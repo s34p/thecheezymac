@@ -12,7 +12,10 @@ h1{
     padding: 0px;
 }
 
-
+a, a:hover {
+    text-decoration: none !important;
+    color: inherit;
+}
 
 .header
 {
@@ -31,11 +34,12 @@ h1{
 }
 .footer
 {
-    /*background: url("/img/bg/footer.jpg") no-repeat;*/
-    background-color: #1d1d1d;
-    height: 250px;
+    /*background: url("/img/bg/footer.jpg") repeat-y;*/
+    background-color: #363636;
+
     color: white;
-    padding: 10px 0px;
+    padding-top: 50px;
+    padding-bottom: 10px;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 14px;
     text-align: left;
@@ -44,6 +48,66 @@ h1{
 .footer-title{
     border-bottom: 1px dotted #fff;
     padding-bottom: 5px;
+}
+.recycleLogo{
+    padding: 20px 0px;
+}
+
+.recycleLogo img{
+    float: left;
+
+}
+
+.recycleLogo-text{
+    float: left;
+    width: 195px;
+    font-size: 13px;
+    padding-top: 15px;
+    padding-left: 5px;
+}
+
+.footer-list-items{
+    list-style: none;
+    padding-left: 0px;
+}
+.footer-list-items li a:hover
+{
+    color: #ffff00;
+}
+.footer-contactus{
+    padding-top:10px;
+    font-size: 13px;
+}
+
+.subfooter{
+    padding-top: 40px;
+}
+.facebook:hover
+{
+    color: #3b5998;
+}
+.twitter:hover
+{
+    color: #4099ff
+}
+.google:hover
+{
+    color: #d34836
+}
+.youtube:hover
+{
+    color: #bb0000
+}
+.instagram:hover
+{
+    color: #517fa4
+}
+.ads{
+    text-align: right;
+    font-size: 11px;
+}
+.social-network{
+    text-align:right;
 }
 
 .col-lg-10
@@ -64,6 +128,59 @@ h1{
 
 }
 
+/*Slideshow*/
+.carousel {
+    background: url("/img/slideshow.png") repeat-x;
+    position: relative;
+    padding: 5px;     /* Shows as a border around the carousel */
+    margin: 0 auto;
+    width: 96%;
+}
+.carousel-inner div img{
+    padding-left: 10px
+}
+
+/*5 Column Bootstrap*/
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+
+.important-links
+{
+    margin-top:25px;
+}
+.important-links div img{
+    width:100%;
+}
+@media (min-width: 768px) {
+    .col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
 
 
 @media screen and (max-width: 998px)
@@ -77,6 +194,19 @@ h1{
     .container{
         padding: 0px !important;
         width: 100% !important;
+    }
+
+    .footer-list-items li a:hover
+    {
+        color: #600d00;
+    }
+    .dashed-border{
+        border-bottom: 1px dashed #FFFFFF;
+        margin-bottom: 10px;
+    }
+
+    .important-links div img{
+        width:auto;
     }
 }
 

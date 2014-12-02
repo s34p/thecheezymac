@@ -7,6 +7,7 @@
 {{HTML::style('plugins/bootstrap/css/bootstrap.min.css')}}
 {{HTML::style('plugins/bootstrap/css/bootstrap-theme.min.css')}}
 {{HTML::style('plugins/bootstrap/css/offcanvas.css')}}
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 {{HTML::style('css/thecheezymac.css')}}
 
     {{HTML::script('/js/jquery.min.js')}}
@@ -41,7 +42,6 @@
                               </button>
 
                             </div>
-
 
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="collapse navbar-collapse mynavbar clearfix" id="mainNavbar">
