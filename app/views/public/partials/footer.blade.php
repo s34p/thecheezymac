@@ -1,7 +1,9 @@
-                <div class="footer col-lg-10">
+                <div class="footer ">
 
                 </div>
             </div>
+
+         </div>
 
 
 </body>

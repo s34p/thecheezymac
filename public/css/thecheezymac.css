@@ -1,6 +1,10 @@
+@import "partials/navbar.css";
+
 body{
     background: url("/img/bg/brickbg.jpg") repeat-x;
     background-color: #ffffff;
+    padding: 0px;
+    margin: 0px;
 }
 h1{
     font-family: trajan !important;
@@ -8,34 +12,24 @@ h1{
     padding: 0px;
 }
 
-/**
-NAVIGATION BAR
-**/
 
-nav{
-    padding: 0px;
-    margin: 0px;
-    z-index: 1001;
-}
-.navbar-nav
+
+.header
 {
-    float:none !important;
+    background: url("/img/bg/header.jpg") no-repeat;
+    height:190px;
+}
+
+.logo
+{
     text-align: center;
-    margin: 0 auto;
+    padding: 10px;
 }
-
-nav ul li a
+.footer
 {
-    padding: 0px 8px !important;
-    display:inline-block;
-    float:none;
-}
+    background: url("/img/bg/footer.jpg") no-repeat;
+    height: 250px;
 
-.handler{
-    display: none;
-    box-sizing: border-box;
-    color: white;
-    text-align: left;
 }
 
 .col-lg-10
@@ -44,18 +38,7 @@ nav ul li a
     margin: 0 auto;
     padding: 0px;
 }
-.header
-{
-    background: url("/img/bg/header.jpg") no-repeat;
-    height:190px;
 
-}
-.footer
-{
-    background: url("/img/bg/footer.jpg") no-repeat;
-    height: 260px;
-
-}
 .main
 {
     background: url("/img/bg/paperbg1.jpg") repeat-y;
@@ -66,36 +49,10 @@ nav ul li a
     /*background-position:center;*/
 
 }
-.logo
-{
-    text-align: center;
-    padding: 10px;
-}
+
 
 @media screen and (max-width: 998px)
 {
-    /*
-    Navigation Bar
-    */
-    /*.showing{*/
-        /*box-sizing: border-box;*/
-    /*}*/
-
-    /*nav ul{*/
-        /*max-height: 0px;*/
-        /*max-height: 20em;*/
-    /*}*/
-
-    /*nav ul li{*/
-        /*box-sizing: border-box;*/
-        /*width: 100%;*/
-        /*text-align: left;*/
-
-    /*}*/
-
-    /*.handler{*/
-        /*display: block;*/
-    /*}*/
 
 
     .col-lg-10, .main{
@@ -104,6 +61,7 @@ nav ul li a
 
     .container{
         padding: 0px !important;
+        width: 100% !important;
     }
 }
 
