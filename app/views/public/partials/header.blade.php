@@ -32,6 +32,7 @@
                 <div class="menu">
                     <nav class="navbar">
                         <div class="container-fluid">
+
                             <!-- Brand and toggle get grouped for better mobile display -->
                             <div class="navbar-header">
                               <button type="button" class="navbar-toggle collapsed btn btn-warning custom-toggle pull-left" data-toggle="collapse" data-target="#mainNavbar">
@@ -62,17 +63,18 @@
                                     <li><a href="/" class="menu-button"><img src="/img/buttons/home.png" class="home" alt=""/></a></li>
                                 @endif
 
-                                <li><a href="/" class="menu-button"><img src="/img/buttons/story.png" class="story" alt=""/></a></li>
-                                <li><a href="/" class="menu-button"><img src="/img/buttons/specials.png" class="specials" alt=""/></a></li>
-                                <li><a href="/" class="menu-button"><img src="/img/buttons/menu.png" class="menu" alt=""/></a></li>
-                                <li><a href="/" class="menu-button"><img src="/img/buttons/catering.png" class="catering" alt=""/></a></li>
-                                <li><a href="/" class="menu-button"><img src="/img/buttons/news.png" class="news" alt=""/></a></li>
-                                <li><a href="/" class="menu-button"><img src="/img/buttons/giftcard.png" class="giftcard" alt=""/></a></li>
-                                <li><a href="/" class="menu-button"><img src="/img/buttons/loyalty.png" class="loyalty" alt=""/></a></li>
+                                <li><a href="/" class="menu-button"><img  src="/img/buttons/story.png" class="story img-responsive" alt=""/></a></li>
+                                <li><a href="/" class="menu-button"><img  src="/img/buttons/specials.png" class="specials img-responsive" alt=""/></a></li>
+                                <li><a href="/" class="menu-button"><img  src="/img/buttons/menu.png" class="menu img-responsive" alt=""/></a></li>
+                                <li><a href="/" class="menu-button"><img  src="/img/buttons/catering.png" class="catering img-responsive" alt=""/></a></li>
+                                <li><a href="/" class="menu-button"><img  src="/img/buttons/news.png" class="news img-responsive" alt=""/></a></li>
+                                <li><a href="/" class="menu-button"><img  src="/img/buttons/giftcard.png" class="giftcard img-responsive" alt=""/></a></li>
+                                <li><a href="/" class="menu-button"><img  src="/img/buttons/loyalty.png" class="loyalty img-responsive" alt=""/></a></li>
 
                               </ul>
 
                             </div><!-- /.navbar-collapse -->
+
                      </div><!-- /.container-fluid -->
 
 

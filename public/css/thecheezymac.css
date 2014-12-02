@@ -31,9 +31,19 @@ h1{
 }
 .footer
 {
-    background: url("/img/bg/footer.jpg") no-repeat;
+    /*background: url("/img/bg/footer.jpg") no-repeat;*/
+    background-color: #1d1d1d;
     height: 250px;
+    color: white;
+    padding: 10px 0px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    text-align: left;
+}
 
+.footer-title{
+    border-bottom: 1px dotted #fff;
+    padding-bottom: 5px;
 }
 
 .col-lg-10
