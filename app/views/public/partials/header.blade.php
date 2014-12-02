@@ -6,10 +6,12 @@
 
 {{HTML::style('plugins/bootstrap/css/bootstrap.min.css')}}
 {{HTML::style('plugins/bootstrap/css/bootstrap-theme.min.css')}}
+{{HTML::style('plugins/bootstrap/css/offcanvas.css')}}
 {{HTML::style('css/thecheezymac.css')}}
 
     {{HTML::script('/js/jquery.min.js')}}
     {{HTML::script('/plugins/bootstrap/js/bootstrap.min.js')}}
+    {{HTML::script('/plugins/bootstrap/js/offcanvas.js')}}
     {{HTML::script('plugins/facelift/flir.js')}}
     {{HTML::script('/js/thecheezymac.js')}}
     {{--<script type="text/javascript">--}}
@@ -20,11 +22,12 @@
 </head>
 <body>
         <div class="container text-center">
-            <div class="col-lg-10">
+        <div class="col-lg-10">
+
 
             <div class="header">
                 <div class="logo">
-                    <img src="/img/logo.png" alt="The cheezy Mac Logo"/>
+                    <img src="/img/logo.png" class="img-responsive" alt="The cheezy Mac Logo"/>
                 </div>
                 <div class="menu">
                     <nav class="navbar">

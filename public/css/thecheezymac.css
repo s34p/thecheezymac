@@ -25,6 +25,10 @@ h1{
     text-align: center;
     padding: 10px;
 }
+
+.logo .img-responsive{
+    display: inline-block;
+}
 .footer
 {
     background: url("/img/bg/footer.jpg") no-repeat;
@@ -49,6 +53,7 @@ h1{
     /*background-position:center;*/
 
 }
+
 
 
 @media screen and (max-width: 998px)

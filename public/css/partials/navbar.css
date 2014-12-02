@@ -99,4 +99,10 @@ nav{
     .custom-toggle {
         margin: 0px;
     }
+
+    .mynavbar{
+        background: url("/img/bg/header.jpg") no-repeat;
+    }
+
+
 }
