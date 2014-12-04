@@ -4,7 +4,7 @@
 
 @section('content')
 
-            <div class="main">
+            <div class="main-index">
                 {{--Slideshow--}}
 
 

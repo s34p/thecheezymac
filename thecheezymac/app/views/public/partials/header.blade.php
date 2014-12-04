@@ -19,6 +19,54 @@
         {{--FLIR.init();--}}
         {{--FLIR.auto([ 'h1', 'h2']);--}}
     {{--</script>--}}
+    <script type="text/javascript">
+    $(document).ready(function(){
+        var activeButton = "<?php echo Request::segment(1); ?>";
+
+        /**
+         * Button Hover
+         * @type {string}
+         */
+            $(".menu-button img").mouseover(function()
+             {
+
+                 if($(this).attr('data-link') != activeButton)
+                 {
+                    var navButton = $(this).attr('src');
+                     var navHover = navButton.replace(".png","-hover.png");
+                     $(this).attr('src',navHover);
+                 }
+
+             });
+             $(".menu-button img").mouseout(function()
+             {
+
+                 if($(this).attr('data-link') != activeButton)
+                 {
+                    var navButton = $(this).attr('src');
+                     var navHover = navButton.replace("-hover", "");
+                     $(this).attr('src', navHover);
+                 }
+             });
+
+
+
+
+
+        $("nav ul li a img").each(function()
+        {
+              //var classVal = $(this).attr("data-link");
+
+            if(activeButton == $(this).attr("data-link"))
+            {
+
+                var navButton = $(this).attr('src');
+                var navHover = navButton.replace(".png","-hover.png");
+                $(this).attr('src',navHover);
+            }
+        });
+       });
+    </script>
 
 </head>
 <body>
@@ -60,10 +108,10 @@
                               {{--</li>--}}
                                 {{--<li><a href="/" class="menu-button"><img src="/img/buttons/home.png" class="home" alt=""/></a></li>--}}
                                 @if(Request::segment(1) != "" AND Request::segment(1) != "home")
-                                    <li><a href="/" class="menu-button"><img src="/img/buttons/home.png" class="home" alt=""/></a></li>
+                                    <li><a href="/" class="menu-button"><img src="/img/buttons/home.png" class="home img-responsive" alt=""/></a></li>
                                 @endif
 
-                                <li><a href="/" class="menu-button"><img  src="/img/buttons/story.png" class="story img-responsive" alt=""/></a></li>
+                                <li><a href="/" class="menu-button"><img  src="/img/buttons/story.png" data-link="story" class="story img-responsive" alt=""/></a></li>
                                 <li><a href="/" class="menu-button"><img  src="/img/buttons/specials.png" class="specials img-responsive" alt=""/></a></li>
                                 <li><a href="/" class="menu-button"><img  src="/img/buttons/menu.png" class="menu img-responsive" alt=""/></a></li>
                                 <li><a href="/" class="menu-button"><img  src="/img/buttons/catering.png" class="catering img-responsive" alt=""/></a></li>
@@ -72,6 +120,8 @@
                                 <li><a href="/" class="menu-button"><img  src="/img/buttons/loyalty.png" class="loyalty img-responsive" alt=""/></a></li>
 
                               </ul>
+
+
 
                             </div><!-- /.navbar-collapse -->
 

@@ -9,4 +9,9 @@ class PagesController extends BaseController {
 		$this->layout->content = View::make('public.index');
 	}
 
+	public function story()
+	{
+	    $this->layout->content = View::make('public.story');
+	}
+
 }

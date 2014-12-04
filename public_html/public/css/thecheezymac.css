@@ -117,7 +117,7 @@ a, a:hover {
     padding: 0px;
 }
 
-.main
+.main-index
 {
     background: url("/img/bg/paperbg1.jpg") repeat-y;
 
@@ -127,6 +127,18 @@ a, a:hover {
     /*background-position:center;*/
 
 }
+
+
+.main
+{
+    background-color: white;
+    min-height:600px;
+    z-index: 1000;
+    /*background-size:contain;*/
+    /*background-position:center;*/
+
+}
+
 
 /*Slideshow*/
 .carousel {

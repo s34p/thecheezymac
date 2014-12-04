@@ -2,163 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f3912ce-a158-4f61-b840-36a2c426d818" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\.idea\dictionaries\rmork.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\TheCheezyMac\Forms\FormValidationException.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\TheCheezyMac\Forms\FormValidator.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\TheCheezyMac\Mailers\MailerImplementation.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\TheCheezyMac\Mailers\MailerInterface.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\TheCheezyMac\Mailers\MailersServiceProvider.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\commands\.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\config\app.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\config\auth.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\config\cache.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\config\compile.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\config\database.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\config\local\app.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\config\local\database.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\config\mail.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\config\packages\.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\config\queue.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\config\remote.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\config\services.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\config\session.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\config\testing\cache.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\config\testing\session.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\config\view.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\config\workbench.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\controllers\.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\controllers\BaseController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\controllers\PageController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\database\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\database\migrations\.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\database\seeds\.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\database\seeds\DatabaseSeeder.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\filters.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\lang\en\pagination.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\lang\en\reminders.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\lang\en\validation.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\models\User.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\routes.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\start\artisan.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\start\global.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\start\local.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\storage\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\storage\cache\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\storage\logs\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\storage\meta\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\storage\sessions\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\storage\views\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\tests\ExampleTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\tests\TestCase.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\views\emails\auth\reminder.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\views\public\index.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\views\public\layout\default.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\views\public\partials\footer.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\app\views\public\partials\header.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\artisan" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\bootstrap\autoload.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\bootstrap\paths.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\bootstrap\start.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\composer.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\phpunit.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\css\partials\navbar.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\css\thecheezymac.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\Logo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\applogo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\bg\brickbg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\bg\footer.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\bg\footerbg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\bg\header.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\bg\paperbg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\bg\paperbg1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\buttons\catering-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\buttons\catering.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\buttons\giftcard-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\buttons\giftcard.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\buttons\home-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\buttons\home.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\buttons\loyalty-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\buttons\loyalty.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\buttons\menu-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\buttons\menu.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\buttons\news-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\buttons\news.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\buttons\specials-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\buttons\specials.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\buttons\story-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\buttons\story.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\caterlogo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\freestylelogo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\gflogo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\gflogopurple.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\headerbg.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\logotall.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\menulogo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\recyclelogo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\slide1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\slideshow.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\sociallogo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\speciallogo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\img\storylogo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\index.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\js\jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\js\thecheezymac.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\packages\.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\bootstrap\css\bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\bootstrap\css\bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\bootstrap\css\bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\bootstrap\css\bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\bootstrap\css\bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\bootstrap\css\bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\bootstrap\css\offcanvas.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\bootstrap\fonts\glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\bootstrap\fonts\glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\bootstrap\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\bootstrap\fonts\glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\bootstrap\js\bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\bootstrap\js\bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\bootstrap\js\npm.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\bootstrap\js\offcanvas.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\facelift\_COPYING.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\facelift\_README.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\facelift\_notes\dwsync.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\facelift\config-flir.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\facelift\flir.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\facelift\fonts\ArtOfIlluminating.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\facelift\fonts\ArtOfIlluminating.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\facelift\fonts\OFL_FAQ.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\facelift\fonts\OFL_License.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\facelift\fonts\README.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\facelift\fonts\TrajanPro-Bold.otf" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\facelift\fonts\_notes\dwsync.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\facelift\fonts\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\facelift\fonts\okolaksBold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\facelift\fonts\wanta_091.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\facelift\generate.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\facelift\inc-flir.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\facelift\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\facelift\js-plugins\_notes\dwsync.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\facelift\js-plugins\detectimages.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\facelift\js-plugins\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\facelift\js-plugins\refreshimages.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\facelift\plugins\FancyFonts.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\facelift\plugins\QuickEffects.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\facelift\plugins\QuickEffects\_notes\dwsync.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\facelift\plugins\QuickEffects\qe-pattern-fill-texture.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\facelift\plugins\_notes\dwsync.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\facelift\plugins\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\plugins\facelift\spacer.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public\robots.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\readme.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\server.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thecheezymac/app/controllers/PageController.php" afterPath="$PROJECT_DIR$/thecheezymac/app/controllers/PageController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thecheezymac/app/views/public/partials/header.blade.php" afterPath="$PROJECT_DIR$/thecheezymac/app/views/public/partials/header.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thecheezymac/app/views/public/index.blade.php" afterPath="$PROJECT_DIR$/thecheezymac/app/views/public/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thecheezymac/app/routes.php" afterPath="$PROJECT_DIR$/thecheezymac/app/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/public/css/thecheezymac.css" afterPath="$PROJECT_DIR$/public_html/public/css/thecheezymac.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/public/js/thecheezymac.js" afterPath="$PROJECT_DIR$/public_html/public/js/thecheezymac.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="thecheezymac.iws" />
@@ -184,22 +33,84 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="paths.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thecheezymac/bootstrap/paths.php">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/thecheezymac/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-27.461538" vertical-offset="0" max-vertical-offset="1071">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="170">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public_html/public/index.php">
+      <file leaf-file-name="story.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/thecheezymac/app/views/public/story.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.60918254" vertical-offset="0" max-vertical-offset="893">
-              <caret line="37" column="75" selection-start-line="37" selection-start-column="75" selection-end-line="37" selection-end-column="75" />
+            <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="272">
+              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PageController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/thecheezymac/app/controllers/PageController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="391">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="thecheezymac.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/public/css/thecheezymac.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2681" max-vertical-offset="3910">
+              <caret line="191" column="19" selection-start-line="191" selection-start-column="19" selection-end-line="191" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navbar.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public_html/public/css/partials/navbar.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.32508436" vertical-offset="0" max-vertical-offset="1921">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/thecheezymac/app/views/public/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="1190">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/thecheezymac/app/views/public/partials/header.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-24.192308" vertical-offset="221" max-vertical-offset="2380">
+              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="thecheezymac.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/public/js/thecheezymac.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -215,19 +126,28 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
-    <option name="changedFiles">
+    <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/thecheezymac/bootstrap/paths.php" />
-        <option value="$PROJECT_DIR$/public_html/public/index.php" />
+        <option value="$PROJECT_DIR$/thecheezymac/app/routes.php" />
+        <option value="$PROJECT_DIR$/thecheezymac/app/views/public/story.blade.php" />
+        <option value="$PROJECT_DIR$/thecheezymac/app/controllers/PageController.php" />
+        <option value="$PROJECT_DIR$/thecheezymac/app/views/public/index.blade.php" />
+        <option value="$PROJECT_DIR$/public_html/public/js/thecheezymac.js" />
+        <option value="$PROJECT_DIR$/thecheezymac/app/views/public/partials/header.blade.php" />
+        <option value="$PROJECT_DIR$/public_html/public/css/thecheezymac.css" />
+        <option value="$PROJECT_DIR$/public_html/public/css/partials/navbar.css" />
       </list>
     </option>
   </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1696" />
+    <option name="height" value="1026" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -273,6 +193,16 @@
               <option name="myItemId" value="thecheezymac" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="thecheezymac" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -285,6 +215,202 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -300,6 +426,11 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../aracademia" />
     <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\thecheezymac\thecheezymac\app\views\public" />
+    </key>
   </component>
   <component name="RunManager">
     <list size="0" />
@@ -318,26 +449,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="true" />
+    <frame x="1912" y="-8" width="1696" height="1026" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -364,22 +495,71 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/thecheezymac/bootstrap/paths.php">
+    <entry file="file://$PROJECT_DIR$/thecheezymac/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.461538" vertical-offset="0" max-vertical-offset="1071">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="170">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public/index.php">
+    <entry file="file://$PROJECT_DIR$/thecheezymac/app/views/public/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60918254" vertical-offset="0" max-vertical-offset="893">
-          <caret line="37" column="75" selection-start-line="37" selection-start-column="75" selection-end-line="37" selection-end-column="75" />
+        <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="1190">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thecheezymac/app/controllers/PageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="391">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thecheezymac/app/views/public/story.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="272">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/public/js/thecheezymac.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thecheezymac/app/views/public/partials/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.192308" vertical-offset="221" max-vertical-offset="2380">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/public/css/thecheezymac.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2681" max-vertical-offset="3910">
+          <caret line="191" column="19" selection-start-line="191" selection-start-column="19" selection-end-line="191" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/public/css/partials/navbar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32508436" vertical-offset="0" max-vertical-offset="1921">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
   </component>
 </project>
-
