@@ -72,6 +72,64 @@
 
          </div>
 
+         <script type="text/javascript">
+             $(document).ready(function(){
+         //            FLIR.init();
+         //            FLIR.auto([ 'h1', 'h2']);
+
+                 var activeButton = "<?php echo Request::segment(1); ?>";
+
+                 /**
+                  * Button Hover
+                  * @type {string}
+                  */
+                     $(".menu-button img").mouseover(function()
+                      {
+
+                          if($(this).attr('data-link') != activeButton)
+                          {
+                             var navButton = $(this).attr('src');
+                              var navHover = navButton.replace(".png","-hover.png");
+                              $(this).attr('src',navHover);
+                          }
+
+                      });
+                      $(".menu-button img").mouseout(function()
+                      {
+
+                          if($(this).attr('data-link') != activeButton)
+                          {
+                             var navButton = $(this).attr('src');
+                              var navHover = navButton.replace("-hover", "");
+                              $(this).attr('src', navHover);
+                          }
+                      });
+
+
+
+
+
+                 $("nav ul li a img").each(function()
+                 {
+                       //var classVal = $(this).attr("data-link");
+
+                     if(activeButton == $(this).attr("data-link"))
+                     {
+
+                         var navButton = $(this).attr('src');
+                         var navHover = navButton.replace(".png","-hover.png");
+                         $(this).attr('src',navHover);
+                     }
+                 });
+
+                         $('.navbar .dropdown').hover(function() {
+                 		  $(this).find('.dropdown-menu').first().stop(true, true).slideDown("slow");
+                 		}, function() {
+                 		  $(this).find('.dropdown-menu').first().stop(true, true).slideUp("slow")
+                 		});
+                });
+             </script>
+
 
 </body>
 </html>

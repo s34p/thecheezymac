@@ -40,9 +40,10 @@ define('HBOUNDS_TEXT', 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz[]{}
 // Each font you want to use should have an entry in the fonts array.
 $fonts = array();
 $fonts['trajan'] 	= 'TrajanPro-Bold.otf';
+$fonts['sketch'] 	= 'sketch_block.ttf';
 
 // The font will default to the following (put your most common font here).
-$fonts['default'] 		= $fonts['trajan'];
+$fonts['default'] 		= $fonts['sketch'];
 
 /*
 // You can now setup collections of fonts that will be automatically detected and used if the proper CSS conditions are met.

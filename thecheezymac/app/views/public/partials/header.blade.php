@@ -13,60 +13,10 @@
     {{HTML::script('/js/jquery.min.js')}}
     {{HTML::script('/plugins/bootstrap/js/bootstrap.min.js')}}
     {{HTML::script('/plugins/bootstrap/js/offcanvas.js')}}
-    {{HTML::script('plugins/facelift/flir.js')}}
+{{--    {{HTML::script('/plugins/facelift/flir.js')}}--}}
     {{HTML::script('/js/thecheezymac.js')}}
-    {{--<script type="text/javascript">--}}
-        {{--FLIR.init();--}}
-        {{--FLIR.auto([ 'h1', 'h2']);--}}
-    {{--</script>--}}
-    <script type="text/javascript">
-    $(document).ready(function(){
-        var activeButton = "<?php echo Request::segment(1); ?>";
-
-        /**
-         * Button Hover
-         * @type {string}
-         */
-            $(".menu-button img").mouseover(function()
-             {
-
-                 if($(this).attr('data-link') != activeButton)
-                 {
-                    var navButton = $(this).attr('src');
-                     var navHover = navButton.replace(".png","-hover.png");
-                     $(this).attr('src',navHover);
-                 }
-
-             });
-             $(".menu-button img").mouseout(function()
-             {
-
-                 if($(this).attr('data-link') != activeButton)
-                 {
-                    var navButton = $(this).attr('src');
-                     var navHover = navButton.replace("-hover", "");
-                     $(this).attr('src', navHover);
-                 }
-             });
 
 
-
-
-
-        $("nav ul li a img").each(function()
-        {
-              //var classVal = $(this).attr("data-link");
-
-            if(activeButton == $(this).attr("data-link"))
-            {
-
-                var navButton = $(this).attr('src');
-                var navHover = navButton.replace(".png","-hover.png");
-                $(this).attr('src',navHover);
-            }
-        });
-       });
-    </script>
 
 </head>
 <body>
@@ -111,13 +61,20 @@
                                     <li><a href="/" class="menu-button"><img src="/img/buttons/home.png" class="home img-responsive" alt=""/></a></li>
                                 @endif
 
-                                <li><a href="/" class="menu-button"><img  src="/img/buttons/story.png" data-link="story" class="story img-responsive" alt=""/></a></li>
-                                <li><a href="/" class="menu-button"><img  src="/img/buttons/specials.png" class="specials img-responsive" alt=""/></a></li>
-                                <li><a href="/" class="menu-button"><img  src="/img/buttons/menu.png" class="menu img-responsive" alt=""/></a></li>
-                                <li><a href="/" class="menu-button"><img  src="/img/buttons/catering.png" class="catering img-responsive" alt=""/></a></li>
-                                <li><a href="/" class="menu-button"><img  src="/img/buttons/news.png" class="news img-responsive" alt=""/></a></li>
-                                <li><a href="/" class="menu-button"><img  src="/img/buttons/giftcard.png" class="giftcard img-responsive" alt=""/></a></li>
-                                <li><a href="/" class="menu-button"><img  src="/img/buttons/loyalty.png" class="loyalty img-responsive" alt=""/></a></li>
+                                <li><a href="/story" class="menu-button"><img  src="/img/buttons/story.png" data-link="story" class=" img-responsive" alt=""/></a></li>
+                                <li class="dropdown">
+                                    <a href="/menu" class="menu-button dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img  src="/img/buttons/menu.png" data-link="menu" class=" img-responsive" alt=""/></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                         <li><a href="/menu" class="menu-button"><img  src="/img/buttons/menu.png" data-link="menu" class=" img-responsive" alt=""/></a></li>
+                                         <li><a href="/specials" class="menu-button"><img  src="/img/buttons/specials.png" data-link="specials" class=" img-responsive" alt=""/></a></li>
+
+                                    </ul>
+                                </li>
+                                <li><a href="/catering" class="menu-button"><img  src="/img/buttons/catering.png" data-link="catering" class=" img-responsive" alt=""/></a></li>
+                                <li><a href="/blog" class="menu-button"><img  src="/img/buttons/news.png" data-link="blog" class=" img-responsive" alt=""/></a></li>
+                                <li><a href="/giftcard" class="menu-button"><img  src="/img/buttons/giftcard.png" data-link="giftcard" class="giftcard img-responsive" alt=""/></a></li>
+                                <li><a href="/club" class="menu-button"><img  src="/img/buttons/loyalty.png" data-link="club" class=" img-responsive" alt=""/></a></li>
+                                <li><a href="/contact-us" class="menu-button"><img  src="/img/buttons/giftcard.png" data-link="contact-us" class=" img-responsive" alt=""/></a></li>
 
                               </ul>
 
