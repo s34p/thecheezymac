@@ -4,18 +4,7 @@
 <meta charset="UTF-8">
 <title>@yield('title')</title>
 
-{{HTML::style('plugins/bootstrap/css/bootstrap.min.css')}}
-{{HTML::style('plugins/bootstrap/css/bootstrap-theme.min.css')}}
-{{HTML::style('plugins/bootstrap/css/offcanvas.css')}}
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-{{HTML::style('css/thecheezymac.css')}}
-
-    {{HTML::script('/js/jquery.min.js')}}
-    {{HTML::script('/plugins/bootstrap/js/bootstrap.min.js')}}
-    {{HTML::script('/plugins/bootstrap/js/offcanvas.js')}}
-{{--    {{HTML::script('/plugins/facelift/flir.js')}}--}}
-    {{HTML::script('/js/thecheezymac.js')}}
-
+{{HTML::style('/css/min/thecheezymac.css')}}
 
 
 </head>

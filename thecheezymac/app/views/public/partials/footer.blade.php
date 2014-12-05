@@ -72,10 +72,12 @@
 
          </div>
 
+
+            {{HTML::script('/js/thecheezymac.js')}}
+
          <script type="text/javascript">
              $(document).ready(function(){
-         //            FLIR.init();
-         //            FLIR.auto([ 'h1', 'h2']);
+
 
                  var activeButton = "<?php echo Request::segment(1); ?>";
 
