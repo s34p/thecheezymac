@@ -2,111 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59b89073-589e-43d4-a3d6-c0b4491f388c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thecheezymac/app/TheCheezyMac/Users/UserManagement/CreateValidation.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thecheezymac/app/TheCheezyMac/Users/Login/LoginValidation.php" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\css\partials\navbar.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\css\thecheezymac.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\Logo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\applogo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\bg\brickbg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\bg\footer.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\bg\footerbg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\bg\header.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\bg\paperbg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\bg\paperbg1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\buttons\catering-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\buttons\catering.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\buttons\giftcard-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\buttons\giftcard.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\buttons\home-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\buttons\home.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\buttons\loyalty-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\buttons\loyalty.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\buttons\menu-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\buttons\menu.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\buttons\news-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\buttons\news.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\buttons\specials-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\buttons\specials.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\buttons\story-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\buttons\story.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\caterlogo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\freestylelogo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\gflogo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\gflogopurple.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\headerbg.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\logotall.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\menulogo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\recyclelogo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\slide1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\slideshow.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\sociallogo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\speciallogo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\storylogo.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\img\storypic.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\index.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\js\jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\js\thecheezymac.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\packages\.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\bootstrap\css\bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\bootstrap\css\bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\bootstrap\css\bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\bootstrap\css\bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\bootstrap\css\bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\bootstrap\css\bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\bootstrap\css\offcanvas.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\bootstrap\fonts\glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\bootstrap\fonts\glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\bootstrap\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\bootstrap\fonts\glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\bootstrap\js\bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\bootstrap\js\bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\bootstrap\js\npm.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\bootstrap\js\offcanvas.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\facelift\_COPYING.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\facelift\_README.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\facelift\_notes\dwsync.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\facelift\config-flir.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\facelift\flir.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\facelift\fonts\ArtOfIlluminating.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\facelift\fonts\ArtOfIlluminating.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\facelift\fonts\OFL_FAQ.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\facelift\fonts\OFL_License.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\facelift\fonts\README.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\facelift\fonts\Sketch_Block.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\facelift\fonts\TrajanPro-Bold.otf" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\facelift\fonts\_notes\dwsync.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\facelift\fonts\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\facelift\fonts\okolaksBold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\facelift\fonts\wanta_091.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\facelift\generate.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\facelift\inc-flir.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\facelift\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\facelift\js-plugins\_notes\dwsync.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\facelift\js-plugins\detectimages.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\facelift\js-plugins\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\facelift\js-plugins\refreshimages.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\facelift\plugins\FancyFonts.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\facelift\plugins\QuickEffects.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\facelift\plugins\QuickEffects\_notes\dwsync.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\facelift\plugins\QuickEffects\qe-pattern-fill-texture.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\facelift\plugins\_notes\dwsync.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\facelift\plugins\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\plugins\facelift\spacer.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\public_html\public\robots.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\thecheezymac\thecheezymac\app\models\User.php" afterPath="" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\thecheezymac\thecheezymac\app\config\local\app.php" afterPath="$PROJECT_DIR$/thecheezymac/app/config/development/app.php" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\thecheezymac\thecheezymac\app\config\local\database.php" afterPath="$PROJECT_DIR$/thecheezymac/app/config/development/database.php" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\thecheezymac\thecheezymac\app\controllers\PageController.php" afterPath="$PROJECT_DIR$/thecheezymac/app/controllers/PagesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thecheezymac/.gitignore" afterPath="$PROJECT_DIR$/thecheezymac/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thecheezymac/app/config/app.php" afterPath="$PROJECT_DIR$/thecheezymac/app/config/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thecheezymac/composer.json" afterPath="$PROJECT_DIR$/thecheezymac/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thecheezymac/app/config/database.php" afterPath="$PROJECT_DIR$/thecheezymac/app/config/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thecheezymac/gulpfile.js" afterPath="$PROJECT_DIR$/thecheezymac/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thecheezymac/app/routes.php" afterPath="$PROJECT_DIR$/thecheezymac/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thecheezymac/bootstrap/start.php" afterPath="$PROJECT_DIR$/thecheezymac/bootstrap/start.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thecheezymac/app/views/public/index.blade.php" afterPath="$PROJECT_DIR$/thecheezymac/app/views/public/index.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/thecheezymac/css/min/thecheezymac.css" afterPath="$PROJECT_DIR$/public_html/thecheezymac/css/min/thecheezymac.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thecheezymac/app/assets/css/thecheezymac.css" afterPath="$PROJECT_DIR$/thecheezymac/app/assets/css/thecheezymac.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -137,28 +33,48 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/thecheezymac/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.692307" vertical-offset="0" max-vertical-offset="561">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="408" max-vertical-offset="561">
               <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thecheezymac/app/views/private/dashboard.blade.php">
+      <file leaf-file-name="UsersController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/thecheezymac/app/controllers/UsersController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="510">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1785">
+              <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UsersController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/thecheezymac/app/controllers/UsersController.php">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/thecheezymac/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7995521" vertical-offset="102" max-vertical-offset="1785">
-              <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/thecheezymac/app/views/public/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-27.807692" vertical-offset="297" max-vertical-offset="1190">
+              <caret line="60" column="44" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="thecheezymac.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/thecheezymac/app/assets/css/thecheezymac.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.88616073" vertical-offset="4034" max-vertical-offset="4998">
+              <caret line="284" column="27" selection-start-line="284" selection-start-column="27" selection-end-line="284" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -167,7 +83,7 @@
       <file leaf-file-name="AuthController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/thecheezymac/app/controllers/AuthController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.26923" vertical-offset="0" max-vertical-offset="731">
+            <state vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="731">
               <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="32" selection-end-column="55" />
               <folding>
                 <element signature="e#7#51#0#PHP" expanded="true" />
@@ -179,7 +95,7 @@
       <file leaf-file-name="UserManagementInterface.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/thecheezymac/app/TheCheezyMac/Users/UserManagement/UserManagementInterface.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="272">
+            <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="272">
               <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
               <folding />
             </state>
@@ -189,7 +105,7 @@
       <file leaf-file-name="UserManagementImplementation.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/thecheezymac/app/TheCheezyMac/Users/UserManagement/UserManagementImplementation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="323">
+            <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="323">
               <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
@@ -199,7 +115,7 @@
       <file leaf-file-name="CreateValidation.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/thecheezymac/app/TheCheezyMac/Users/UserManagement/CreateValidation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="391">
+            <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="391">
               <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
               <folding />
             </state>
@@ -209,21 +125,9 @@
       <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/thecheezymac/app/views/private/users/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="1190">
+            <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1190">
               <caret line="19" column="95" selection-start-line="19" selection-start-column="95" selection-end-line="19" selection-end-column="95" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thecheezymac/app/TheCheezyMac/Users/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="561">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding>
-                <element signature="e#38#68#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -267,7 +171,6 @@
         <option value="$PROJECT_DIR$/thecheezymac/.env.php" />
         <option value="$PROJECT_DIR$/thecheezymac/app/config/development/app.php" />
         <option value="$PROJECT_DIR$/thecheezymac/gulpfile.js" />
-        <option value="$PROJECT_DIR$/thecheezymac/app/assets/css/thecheezymac.css" />
         <option value="$PROJECT_DIR$/thecheezymac/app/TheCheezyMac/Users/User.php" />
         <option value="$PROJECT_DIR$/thecheezymac/app/TheCheezyMac/Users/UserForms/LoginValidation.php" />
         <option value="$PROJECT_DIR$/thecheezymac/app/TheCheezyMac/Users/Login/LoginInterface.php" />
@@ -288,6 +191,8 @@
         <option value="$PROJECT_DIR$/thecheezymac/app/TheCheezyMac/Users/UserManagement/CreateValidation.php" />
         <option value="$PROJECT_DIR$/thecheezymac/app/views/private/users/create.blade.php" />
         <option value="$PROJECT_DIR$/thecheezymac/app/controllers/UsersController.php" />
+        <option value="$PROJECT_DIR$/thecheezymac/app/views/public/index.blade.php" />
+        <option value="$PROJECT_DIR$/thecheezymac/app/assets/css/thecheezymac.css" />
       </list>
     </option>
   </component>
@@ -395,6 +300,10 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -419,6 +328,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="private" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -562,7 +493,107 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="min" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thecheezymac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -610,15 +641,15 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
       <pass-parent-env-vars>false</pass-parent-env-vars>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -643,7 +674,6 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293348" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -654,11 +684,12 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293348" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329849" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -690,13 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="289">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thecheezymac/app/views/public/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1190">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -780,14 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/thecheezymac/css/min/thecheezymac.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22051887" vertical-offset="0" max-vertical-offset="848">
-          <caret line="11" column="2640" selection-start-line="11" selection-start-column="2640" selection-end-line="11" selection-end-column="2640" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/thecheezymac/app/assets/bootstrap/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.41273585" vertical-offset="4291" max-vertical-offset="107746">
@@ -810,19 +826,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thecheezymac/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12948857" vertical-offset="0" max-vertical-offset="919">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/thecheezymac/.env.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.11422172" vertical-offset="0" max-vertical-offset="893">
           <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -830,7 +837,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4568869" vertical-offset="0" max-vertical-offset="893">
           <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -838,7 +844,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.11422172" vertical-offset="0" max-vertical-offset="893">
           <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -846,7 +851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7614782" vertical-offset="306" max-vertical-offset="2210">
           <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -854,7 +858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3617021" vertical-offset="0" max-vertical-offset="1173">
           <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -862,7 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="919">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -870,7 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34266517" vertical-offset="0" max-vertical-offset="893">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -878,7 +879,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="893">
           <caret line="0" column="37" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -886,7 +886,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="906">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -894,7 +893,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="906">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -902,7 +900,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
           <caret line="35" column="3" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -910,7 +907,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-24.846153" vertical-offset="0" max-vertical-offset="867">
           <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -918,15 +914,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.9977603" vertical-offset="2677" max-vertical-offset="3570">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thecheezymac/app/assets/css/thecheezymac.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2779" max-vertical-offset="4862">
-          <caret line="192" column="0" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -934,7 +921,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34266517" vertical-offset="0" max-vertical-offset="893">
           <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -942,7 +928,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.038462" vertical-offset="1733" max-vertical-offset="3502">
           <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -950,7 +935,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="391">
           <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -958,7 +942,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-26.807692" vertical-offset="0" max-vertical-offset="952">
           <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -966,10 +949,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="748">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <marker date="1417915403902" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1417915403902" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -977,7 +956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="1020">
           <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -985,13 +963,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7144457" vertical-offset="654" max-vertical-offset="1547">
           <caret line="76" column="6" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/thecheezymac/app/views/private/dashboard.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="510">
+        <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="510">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
@@ -999,7 +976,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/thecheezymac/app/TheCheezyMac/Users/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="561">
+        <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="561">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
             <element signature="e#38#68#0#PHP" expanded="true" />
@@ -1009,7 +986,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/thecheezymac/app/controllers/AuthController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.26923" vertical-offset="0" max-vertical-offset="731">
+        <state vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="731">
           <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="32" selection-end-column="55" />
           <folding>
             <element signature="e#7#51#0#PHP" expanded="true" />
@@ -1021,13 +998,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19036955" vertical-offset="0" max-vertical-offset="893">
           <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/thecheezymac/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.692307" vertical-offset="0" max-vertical-offset="561">
+        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="561">
           <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
           <folding />
         </state>
@@ -1035,7 +1011,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/thecheezymac/app/TheCheezyMac/Users/UserManagement/UserManagementInterface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="272">
+        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="272">
           <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
           <folding />
         </state>
@@ -1045,15 +1021,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.69770116" vertical-offset="5" max-vertical-offset="901">
           <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-          <folding>
-            <element signature="e#127#180#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/thecheezymac/app/TheCheezyMac/Users/UserManagement/UserManagementImplementation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="323">
+        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="323">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
@@ -1063,13 +1036,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09770115" vertical-offset="0" max-vertical-offset="870">
           <caret line="10" column="22" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/thecheezymac/app/TheCheezyMac/Users/UserManagement/CreateValidation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="391">
+        <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="391">
           <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
           <folding />
         </state>
@@ -1077,7 +1049,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/thecheezymac/app/views/private/users/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="1190">
+        <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1190">
           <caret line="19" column="95" selection-start-line="19" selection-start-column="95" selection-end-line="19" selection-end-column="95" />
           <folding />
         </state>
@@ -1085,8 +1057,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/thecheezymac/app/controllers/UsersController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7995521" vertical-offset="102" max-vertical-offset="1785">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1785">
           <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thecheezymac/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/thecheezymac/css/min/thecheezymac.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21177803" vertical-offset="0" max-vertical-offset="883">
+          <caret line="11" column="2640" selection-start-line="11" selection-start-column="2640" selection-end-line="11" selection-end-column="2640" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thecheezymac/app/views/public/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-27.807692" vertical-offset="297" max-vertical-offset="1190">
+          <caret line="60" column="44" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thecheezymac/app/assets/css/thecheezymac.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.88616073" vertical-offset="4034" max-vertical-offset="4998">
+          <caret line="284" column="27" selection-start-line="284" selection-start-column="27" selection-end-line="284" selection-end-column="27" />
           <folding />
         </state>
       </provider>

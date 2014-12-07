@@ -46,17 +46,17 @@
                 {{--<div class="col-md-3">--}}
                     {{--<img  src="/img/storylogo.png" alt="Our Story"/>--}}
                 {{--</div>--}}
-                <div class="col-md-3">
-                    <img  src="/img/speciallogo.png" alt="Weekly Specials"/>
+                <div class="col-sm-3" style="">
+                    <img  src="/img/speciallogo.png" class="img-responsive"  alt="Weekly Specials"/>
                 </div>
-                <div class="col-md-3">
-                    <img  src="/img/caterlogo.png" alt="Let Us Cater"/>
+                <div class="col-sm-3">
+                    <img  src="/img/caterlogo.png" class="img-responsive" alt="Let Us Cater"/>
                 </div>
-                <div class="col-md-3">
-                    <img  src="/img/menulogo.png" alt="Menu"/>
+                <div class="col-sm-3">
+                    <img  src="/img/menulogo.png" class="img-responsive" alt="Menu"/>
                 </div>
-                <div class="col-md-3">
-                    <img  src="/img/applogo.png" alt="Download Our App"/>
+                <div class="col-sm-3">
+                    <img  src="/img/applogo.png" class="img-responsive" alt="Download Our App"/>
                 </div>
                 <div class="clearfix"></div>
                 </div>

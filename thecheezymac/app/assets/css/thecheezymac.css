@@ -276,5 +276,13 @@ ul .dropdown-menu{
     .login{
         width:100%;
     }
+
+    .img-responsive{
+        display: inline;
+    }
+
+    .storytext{
+        padding: 25px 10px;
+    }
 }
 
