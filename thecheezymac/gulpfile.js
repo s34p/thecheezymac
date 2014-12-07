@@ -30,7 +30,7 @@ gulp.task('default', function(){
     gulp.run('css');
 
 
-    //gulp.watch('../public_html/thecheezymac/css/*.css', function () {
-    //    gulp.run('css');
-    //});
+    gulp.watch(assetDir + 'css/thecheezymac.css', function () {
+        gulp.run('css');
+    });
 });

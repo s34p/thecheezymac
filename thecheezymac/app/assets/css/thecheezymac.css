@@ -187,6 +187,10 @@ ul .dropdown-menu{
     text-align: left;
 }
 
+.login{
+    width:70%;
+}
+
 /*Slideshow*/
 .carousel {
     background: url("/img/slideshow.png") repeat-x;
@@ -227,6 +231,7 @@ ul .dropdown-menu{
         width: 20%;
         float: left;
     }
+
 }
 @media (min-width: 992px) {
     .col-md-15 {
@@ -266,6 +271,10 @@ ul .dropdown-menu{
 
     .important-links div img{
         width:auto;
+    }
+
+    .login{
+        width:100%;
     }
 }
 
