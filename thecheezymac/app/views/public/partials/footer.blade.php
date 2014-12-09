@@ -17,25 +17,25 @@
                     <div class="col-md-2 dashed-border">
                         <div>
                             <ul class="footer-list-items">
-                                <li><a href="#">HOME</a></li>
-                                <li><a href="#">NEWS</a></li>
-                                <li><a href="#">GIFT CARDS</a></li>
-                                <li><a href="#">LOYALTY CLUB</a></li>
-                                <li><a href="#">OUR STORY</a></li>
-                                <li><a href="#">OUR MENU</a></li>
-                                <li><a href="#">OUR SPECIALS</a></li>
+                                <li><a href="/">HOME</a></li>
+                                <li><a href="/news">NEWS</a></li>
+                                <li><a href="/giftcard">GIFT CARDS</a></li>
+                                <li><a href="/club">LOYALTY CLUB</a></li>
+                                <li><a href="/story">OUR STORY</a></li>
+                                <li><a href="/menu">OUR MENU</a></li>
+                                <li><a href="/specials">OUR SPECIALS</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-3 dashed-border">
                         <ul class="footer-list-items">
-                            <li><a href="#">DOWNLOAD OUR APP</a></li>
-                            <li><a href="#">FRANCHISE INFO</a></li>
+                            <li><a href="/app">DOWNLOAD OUR APP</a></li>
+                            <li><a href="/franchise">FRANCHISE INFO</a></li>
                             <li><a href="#">EMPLOYMENT</a></li>
-                            <li><a href="#">PRESS/MEDIA</a></li>
+                            <li><a href="/press-media">PRESS/MEDIA</a></li>
                             <li><a href="#">WEEKLY WINNER</a></li>
-                            <li><a href="#">CATERING</a></li>
-                            <li><a href="#">CONTACT US</a></li>
+                            <li><a href="/catering">CATERING</a></li>
+                            <li><a href="/contact-us">CONTACT US</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3 dashed-border">

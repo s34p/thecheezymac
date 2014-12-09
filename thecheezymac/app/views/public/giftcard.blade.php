@@ -12,14 +12,13 @@
                    <div class="row">
 
                        <div class="col-md-4 storypic">
-                           <img src="/img/storypic.jpg" class="img-thumbnail" alt=""/>
+                           <img src="/img/giftcard.png" class="img-thumbnail" alt=""/>
                        </div>
                        <div class="col-md-8 storytext">
-                            <h3>Join Us!</h3>
+                            <h3>GIFT CARDS!</h3>
 
                            <p>
-                           What is the ultimate comfort food? It’s food that evokes those warm, nostalgic and sentimental feelings that positively peeks the emotions from the greatest moments of our lives. It’s “positive” food that creates “positive” feelings. Here, at The Cheezy Mac, we are enthusiasts, specializing in the creation of what we believe is the ultimate comfort food, the best macaroni and cheese around!
-                           </p>
+Mac & Cheese ... The ultimate comfort food! Just saying it makes you smile. We hope you love our twist on the old classic so much that you want to share it with others. Now you can! Buy a Gift Card and treat someone special to a dinner to remember at The Cheezy Mac!                           </p>
 
                        </div>
                        <div class="clearfix"></div>

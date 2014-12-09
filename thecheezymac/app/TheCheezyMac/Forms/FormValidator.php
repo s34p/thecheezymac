@@ -36,7 +36,10 @@ abstract class FormValidator {
 
     protected function getValidationRules()
     {
+
         return $this->rules;
+
+
     }
 
     protected function getValidationErrors()

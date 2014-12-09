@@ -15,11 +15,10 @@
                                        <img src="/img/storypic.jpg" class="img-thumbnail" alt=""/>
                                    </div>
                                    <div class="col-md-8 storytext">
-                                        <h3>Join Us!</h3>
+                                        <h3>CATERING!</h3>
 
                                        <p>
-                                       What is the ultimate comfort food? It’s food that evokes those warm, nostalgic and sentimental feelings that positively peeks the emotions from the greatest moments of our lives. It’s “positive” food that creates “positive” feelings. Here, at The Cheezy Mac, we are enthusiasts, specializing in the creation of what we believe is the ultimate comfort food, the best macaroni and cheese around!
-                                       </p>
+Tired of cold cuts and deli sandwiches? Try something different. Surprise your guest with a dish everyone loves… Mac & Cheese! It’s fast, fun, easy and delicious. Call today and let The Cheezy Mac cater your next party!                                       </p>
 
                                    </div>
                                    <div class="clearfix"></div>

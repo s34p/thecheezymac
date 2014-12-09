@@ -11,6 +11,10 @@ Route::get('/catering','PagesController@catering');
 Route::get('/giftcard','PagesController@giftcard');
 Route::get('/club','PagesController@club');
 Route::get('/contact-us','PagesController@contactus');
+Route::get('/app','PagesController@app');
+Route::get('/press-media','PagesController@pressMedia');
+Route::get('/franchise','PagesController@franchise');
+Route::get('/comments','PagesController@comments');
 
 Route::get('/webadmin','AuthController@authenticate');
 Route::post('/webadmin',[
@@ -18,11 +22,14 @@ Route::post('/webadmin',[
     'uses' => 'AuthController@postAuthenticate'
 ]);
 
-Route::group(['prefix'=>'webadmin'], function()
+Route::group(['prefix'=>'webadmin','before'=>'isLoggedIn'], function()
 {
     Route::get('dashboard', 'PagesController@dashboard');
 
     Route::resource('news', 'NewsController');
     Route::resource('users', 'UsersController');
+
+    Route::post('users/passEdit/{id}', 'UsersController@updatePassword');
+    Route::get('logout','AuthController@logout');
 
 });

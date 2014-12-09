@@ -7,7 +7,7 @@
             <div class="main">
 
                                <div class="wrapper">
-                                   <h1 class="heading">Loyalty Club</h1>
+                                   <h1 class="heading">FRANCHISE INFO!</h1>
 
                                    <div class="row">
 
@@ -15,11 +15,10 @@
                                            <img src="/img/storypic.jpg" alt=""/>
                                        </div>
                                        <div class="col-md-8 storytext">
-                                            <h3>LOYALTY CLUB!</h3>
+                                            <h3>Franchise Info!</h3>
 
                                            <p>
-Mac & Cheese lovers unite! Sign-up to receive the latest news, upcoming events, weekly specials, and exclusive “members only” coupons. Simply fill out the form below to “Join the Club” and instantly receive a “Buy One Entree, Get One Free” voucher.
-                                            </p>
+Help us spread the love of gourmet Mac & Cheese! Our business plan is designed for profit and growth. If you’d like to learn more about franchise opportunities, please fill out the Information Request form below, or contact our corporate office at 844-624-3399. We look forward to hearing from you!                                            </p>
 
                                        </div>
                                        <div class="clearfix"></div>

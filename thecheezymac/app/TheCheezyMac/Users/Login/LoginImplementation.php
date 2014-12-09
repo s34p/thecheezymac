@@ -8,7 +8,7 @@
 
 namespace TheCheezyMac\Users\Login;
 
-use Cartalyst\Sentry\Facades\Native\Sentry as Sentry;
+use Cartalyst\Sentry\Facades\Laravel\Sentry as Sentry;
 use Cartalyst\Sentry\Users\UserNotFoundException;
 use Cartalyst\Sentry\Users\WrongPasswordException;
 
@@ -29,7 +29,7 @@ class LoginImplementation implements LoginInterface{
             // Authenticate the user
             $user = Sentry::authenticate($credentials, false);
 
-            $groups = $user->getGroups();
+            //$groups = $user->getGroups();
 
             \Session::put('id', $user->id);
             \Session::put('email', $user->email);
@@ -38,11 +38,11 @@ class LoginImplementation implements LoginInterface{
             \Session::put('last_login', $user->last_login);
 
 
-            return \Redirect::intended('webadmin/dashboard');
+            return \Redirect::intended('/webadmin/dashboard');
         }
         catch (WrongPasswordException $e)
         {
-            return \Redirect::back()->with('sentryError','Email / Password are wrong');
+            return \Redirect::back()->with('sentryError','Incorrect Email / Password');
         }
         catch (UserNotFoundException $e)
         {

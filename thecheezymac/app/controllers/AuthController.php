@@ -34,4 +34,11 @@ class AuthController extends \BaseController
 
         return $this->authenticate->login(Input::all());
     }
+
+    public function logout()
+    {
+        Sentry::logout();
+        return Redirect::to("/");
+
+    }
 }

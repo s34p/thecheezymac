@@ -1,6 +1,8 @@
 <?php
 
 use TheCheezyMac\Users\UserManagement\CreateValidation;
+use TheCheezyMac\Users\UserManagement\UserManagementInterface;
+use TheCheezyMac\Users\User;
 
 class UsersController extends \BaseController {
 
@@ -9,12 +11,27 @@ class UsersController extends \BaseController {
      * @var CreateValidation
      */
     private $createValidation;
+	/**
+	 * @var UserManagementInterface
+	 */
+	private $userManagement;
+	/**
+	 * @var User
+	 */
+	private $userModel;
+	/**
+	 * @var EditValidation
+	 */
+	private $editValidation;
 
-    public function __construct(CreateValidation $createValidation)
+
+	public function __construct(CreateValidation $createValidation, UserManagementInterface $userManagement, User $userModel)
     {
 
         $this->createValidation = $createValidation;
-    }
+		$this->userManagement = $userManagement;
+		$this->userModel = $userModel;
+	}
 
     /**
 	 * Display a listing of the resource.
@@ -24,7 +41,9 @@ class UsersController extends \BaseController {
 	 */
 	public function index()
 	{
-		//return dd(TheCheezyMac\Users\User::all());
+		$users = $this->userModel->orderBy('first_name')->get();
+
+		$this->layout->content = View::make('private.users.index',compact('users'));
 	}
 
 	/**
@@ -47,6 +66,9 @@ class UsersController extends \BaseController {
 	public function store()
 	{
         $this->createValidation->validate(Input::all());
+
+		return $this->userManagement->add(Input::all());
+
 	}
 
 	/**
@@ -70,7 +92,9 @@ class UsersController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		//
+		$user = $this->userModel->findOrFail($id);
+
+		$this->layout->content = View::make('private.users.edit', compact('user'));
 	}
 
 	/**
@@ -82,7 +106,45 @@ class UsersController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		//
+
+
+		$rules = [
+			'first_name' => 'required',
+			'last_name' => 'required',
+			'email' => 'required|email|unique:users,email,'.$id,
+		];
+
+		$validation = Validator::make(Input::all(),$rules);
+
+		if($validation->fails())
+		{
+			return Redirect::back()->withErrors($validation);
+		}
+
+		return $this->userManagement->update(Input::all(), $id);
+
+
+	}
+
+	public function updatePassword($id)
+	{
+
+
+		$rules = [
+			'password'=>'required|confirmed|min:8',
+        	'password_confirmation'=>'required',
+		];
+
+		$validation = Validator::make(Input::all(),$rules);
+
+		if($validation->fails())
+		{
+			return Redirect::back()->withErrors($validation);
+		}
+
+		return $this->userManagement->updatePassword(Input::all(), $id);
+
+
 	}
 
 	/**
@@ -94,7 +156,11 @@ class UsersController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		return $this->userModel->destroy($id) ?
+			Redirect::back()->withSuccess('User has been removed successfully') :
+			Redirect::back()->withErrors('User was not removed due to technical problems. Please try again.');
+
+
 	}
 
 }
