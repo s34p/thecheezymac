@@ -33,20 +33,29 @@ App::after(function($request, $response)
 |
 */
 
-Route::filter('auth', function()
+
+Route::filter('isLoggedIn', function()
 {
-	if (Auth::guest())
+	if ( ! Sentry::check())
 	{
-		if (Request::ajax())
-		{
-			return Response::make('Unauthorized', 401);
-		}
-		else
-		{
-			return Redirect::guest('login');
-		}
+		return Redirect::guest('/webadmin')->with('sentryError','Restricted Area, please Login');
 	}
 });
+
+//Route::filter('auth', function()
+//{
+//	if (Auth::guest())
+//	{
+//		if (Request::ajax())
+//		{
+//			return Response::make('Unauthorized', 401);
+//		}
+//		else
+//		{
+//			return Redirect::guest('login');
+//		}
+//	}
+//});
 
 
 Route::filter('auth.basic', function()
@@ -65,10 +74,10 @@ Route::filter('auth.basic', function()
 |
 */
 
-Route::filter('guest', function()
-{
-	if (Auth::check()) return Redirect::to('/');
-});
+//Route::filter('guest', function()
+//{
+//	if (Auth::check()) return Redirect::to('/');
+//});
 
 /*
 |--------------------------------------------------------------------------

@@ -7,7 +7,7 @@
             <div class="main">
 
                                <div class="wrapper">
-                                   <h1 class="heading">Loyalty Club</h1>
+                                   <h1 class="heading">DOWNLOAD OUR APP!</h1>
 
                                    <div class="row">
 
@@ -15,11 +15,10 @@
                                            <img src="/img/storypic.jpg" alt=""/>
                                        </div>
                                        <div class="col-md-8 storytext">
-                                            <h3>LOYALTY CLUB!</h3>
+                                            <h3>Download Our App!</h3>
 
                                            <p>
-Mac & Cheese lovers unite! Sign-up to receive the latest news, upcoming events, weekly specials, and exclusive “members only” coupons. Simply fill out the form below to “Join the Club” and instantly receive a “Buy One Entree, Get One Free” voucher.
-                                            </p>
+Delicious Mac & Cheese is just a tap away! Download The Cheezy Mac app on your iPhone or Android phone, then Build-Your-Own or choose one of our Chef’s Specialities. We’ll have it piping hot and ready to eat when you arrive! Ordering online has never been faster or easier!                                            </p>
 
                                        </div>
                                        <div class="clearfix"></div>

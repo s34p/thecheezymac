@@ -18,6 +18,11 @@ class UserServiceProvider extends ServiceProvider {
             'TheCheezyMac\Users\Login\LoginInterface',
             'TheCheezyMac\Users\Login\LoginImplementation'
         );
+
+        $this->app->bind(
+            'TheCheezyMac\Users\UserManagement\UserManagementInterface',
+            'TheCheezyMac\Users\UserManagement\UserManagementImplementation'
+        );
     }
 
 }

@@ -43,20 +43,20 @@
                 <div class="row important-links">
 
 
-                {{--<div class="col-md-3">--}}
-                    {{--<img  src="/img/storylogo.png" alt="Our Story"/>--}}
-                {{--</div>--}}
-                <div class="col-sm-3" style="">
-                    <img  src="/img/speciallogo.png" class="img-responsive"  alt="Weekly Specials"/>
+                <div class="col-md-15 col-sm-3">
+                    <a href="/giftcard"><img  src="/img/giftcardhomebutton.png" class="img-responsive"  alt="Gift Card"/></a>
                 </div>
-                <div class="col-sm-3">
-                    <img  src="/img/caterlogo.png" class="img-responsive" alt="Let Us Cater"/>
+                <div class="col-md-15 col-sm-3" style="">
+                    <a href="#"><img  src="/img/photogalleryhomebutton.png" class="img-responsive"  alt="Photo Gallery"/></a>
                 </div>
-                <div class="col-sm-3">
-                    <img  src="/img/menulogo.png" class="img-responsive" alt="Menu"/>
+                <div class="col-md-15 col-sm-3">
+                    <a href="#"><img  src="/img/reciepewinnerhomebutton.png" class="img-responsive" alt="Reciepe Winners"/></a>
                 </div>
-                <div class="col-sm-3">
-                    <img  src="/img/applogo.png" class="img-responsive" alt="Download Our App"/>
+                <div class="col-md-15 col-sm-3">
+                    <a href="/menu"><img  src="/img/menulogo.png" class="img-responsive" alt="Menu"/></a>
+                </div>
+                <div class="col-md-15 col-sm-3">
+                    <a href="/app"><img  src="/img/applogo.png" class="img-responsive" alt="Download Our App"/></a>
                 </div>
                 <div class="clearfix"></div>
                 </div>

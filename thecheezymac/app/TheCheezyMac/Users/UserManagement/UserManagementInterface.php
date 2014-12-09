@@ -13,4 +13,8 @@ interface UserManagementInterface {
 
     public function add(array $inputs);
 
+    public function update(array $inputs, $userId);
+
+    public function updatePassword(array $inputs, $userId);
+
 } 

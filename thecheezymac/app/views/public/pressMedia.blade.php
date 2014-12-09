@@ -7,7 +7,7 @@
             <div class="main">
 
                                <div class="wrapper">
-                                   <h1 class="heading">Loyalty Club</h1>
+                                   <h1 class="heading">PRESS/MEDIA!</h1>
 
                                    <div class="row">
 
@@ -15,11 +15,15 @@
                                            <img src="/img/storypic.jpg" alt=""/>
                                        </div>
                                        <div class="col-md-8 storytext">
-                                            <h3>LOYALTY CLUB!</h3>
+                                            <h3>Press/Media!</h3>
 
                                            <p>
-Mac & Cheese lovers unite! Sign-up to receive the latest news, upcoming events, weekly specials, and exclusive “members only” coupons. Simply fill out the form below to “Join the Club” and instantly receive a “Buy One Entree, Get One Free” voucher.
-                                            </p>
+We opened The Cheezy Mac to share our love for gourmet Macaroni & Cheese. And we’re thrilled to see that others love our unique twist on this old classic! Check out our press clippings and see what others are saying about us…
+</p>
+<p>
+Questions? We’d love to talk. Media inquiries may be directed to press@thecheezymac.com
+</p>
+
 
                                        </div>
                                        <div class="clearfix"></div>

@@ -44,6 +44,26 @@ class PagesController extends BaseController {
     	$this->layout->content = View::make('public.contactus');
     }
 
+    public function app()
+    {
+    	$this->layout->content = View::make('public.app');
+    }
+
+    public function pressMedia()
+    {
+    	$this->layout->content = View::make('public.pressMedia');
+    }
+
+    public function franchise()
+    {
+    	$this->layout->content = View::make('public.franchise');
+    }
+
+    public function comments()
+    {
+    	$this->layout->content = View::make('public.comments');
+    }
+
     public function dashboard()
     {
     	$this->layout->content = View::make('private.dashboard');

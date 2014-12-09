@@ -7,7 +7,7 @@
             <div class="main">
 
                                <div class="wrapper">
-                                   <h1 class="heading">Loyalty Club</h1>
+                                   <h1 class="heading">COMMENT FORM!</h1>
 
                                    <div class="row">
 
@@ -15,11 +15,10 @@
                                            <img src="/img/storypic.jpg" alt=""/>
                                        </div>
                                        <div class="col-md-8 storytext">
-                                            <h3>LOYALTY CLUB!</h3>
+                                            <h3>Comment Form</h3>
 
                                            <p>
-Mac & Cheese lovers unite! Sign-up to receive the latest news, upcoming events, weekly specials, and exclusive “members only” coupons. Simply fill out the form below to “Join the Club” and instantly receive a “Buy One Entree, Get One Free” voucher.
-                                            </p>
+100% satisfaction is our ultimate goal at The Cheezy Mac. We hope you loved our food, our people and our restaurant so much that you tell your friends and family about us! We’d love to hear from you. What did we do great? What can we improve? Share your experience below.                                            </p>
 
                                        </div>
                                        <div class="clearfix"></div>
