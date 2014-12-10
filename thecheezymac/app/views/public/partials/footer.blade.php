@@ -4,7 +4,7 @@
                     <div class="col-md-4 dashed-border">
                         <div>
                             <div ><img src="/img/gflogopurple.png" alt=""/>
-                            <img src="/img/freestylelogo.jpg" style="width:120px"  alt="" />
+                            <img src="/img/freestylelogo.jpg" style="padding-left:20px"  alt="" />
                             </div>
 
                             <div class="recycleLogo">
@@ -73,7 +73,7 @@
          </div>
 
 
-            {{HTML::script('/js/thecheezymac.js')}}
+
 
          <script type="text/javascript">
              $(document).ready(function(){

@@ -122,11 +122,17 @@ a, a:hover {
     color: #517fa4
 }
 .ads{
-    text-align: right;
+    text-align: left;
     font-size: 11px;
+    padding-top: 10px;
 }
 .social-network{
     text-align:right;
+}
+
+.social-network a{
+    padding: 0px 5px;
+    padding: 0px 5px;
 }
 
 .col-lg-10
@@ -191,16 +197,50 @@ ul .dropdown-menu{
     width:70%;
 }
 
+.white-text{
+    color:white !important;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+
+}
+
+.dropdown-menu li a:hover{
+    color: #ffff00 !important;
+}
+
+.dropdown-menu li{
+    padding-top:5px !important;
+}
+
+.dropdown-menu li:last-child{
+    padding-bottom:5px !important;
+}
+
 /*Slideshow*/
 .carousel {
-    background: url("/img/slideshow.png") repeat-x;
+    /*background: url("/img/slideshow.png") repeat-x;*/
     position: relative;
-    padding: 5px;     /* Shows as a border around the carousel */
+    /*padding: 5px;     *//* Shows as a border around the carousel */
     margin: 0 auto;
     width: 96%;
 }
-.carousel-inner div img{
-    padding-left: 10px
+
+.dark-button{
+    color: #fff;
+    font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+
+    background-image: linear-gradient(to bottom, #424242 0%, #6a6a6a 100%);
+}
+
+.large-button
+{
+    width:230px;
+}
+
+.no-left-padding{
+    padding-left: 0 !important;
 }
 
 /*5 Column Bootstrap*/

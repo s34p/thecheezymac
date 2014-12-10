@@ -2,7 +2,9 @@
 
 class NewsController extends \BaseController {
 
-	/**
+	protected $layout = 'public.layout.default';
+
+    /**
 	 * Display a listing of the resource.
 	 * GET /news
 	 *
@@ -82,5 +84,11 @@ class NewsController extends \BaseController {
 	{
 		//
 	}
+
+
+    public function getAllNews()
+    {
+        $this->layout->content = View::make('public.news');
+    }
 
 }
