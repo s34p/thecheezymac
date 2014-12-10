@@ -17,35 +17,38 @@
                                         <div class="commentForm" style="display: none">
                                             <h3>Tell Us About Your Visit!</h3>
 
+                                            {{Form::open(array('url'=>'#','role'=>'form','id'=>'contact'))}}
 
-                                            <div class="form-group hidden">
-                                                {{Form::label('subject','Subject')}}
-                                                {{Form::hidden('subject', null, array('class'=>'form-control','required'=>'required','placeholder'=>'Subject'))}}
-                                            </div>
+                                                <div class="form-group hidden">
+                                                    {{Form::label('subject','Subject')}}
+                                                    {{Form::hidden('subject', null, array('class'=>'form-control','required'=>'required','placeholder'=>'Subject'))}}
+                                                </div>
 
 
-                                            <div class="form-group">
-                                                {{Form::label('email','Email Address')}}
-                                                {{Form::email('email', null, array('class'=>'form-control','required'=>'required','placeholder'=>'Email Address'))}}
-                                            </div>
+                                                <div class="form-group">
+                                                    {{Form::label('email','Email Address')}}
+                                                    {{Form::email('email', null, array('class'=>'form-control','required'=>'required','placeholder'=>'Email Address'))}}
+                                                </div>
 
-                                            <div class="form-group">
-                                                {{Form::label('phone','Phone Number')}}
-                                                {{Form::text('phone', null, array('class'=>'form-control','required'=>'required','placeholder'=>'Phone Number'))}}
-                                            </div>
+                                                <div class="form-group">
+                                                    {{Form::label('phone','Phone Number')}}
+                                                    {{Form::text('phone', null, array('class'=>'form-control','required'=>'required','placeholder'=>'Phone Number'))}}
+                                                </div>
 
-                                            <div class="form-group">
-                                                {{Form::label('comment','Your Comment')}}
-                                                {{Form::textarea('comment', null, array('class'=>'form-control','required'=>'required','placeholder'=>'Your Comment'))}}
-                                            </div>
-                                            <div class="form-group">
-                                                {{Form::submit('Send',array('class'=>'btn btn-primary','name'=>'send'))}}
-                                                <a href="/contact-us">
-                                                <button class="btn btn-primary">
-                                                    <i class="fa fa-arrow-circle-o-left"></i> Go Back
-                                                </button>
-                                                </a>
-                                            </div>
+                                                <div class="form-group">
+                                                    {{Form::label('comment','Your Comment')}}
+                                                    {{Form::textarea('comment', null, array('class'=>'form-control','required'=>'required','placeholder'=>'Your Comment'))}}
+                                                </div>
+                                                <div class="form-group">
+                                                    {{Form::submit('Send',array('class'=>'btn btn-primary','name'=>'send'))}}
+                                                    <a href="/contact-us">
+                                                    <button class="btn btn-primary">
+                                                        <i class="fa fa-arrow-circle-o-left"></i> Go Back
+                                                    </button>
+                                                    </a>
+                                                </div>
+
+                                            {{Form::close()}}
 
                                         </div>
 
@@ -105,6 +108,24 @@
                                         $(".commentForm").slideDown("slow");
                                         $('input[name="subject"]').val("Comment");
                                     });
+
+                                    $("#contact").submit(function(e)
+                                    {
+                                        e.preventDefault();
+
+                                        $.ajax({
+                                            type    :'POST',
+                                            url     :'/comments',
+                                            data    :$(this).serialize(),
+                                            dataType:'json',
+                                            success: function(result)
+                                            {
+                                                //alert(result.email);
+                                            }
+
+                                        });
+                                    });
+
                                 });
 
                             </script>

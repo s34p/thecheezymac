@@ -14,7 +14,7 @@ Route::get('/contact-us','PagesController@contactus');
 Route::get('/app','PagesController@app');
 Route::get('/press-media','PagesController@pressMedia');
 Route::get('/franchise','PagesController@franchise');
-Route::get('/comments','PagesController@comments');
+Route::post('/comments','PagesController@comments');
 
 Route::get('/webadmin','AuthController@authenticate');
 Route::post('/webadmin',[

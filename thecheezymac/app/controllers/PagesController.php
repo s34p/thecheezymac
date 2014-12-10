@@ -59,9 +59,31 @@ class PagesController extends BaseController {
     	$this->layout->content = View::make('public.franchise');
     }
 
+
+    /**
+     * Process Comment's Form
+     */
     public function comments()
     {
-    	$this->layout->content = View::make('public.comments');
+    	$rules = [
+            'phone'    =>  'required',
+            'comment'     =>  'required',
+            'email'         =>  'required|email'
+        ];
+
+        $validation = Validator::make(Input::all(), $rules);
+
+        if($validation->fails())
+        {
+            return Response::json([
+                'success' => false,
+                'errors' => $validation->getMessageBag()->toArray()
+            ], 400);
+        }
+
+        return Response::json([
+            'success'   =>  true
+        ], 200);
     }
 
     public function dashboard()

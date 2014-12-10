@@ -6,7 +6,7 @@
 
             <div class="main">
                 <div class="wrapper">
-                 <h1 class="heading">Our News</h1>
+                 <h1 class="heading">The Scoop on The Cheezy Mac</h1>
                 </div>
             </div>
 

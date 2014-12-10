@@ -224,7 +224,10 @@ ul .dropdown-menu{
 /*Slideshow*/
 
 
-.small-slideshow .carousel-inner > .item{ width:275px; height:200px; }
+.small-slideshow {
+    width:275px;
+    height:200px;
+}
 
 
 .custom-slider {
