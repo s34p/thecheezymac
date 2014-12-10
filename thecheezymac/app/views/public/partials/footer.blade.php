@@ -3,7 +3,7 @@
 
                     <div class="col-md-4 dashed-border">
                         <div>
-                            <div ><img src="/img/gflogopurple.png" alt=""/>
+                            <div ><img src="/img/gflogopurple.png" class="img-circle" style="border:thin solid white" alt=""/>
                             <img src="/img/freestylelogo.jpg" style="padding-left:20px"  alt="" />
                             </div>
 
@@ -28,7 +28,7 @@
                         </div>
                     </div>
                     <div class="col-md-3 dashed-border">
-                        <ul class="footer-list-items">
+                        <ul class="footer-list-items footer-link-2">
                             <li><a href="/app">DOWNLOAD OUR APP</a></li>
                             <li><a href="/franchise">FRANCHISE INFO</a></li>
                             <li><a href="#">EMPLOYMENT</a></li>
@@ -40,7 +40,7 @@
                     </div>
                     <div class="col-md-3 dashed-border">
                         <div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d702.6787587909714!2d-84.44939946346723!3d38.005527984431936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88425aba9560b5b7%3A0x129cd72270d2610e!2s3031+Richmond+Rd+%23120!5e1!3m2!1sen!2sus!4v1417555847740" width="208" height="100" frameborder="0" style="border:0"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d702.6787587909714!2d-84.44939946346723!3d38.005527984431936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88425aba9560b5b7%3A0x129cd72270d2610e!2s3031+Richmond+Rd+%23120!5e1!3m2!1sen!2sus!4v1417555847740" width="200" height="100" frameborder="0" style="border:0"></iframe>
                         </div>
                         <div class="footer-contactus">
                             3031 Richmond Road, Suite 120 <br/>
@@ -62,7 +62,7 @@
                         <a href="#" class="facebook"><i class="fa fa-facebook fa-2x"></i></a>
                         <a href="#" class="twitter"><i class="fa fa-twitter fa-2x"></i></a>
                         <a href="#" class="google"><i class="fa fa-google fa-2x"></i></a>
-                        <a href="#" class="youtube"><i class="fa fa-youtube fa-2x"></i></a>
+                        <a href="#" class="pinterest"><i class="fa fa-pinterest fa-2x"></i></a>
                         <a href="#" class="instagram"><i class="fa fa-instagram fa-2x"></i></a>
                     </div>
                     <div class="clearfix"></div>
@@ -77,6 +77,14 @@
 
          <script type="text/javascript">
              $(document).ready(function(){
+
+                $('.recycleLogo img').hover(function(){
+                      $(this).attr('src','/img/recyclelogo-hover.png');
+                   }, function(){
+                      $(this).attr('src','/img/recyclelogo.png');
+                   });
+
+
 
 
                  var activeButton = "<?php echo Request::segment(1); ?>";

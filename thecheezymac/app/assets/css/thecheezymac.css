@@ -55,12 +55,11 @@ a, a:hover {
 {
     /*background: url("/img/bg/footer.jpg") repeat-y;*/
     background-color: #363636;
-
     color: white;
-    padding-top: 50px;
-    padding-bottom: 10px;
+    padding: 50px 30px 10px 25px;
+
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     text-align: left;
 }
 
@@ -68,13 +67,17 @@ a, a:hover {
     border-bottom: 1px dotted #fff;
     padding-bottom: 5px;
 }
+
+.dashed-border{
+    padding-right:0px !important;
+}
+
 .recycleLogo{
     padding: 20px 0px;
 }
 
 .recycleLogo img{
     float: left;
-
 }
 
 .recycleLogo-text{
@@ -87,7 +90,9 @@ a, a:hover {
 
 .footer-list-items{
     list-style: none;
-    padding-left: 0px;
+}
+.footer-list-items li{
+    padding:5px 0px !important;
 }
 .footer-list-items li a:hover
 {
@@ -95,11 +100,11 @@ a, a:hover {
 }
 .footer-contactus{
     padding-top:10px;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 .subfooter{
-    padding-top: 40px;
+    padding-top: 20px;
 }
 .facebook:hover
 {
@@ -113,9 +118,9 @@ a, a:hover {
 {
     color: #d34836
 }
-.youtube:hover
+.pinterest:hover
 {
-    color: #bb0000
+    color: #cb2027
 }
 .instagram:hover
 {
@@ -145,7 +150,7 @@ a, a:hover {
 .main-index
 {
     background: url("/img/bg/paperbg1.jpg") repeat-y;
-
+    padding: 25px;
     min-height:600px;
     z-index: 1000;
     /*background-size:contain;*/
@@ -217,12 +222,17 @@ ul .dropdown-menu{
 }
 
 /*Slideshow*/
-.carousel {
+
+
+.small-slideshow .carousel-inner > .item{ width:275px; height:200px; }
+
+
+.custom-slider {
     /*background: url("/img/slideshow.png") repeat-x;*/
     position: relative;
     /*padding: 5px;     *//* Shows as a border around the carousel */
     margin: 0 auto;
-    width: 96%;
+    width: 97%;
 }
 
 .dark-button{
@@ -261,11 +271,9 @@ ul .dropdown-menu{
 
 .important-links
 {
-    margin-top:25px;
+    margin-top:40px;
 }
-.important-links div img{
-    width:100%;
-}
+
 @media (min-width: 768px) {
     .col-sm-15 {
         width: 20%;

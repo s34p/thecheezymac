@@ -2,6 +2,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>@yield('title')</title>
 
 {{HTML::style('/css/min/thecheezymac.css')}}
@@ -62,8 +64,8 @@
                                     </ul>
                                 </li>
                                 <li><a href="/catering" class="menu-button"><img  src="/img/buttons/catering.png" data-link="catering" class=" img-responsive" alt=""/></a></li>
-                                <li><a href="/news" class="menu-button"><img  src="/img/buttons/news.png" data-link="blog" class=" img-responsive" alt=""/></a></li>
-                                <li><a href="/giftcard" class="menu-button"><img  src="/img/buttons/giftcard.png" data-link="giftcard" class="giftcard img-responsive" alt=""/></a></li>
+                                <li><a href="/news" class="menu-button"><img  src="/img/buttons/news.png" data-link="news" class=" img-responsive" alt=""/></a></li>
+                                <li><a href="/blog" class="menu-button"><img  src="/img/buttons/blog.png" data-link="blog" class=" img-responsive" alt=""/></a></li>
                                 <li><a href="/club" class="menu-button"><img  src="/img/buttons/loyalty.png" data-link="club" class=" img-responsive" alt=""/></a></li>
                                 <li><a href="/contact-us" class="menu-button"><img  src="/img/buttons/contact.png" data-link="contact-us" class=" img-responsive" alt=""/></a></li>
 
