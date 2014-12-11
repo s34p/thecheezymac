@@ -1,10 +1,23 @@
 <?php
 
+use TheCheezyMac\Mailers\MailerInterface as Mailer;
+
 class PagesController extends BaseController {
 
     protected $layout = "public.layout.default";
+    /**
+     * @var MailerInterface
+     */
+    private $mailer;
 
-	public function index()
+
+    public function __construct(Mailer $mailer)
+    {
+
+        $this->mailer = $mailer;
+    }
+
+    public function index()
 	{
 		$this->layout->content = View::make('public.index');
 	}
@@ -81,13 +94,35 @@ class PagesController extends BaseController {
             ]);
         }
 
+        $recipient = $this->recipient();
+        $formInputs = $this->commentsInputs();
+        $view = 'emails.contactus';
+        $subject = 'New Comment';
 
+        $this->mailer->sendTo($recipient, $subject, $view, $formInputs);
 
         return Response::json([
             'success'   =>  true,
-            'msg'       =>  'Your comment was send successfully. Thank you'
+            'msg'       =>  'Your comment was sent successfully. Thank you'
         ], 200);
     }
+
+    private function commentsInputs()
+    {
+        return $formInputs = [
+            'email' =>  Input::get('email'),
+            'phone' =>  Input::get('phone'),
+            'comment' =>Input::get('comment')
+        ];
+    }
+
+    private function recipient()
+    {
+        $userArray = ['email'=>'rrafiatech@gmail.com','fullName'=>'Rachid Rafia'];
+        return arrayToObject::execute($userArray);
+
+    }
+
 
 
 
