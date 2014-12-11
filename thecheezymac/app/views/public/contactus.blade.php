@@ -51,7 +51,7 @@
                                                     <div id ="comment_error"></div>
                                                 </div>
                                                 <div class="form-group">
-                                                    {{Form::submit('Send',array('class'=>'btn btn-primary','name'=>'send'))}}
+                                                    {{Form::submit('Send',array('class'=>'btn btn-primary','name'=>'send','id'=>'submit'))}}
 
                                                 </div>
 
@@ -110,7 +110,6 @@
                                   </div>
                                    <div class="clearfix"></div>
 
-
                            </div>
 
                             <script>
@@ -126,6 +125,9 @@
                                     {
                                         e.preventDefault();
 
+                                        $("#submit").attr('value','Sending please wait...');
+
+
                                         $.ajax({
                                             type    :'POST',
                                             url     :'/comments',
@@ -135,6 +137,7 @@
                                             {
                                                 if(result.success == false)
                                                 {
+                                                   $("#submit").attr('value','Send');
                                                     $.each(result.errors, function( index, value ) {
                                                             var errorDiv = '#'+index+'_error';
                                                             $(errorDiv).addClass('text-danger');
@@ -143,6 +146,7 @@
                                                  }
                                                  else
                                                  {
+                                                   $("#submit").attr('value','Send');
                                                     $(".text-danger").hide();
                                                     $(".displayMessage").addClass('alert alert-success').empty().append(result.msg);
                                                  }

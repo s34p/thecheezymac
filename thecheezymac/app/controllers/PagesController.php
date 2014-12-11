@@ -95,11 +95,12 @@ class PagesController extends BaseController {
         }
 
         $recipient = $this->recipient();
+        $sender = $this->sender();
         $formInputs = $this->commentsInputs();
         $view = 'emails.contactus';
         $subject = 'New Comment';
 
-        $this->mailer->sendTo($recipient, $subject, $view, $formInputs);
+        $this->mailer->sendTo($recipient, $sender, $subject, $view, $formInputs);
 
         return Response::json([
             'success'   =>  true,
@@ -123,6 +124,14 @@ class PagesController extends BaseController {
 
     }
 
+    private function sender()
+    {
+        $senderArray = [
+            'email' => Input::get('email'),
+            'fullName' => Input::get('email')
+        ];
+        return arrayToObject::execute($senderArray);
+    }
 
 
 
