@@ -78,13 +78,18 @@ class PagesController extends BaseController {
             return Response::json([
                 'success' => false,
                 'errors' => $validation->getMessageBag()->toArray()
-            ], 400);
+            ]);
         }
 
+
+
         return Response::json([
-            'success'   =>  true
+            'success'   =>  true,
+            'msg'       =>  'Your comment was send successfully. Thank you'
         ], 200);
     }
+
+
 
     public function dashboard()
     {

@@ -13,10 +13,7 @@
 
                                    <div class="col-md-4 storypic">
                                        <img src="/img/storypic.jpg" class="img-thumbnail" alt=""/>
-                                       <p>
-                                       <i class="glyphicon glyphicon-phone"></i> 859-2CHEEZY (859-224-3399) <br/>
-                                       <i class="glyphicon glyphicon-phone-alt"></i> 844-624-3399 (Corporate)
-                                       </p>
+
                                    </div>
                                    <div class="col-md-8 storytext">
                                         <h3>CATERING!</h3>
@@ -24,7 +21,11 @@
                                        <p>
 Tired of cold cuts and deli sandwiches? Try something different. Surprise your guest with a dish everyone loves… Mac & Cheese! It’s fast, fun, easy and delicious. Call today and let The Cheezy Mac cater your next party!
                                         </p>
-
+                                        <br/>
+                                        <h4>
+                                       <i class="glyphicon glyphicon-phone"></i> 859-2CHEEZY (859-224-3399) <br/><br/>
+                                       <i class="glyphicon glyphicon-phone-alt"></i> 844-624-3399 (Corporate)
+                                       </h4>
 
                                    </div>
                                    <div class="clearfix"></div>
