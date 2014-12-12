@@ -41,6 +41,26 @@ a, a:hover {
     background-color: transparent;
     border-color: transparent;
 }
+
+ul .menu-nav-pills{
+    list-style-type: none;
+    float: none;
+}
+
+.menu-nav-pills li{
+    display: inline;
+    font-weight: bold;
+    font-style: normal;
+    color: #414141;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.menu-nav-pills li:hover{
+    color:white;
+    background-color: #bd2236;
+}
+
 .author
 {
     font-size: 12px;

@@ -11,6 +11,7 @@
                <div class="row">
 
 
+
                    <div class="center-block table-responsive">
                         {{DisplayMessage::success(Session::get('success'))}}
                         <table class="table table-striped table-condensed">

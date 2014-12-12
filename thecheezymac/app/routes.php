@@ -4,8 +4,6 @@ Route::when('*', 'csrf', array('post', 'put', 'delete'));
 
 Route::get('/', 'PagesController@index');
 Route::get('/story','PagesController@story');
-Route::get('/menu','PagesController@menu');
-Route::get('/specials','PagesController@specials');
 Route::get('/catering','PagesController@catering');
 Route::get('/giftcard','PagesController@giftcard');
 Route::get('/club','PagesController@club');
@@ -21,6 +19,10 @@ Route::get('/our-news/{id}', 'NewsController@getNews');
 Route::get('/blog','NewsController@getAllNews');
 Route::get('/blog/{id}', 'NewsController@getNews');
 
+Route::get('/menu/{type}','MenuController@menuType');
+
+
+
 Route::get('/webadmin','AuthController@authenticate');
 Route::post('/webadmin',[
     'as' => 'login.process',
@@ -33,6 +35,7 @@ Route::group(['prefix'=>'webadmin','before'=>'isLoggedIn'], function()
 
     Route::resource('news', 'NewsController');
     Route::resource('users', 'UsersController');
+    Route::resource('menu', 'MenuController');
 
     Route::post('users/passEdit/{id}', 'UsersController@updatePassword');
     Route::get('logout','AuthController@logout');

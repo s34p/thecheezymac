@@ -15,6 +15,8 @@ class NewsValidation extends FormValidator {
     protected $rules = [
         'title' => 'required',
         'body' => 'required',
+        'author' => 'author',
+        'created_at'    => 'created_at'
     ];
 
 } 

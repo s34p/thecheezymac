@@ -1,5 +1,5 @@
 @section('title')
-    New User
+    Edit News
 @stop
 
 @section('content')
@@ -23,6 +23,16 @@
                                     {{Form::label('title','News Title')}}
                                     {{Form::text('title', null, array('class'=>'form-control','placeholder'=>'News Title'))}}
                                     {{DisplayMessage::error('title', $errors)}}
+                                </div>
+                                <div class="form-group">
+                                    {{Form::label('author','Author')}}
+                                    {{Form::text('author', null, array('class'=>'form-control','placeholder'=>'Author'))}}
+                                    {{DisplayMessage::error('author', $errors)}}
+                                </div>
+                                <div class="form-group">
+                                    {{Form::label('created_at','Published On')}}
+                                    {{Form::text('created_at', null, array('class'=>'form-control','placeholder'=>'Published On'))}}
+                                    {{DisplayMessage::error('created_at', $errors)}}
                                 </div>
                                 <div class="form-group">
                                     {{Form::label('body','News Content')}}

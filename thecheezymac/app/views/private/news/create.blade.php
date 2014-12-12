@@ -1,5 +1,5 @@
 @section('title')
-    New User
+    News
 @stop
 
 @section('content')
@@ -25,10 +25,21 @@
                                     {{DisplayMessage::error('title', $errors)}}
                                 </div>
                                 <div class="form-group">
+                                    {{Form::label('author','Author')}}
+                                    {{Form::text('author', null, array('class'=>'form-control','placeholder'=>'Author'))}}
+                                    {{DisplayMessage::error('author', $errors)}}
+                                </div>
+                                <div class="form-group">
+                                    {{Form::label('created_at','Published On')}}
+                                    {{Form::text('created_at', null, array('class'=>'form-control','placeholder'=>'Published On'))}}
+                                    {{DisplayMessage::error('created_at', $errors)}}
+                                </div>
+                                <div class="form-group">
                                     {{Form::label('body','News Content')}}
                                     {{Form::textarea('body', null, array('class'=>'form-control editme','placeholder'=>'News Content'))}}
                                     {{DisplayMessage::error('body', $errors)}}
                                 </div>
+
 
                                 <div class="form-group">
                                     {{Form::submit('Post',array('class'=>'btn btn-primary','name'=>'submit'))}}

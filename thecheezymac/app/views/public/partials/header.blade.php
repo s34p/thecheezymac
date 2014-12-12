@@ -63,15 +63,16 @@
                                     <li><a href="/" class="menu-button"><img src="/img/buttons/home.png" class="home img-responsive" alt=""/></a></li>
                                 @endif
 
-                                <li><a href="/story" class="menu-button"><img  src="/img/buttons/story.png" data-link="story" class=" img-responsive" alt=""/></a></li>
-                                <li class="dropdown">
-                                    <a href="/menu" class="menu-button dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img  src="/img/buttons/menu.png" data-link="menu" class=" img-responsive" alt=""/></a>
-                                    <ul class="dropdown-menu" role="menu">
-                                         <li><a href="/menu" class="menu-button white-text">Our Menu</a></li>
-                                         <li><a href="/specials" class="menu-button white-text">Our Specials</a></li>
+                                <li><a href="/story" class="menu-button"><img  src="/img/buttons/story.png" data-link="story" class=" img-responsive" alt="Our Story"/></a></li>
+                                <li><a href="/menu/specials" class="menu-button"><img  src="/img/buttons/menu.png" data-link="menu" class=" img-responsive" alt="Menu"/></a></li>
+                                {{--<li class="dropdown">--}}
+                                    {{--<a href="/menu" class="menu-button dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img  src="/img/buttons/menu.png" data-link="menu" class=" img-responsive" alt=""/></a>--}}
+                                    {{--<ul class="dropdown-menu" role="menu">--}}
+                                         {{--<li><a href="/menu" class="menu-button white-text">Our Menu</a></li>--}}
+                                         {{--<li><a href="/menu/specials" class="menu-button white-text">Our Specials</a></li>--}}
 
-                                    </ul>
-                                </li>
+                                    {{--</ul>--}}
+                                {{--</li>--}}
                                 <li><a href="/catering" class="menu-button"><img  src="/img/buttons/catering.png" data-link="catering" class=" img-responsive" alt=""/></a></li>
                                 <li><a href="/our-news" class="menu-button"><img  src="/img/buttons/news.png" data-link="news" class=" img-responsive" alt=""/></a></li>
                                 <li><a href="/blog" class="menu-button"><img  src="/img/buttons/blog.png" data-link="blog" class=" img-responsive" alt=""/></a></li>

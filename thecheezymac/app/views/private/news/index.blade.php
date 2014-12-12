@@ -1,5 +1,5 @@
 @section('title')
-    New User
+    News
 @stop
 
 @section('content')

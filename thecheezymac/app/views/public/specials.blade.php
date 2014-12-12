@@ -6,7 +6,7 @@
 
             <div class="main">
                 <div class="wrapper">
-                    <h1 class="heading">Specials</h1>
+                    <h1 class="heading"></h1>
 
                 <div class="row">
 
@@ -21,29 +21,22 @@
 
                    </div>
                    <div class="col-md-8 specialsBlocks storytext">
-                        <h3>Black and Blue Mac</h3>
 
+
+                       @foreach($menus as $menu)
                        <div class="col-sm-4" style="padding-left:0px">
 
-                       <img src="/img/cater1.jpg" class="img-responsive" alt=""/>
+                       <img src="{{$menu->image}}" class="img-responsive" alt=""/>
                        </div>
                        <div class="col-sm-8">
-                           If you thought that was good………This one will knock you out! Chopped Steak, White Cheddar & Blue Cheese finished off with a drizzle of Aged Balsamic.
+                       <h3>{{$menu->name}}</h3>
+                           {{$menu->description}}
 
                        </div>
                        <div class="clearfix"></div>
                        <br/><br/>
-                       <h3>Black and Blue Mac</h3>
+                       @endforeach
 
-                       <div class="col-sm-4" style="padding-left:0px">
-
-                       <img src="/img/cater1.jpg" class="img-responsive" alt=""/>
-                       </div>
-                       <div class="col-sm-8">
-                           If you thought that was good………This one will knock you out! Chopped Steak, White Cheddar & Blue Cheese finished off with a drizzle of Aged Balsamic.
-
-                       </div>
-                       <div class="clearfix"></div>
 
                    </div>
                    <div class="clearfix"></div>
