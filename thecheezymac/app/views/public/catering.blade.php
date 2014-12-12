@@ -27,6 +27,28 @@ Tired of cold cuts and deli sandwiches? Try something different. Surprise your g
                                        <i class="glyphicon glyphicon-phone-alt"></i> 844-624-3399 (Corporate)
                                        </h4>
 
+                                       <div class="row">
+                                         <div class="col-md-4">
+                                           <a href="#" class="thumbnail">
+                                             <img src="/img/cater1.jpg"  class="img-responsive  " alt="...">
+                                           </a>
+                                         </div>
+
+                                         <div class="col-md-4">
+                                           <a href="#" class="thumbnail">
+                                             <img src="/img/cater3.jpg" class="img-responsive " alt="...">
+                                           </a>
+                                         </div>
+                                         <div class="col-md-4">
+                                           <a href="#" class="thumbnail">
+                                             <img src="/img/cater4.jpg" class="img-responsive " alt="...">
+                                           </a>
+                                         </div>
+
+                                       </div>
+
+
+
                                    </div>
                                    <div class="clearfix"></div>
                                </div>

@@ -11,8 +11,15 @@
 {{HTML::script('/js/thecheezymac.js')}}
 
 
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f708a1900255165"></script>
+
+
+
 </head>
 <body>
+
+
+
         <div class="container text-center">
         <div class="col-lg-10">
 
@@ -64,7 +71,7 @@
                                     </ul>
                                 </li>
                                 <li><a href="/catering" class="menu-button"><img  src="/img/buttons/catering.png" data-link="catering" class=" img-responsive" alt=""/></a></li>
-                                <li><a href="/news" class="menu-button"><img  src="/img/buttons/news.png" data-link="news" class=" img-responsive" alt=""/></a></li>
+                                <li><a href="/our-news" class="menu-button"><img  src="/img/buttons/news.png" data-link="news" class=" img-responsive" alt=""/></a></li>
                                 <li><a href="/blog" class="menu-button"><img  src="/img/buttons/blog.png" data-link="blog" class=" img-responsive" alt=""/></a></li>
                                 <li><a href="/club" class="menu-button"><img  src="/img/buttons/loyalty.png" data-link="club" class=" img-responsive" alt=""/></a></li>
                                 <li><a href="/contact-us" class="menu-button"><img  src="/img/buttons/contact.png" data-link="contact-us" class=" img-responsive" alt=""/></a></li>

@@ -2,9 +2,9 @@
 
 return [
     'DB_NAME' => 'thecheezymac',
-    'DB_USERNAME' => 'root',
-    'DB_PASSWORD' => '',
-    'EMAIL_ADDRESS'=>'rrafia0001@gmail.com',
-    'EMAIL_PASSWORD' =>'Bismilah11gl!',
+    'DB_USERNAME' => 'admin',
+    'DB_PASSWORD' => 'password',
+    'EMAIL_ADDRESS'=>'jerry@thecheezymac.com',
+    'EMAIL_PASSWORD' =>'CheezyMac12!',
 
 ];

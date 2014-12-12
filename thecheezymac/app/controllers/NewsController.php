@@ -1,8 +1,21 @@
 <?php
 
+use TheCheezyMac\News\News;
+
 class NewsController extends \BaseController {
 
 	protected $layout = 'public.layout.default';
+    /**
+     * @var News
+     */
+    private $news;
+
+
+    public function __construct(News $news)
+    {
+
+        $this->news = $news;
+    }
 
     /**
 	 * Display a listing of the resource.
@@ -88,7 +101,15 @@ class NewsController extends \BaseController {
 
     public function getAllNews()
     {
-        $this->layout->content = View::make('public.news');
+        $news = $this->news->orderBy('created_at')->get();
+
+        $this->layout->content = View::make('public.news.index', compact('news'));
+    }
+
+    public function getNews($id)
+    {
+        $news = $this->news->findOrFail($id);
+        $this->layout->content = View::make('public.news.show', compact('news'));
     }
 
 }

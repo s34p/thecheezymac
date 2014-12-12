@@ -12,7 +12,7 @@
 
 
 
-                                   <div class="col-md-8 storytext">
+                                   <div class="col-md-8">
 
                                         <div class="commentForm row" style="display: none">
                                             <h3>

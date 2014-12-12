@@ -65,6 +65,7 @@
                         <a href="#" class="pinterest"><i class="fa fa-pinterest fa-2x"></i></a>
                         <a href="#" class="instagram"><i class="fa fa-instagram fa-2x"></i></a>
                     </div>
+
                     <div class="clearfix"></div>
                     </div>
                 </div>

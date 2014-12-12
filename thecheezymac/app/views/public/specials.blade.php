@@ -7,26 +7,49 @@
             <div class="main">
                 <div class="wrapper">
                     <h1 class="heading">Specials</h1>
-                </div>
 
                 <div class="row">
 
 
 
-                   <div class="col-md-4 storypic">
-                       <img src="/img/storypic.jpg" class="img-thumbnail" alt=""/>
+                   <div class="col-md-4 text-center">
+                        <blockquote>
+                        "Amazed by the flavor in the Cavatapi Macaroni with Chicken and Broccoli" <br>
+                        <small> Jerry Seinfield</small>
+                        </blockquote>
+
+
                    </div>
                    <div class="col-md-8 specialsBlocks storytext">
-                        <h3>Join Us!</h3>
+                        <h3>Black and Blue Mac</h3>
 
-                       <p>
-                       What is the ultimate comfort food? It’s food that evokes those warm, nostalgic and sentimental feelings that positively peeks the emotions from the greatest moments of our lives. It’s “positive” food that creates “positive” feelings. Here, at The Cheezy Mac, we are enthusiasts, specializing in the creation of what we believe is the ultimate comfort food, the best macaroni and cheese around!
-                       </p>
+                       <div class="col-sm-4" style="padding-left:0px">
+
+                       <img src="/img/cater1.jpg" class="img-responsive" alt=""/>
+                       </div>
+                       <div class="col-sm-8">
+                           If you thought that was good………This one will knock you out! Chopped Steak, White Cheddar & Blue Cheese finished off with a drizzle of Aged Balsamic.
+
+                       </div>
+                       <div class="clearfix"></div>
+                       <br/><br/>
+                       <h3>Black and Blue Mac</h3>
+
+                       <div class="col-sm-4" style="padding-left:0px">
+
+                       <img src="/img/cater1.jpg" class="img-responsive" alt=""/>
+                       </div>
+                       <div class="col-sm-8">
+                           If you thought that was good………This one will knock you out! Chopped Steak, White Cheddar & Blue Cheese finished off with a drizzle of Aged Balsamic.
+
+                       </div>
+                       <div class="clearfix"></div>
 
                    </div>
                    <div class="clearfix"></div>
-                   </div>
+                </div>
 
+                </div>
 
 
 
