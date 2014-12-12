@@ -126,6 +126,7 @@ return array(
         //My Service Providers
         'TheCheezyMac\Mailers\MailersServiceProvider',
         'TheCheezyMac\Users\UserServiceProvider',
+        'TheCheezyMac\News\NewsServiceProvider',
 
 	),
 

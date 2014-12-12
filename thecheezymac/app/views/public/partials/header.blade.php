@@ -10,6 +10,8 @@
 
 {{HTML::script('/js/thecheezymac.js')}}
 
+{{HTML::script('/plugins/tinymce/js/tinymce/tinymce.min.js')}}
+
 
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f708a1900255165"></script>
 

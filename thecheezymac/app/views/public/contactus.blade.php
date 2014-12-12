@@ -16,7 +16,7 @@
 
                                         <div class="commentForm row" style="display: none">
                                             <h3>
-                                            Tell Us About Your Visit!
+                                            <span class="formTitle"></span>
                                              <a href="/contact-us" class="pull-right">
                                             <button class="btn btn-default">
                                                 <i class="fa fa-arrow-circle-o-left"></i> Go Back
@@ -32,9 +32,14 @@
 
                                                 </div>
 
+                                                 <div class="form-group">
+                                                    {{Form::label('fullName','Your Name')}} <span class="text-danger">*</span>
+                                                    {{Form::text('fullName', null, array('class'=>'form-control','placeholder'=>'Your Name'))}}
+                                                    <div id ="fullName_error"></div>
+                                                </div>
 
                                                 <div class="form-group">
-                                                    {{Form::label('email','Email Address')}}
+                                                    {{Form::label('email','Email Address')}} <span class="text-danger">*</span>
                                                     {{Form::email('email', null, array('class'=>'form-control','placeholder'=>'Email Address'))}}
                                                     <div id ="email_error"></div>
                                                 </div>
@@ -46,7 +51,7 @@
                                                 </div>
 
                                                 <div class="form-group">
-                                                    {{Form::label('comment','Your Comment')}}
+                                                    {{Form::label('comment','Your Comment')}} <span class="text-danger">*</span>
                                                     {{Form::textarea('comment', null, array('class'=>'form-control','placeholder'=>'Your Comment'))}}
                                                     <div id ="comment_error"></div>
                                                 </div>
@@ -80,7 +85,7 @@
                                                  </h4>
 
                                                   <h4>
-                                                     <a href="" class="btn dark-button large-button">
+                                                     <a class="btn dark-button large-button cateringQuestionsButton">
                                                          Catering Questions
                                                       </a>
                                                   </h4>
@@ -88,12 +93,12 @@
                                            </div>
                                            <div class="col-sm-6 no-left-padding">
                                                <h4>
-                                                   <a href="/comments" class="btn dark-button large-button">
+                                                   <a class="btn dark-button large-button generalQuestionsButton">
                                                        General Questions
                                                     </a>
                                                 </h4>
                                                  <h4>
-                                                   <a href="/comments" class="btn dark-button large-button">
+                                                   <a class="btn dark-button large-button franchiseQuestionsButton">
                                                        Franchise Questions
                                                     </a>
                                                 </h4>
@@ -116,9 +121,28 @@
                                 $(document).ready(function()
                                 {
                                     $(".commentButton").click(function(){
+                                        $(".formTitle").html('Tell Us About Your Visit');
                                         $(".contact-text").fadeOut(500);
                                         $(".commentForm").slideDown("slow");
                                         $('input[name="subject"]').val("Comment");
+                                    });
+                                    $(".cateringQuestionsButton").click(function(){
+                                        $(".formTitle").html('Catering Questions');
+                                        $(".contact-text").fadeOut(500);
+                                        $(".commentForm").slideDown("slow");
+                                        $('input[name="subject"]').val("Catering Questions");
+                                    });
+                                    $(".generalQuestionsButton").click(function(){
+                                        $(".formTitle").html('General Questions');
+                                        $(".contact-text").fadeOut(500);
+                                        $(".commentForm").slideDown("slow");
+                                        $('input[name="subject"]').val("General Questions");
+                                    });
+                                    $(".franchiseQuestionsButton").click(function(){
+                                        $(".formTitle").html('Franchise Questions');
+                                        $(".contact-text").fadeOut(500);
+                                        $(".commentForm").slideDown("slow");
+                                        $('input[name="subject"]').val("Franchise Questions");
                                     });
 
                                     $("#contact").submit(function(e)

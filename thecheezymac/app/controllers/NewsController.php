@@ -1,6 +1,8 @@
 <?php
 
 use TheCheezyMac\News\News;
+use TheCheezyMac\News\NewsInterface;
+use TheCheezyMac\News\NewsValidation;
 
 class NewsController extends \BaseController {
 
@@ -9,13 +11,23 @@ class NewsController extends \BaseController {
      * @var News
      */
     private $news;
+	/**
+	 * @var NewsValidation
+	 */
+	private $newsValidation;
+	/**
+	 * @var NewsInterface
+	 */
+	private $newsInterface;
 
 
-    public function __construct(News $news)
+	public function __construct(News $news, NewsValidation $newsValidation, NewsInterface $newsInterface)
     {
 
         $this->news = $news;
-    }
+		$this->newsValidation = $newsValidation;
+		$this->newsInterface = $newsInterface;
+	}
 
     /**
 	 * Display a listing of the resource.
@@ -25,7 +37,9 @@ class NewsController extends \BaseController {
 	 */
 	public function index()
 	{
-		//
+		$news = $this->news->orderBy('created_at')->get();
+
+		$this->layout->content = View::make('private.news.index', compact('news'));
 	}
 
 	/**
@@ -36,7 +50,7 @@ class NewsController extends \BaseController {
 	 */
 	public function create()
 	{
-		//
+		$this->layout->content = View::make('private.news.create');
 	}
 
 	/**
@@ -47,7 +61,9 @@ class NewsController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+		$this->newsValidation->validate(Input::all());
+		$this->newsInterface->add(Input::all());
+		return Redirect::to('/webadmin/news')->withSuccess('Post has been submitted successfully!');
 	}
 
 	/**
@@ -71,7 +87,8 @@ class NewsController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		//
+		$news = $this->news->findOrFail($id);
+		$this->layout->content = View::make('private.news.edit',compact('news'));
 	}
 
 	/**
@@ -83,7 +100,9 @@ class NewsController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		//
+		$this->newsValidation->validate(Input::all());
+		$this->newsInterface->update(Input::all(), $id);
+		return Redirect::to('/webadmin/news')->withSuccess('Post was updated successfully!');
 	}
 
 	/**
@@ -95,7 +114,8 @@ class NewsController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		$this->news->destroy($id);
+		return Redirect::back()->withSuccess('Post was deleted successfully!');
 	}
 
 

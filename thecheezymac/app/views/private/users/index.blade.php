@@ -6,14 +6,14 @@
     <div class="main">
 
            <div class="wrapper">
-               <h1 class="heading">Users</h1>
+               @include('private.partials.adminNav')
 
                <div class="row">
 
 
-                   <div class="center-block">
+                   <div class="center-block table-responsive">
                         {{DisplayMessage::success(Session::get('success'))}}
-                        <table class="table table-responsive table-striped table-condensed">
+                        <table class="table table-striped table-condensed">
                         <caption class="text-right">
                         <a href="/webadmin/users/create">
                             <button class="btn btn-danger"><span class="glyphicon glyphicon-plus"></span> New User </button>

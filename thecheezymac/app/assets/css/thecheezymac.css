@@ -35,6 +35,12 @@ a, a:hover {
     text-decoration: none !important;
     color: inherit;
 }
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+    background-color: transparent;
+    border-color: transparent;
+}
 .author
 {
     font-size: 12px;

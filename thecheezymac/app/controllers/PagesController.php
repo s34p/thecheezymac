@@ -79,9 +79,11 @@ class PagesController extends BaseController {
     public function comments()
     {
     	$rules = [
-            'phone'    =>  'required',
+            'fullName' => 'required',
+            'email'         =>  'required|email',
+            'phone'    =>  'alpha_dash',
             'comment'     =>  'required',
-            'email'         =>  'required|email'
+
         ];
 
         $validation = Validator::make(Input::all(), $rules);
@@ -111,9 +113,11 @@ class PagesController extends BaseController {
     private function commentsInputs()
     {
         return $formInputs = [
+            'fullName' =>  Input::get('fullName'),
             'email' =>  Input::get('email'),
             'phone' =>  Input::get('phone'),
-            'comment' =>Input::get('comment')
+            'comment' =>Input::get('comment'),
+            'subject'   => Input::get('subject')
         ];
     }
 
