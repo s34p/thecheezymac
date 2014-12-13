@@ -22,7 +22,7 @@
                                     <th>Item Image</th>
                                     <th>Name</th>
                                     <th>Category</th>
-                                    <th></th>
+
                                     <th></th>
                                     <th></th>
                                 </tr>
@@ -36,11 +36,10 @@
                                            <img src="{{$menu->image}}" class="img-responsive" alt=""/>
                                            </div>
                                        </td>
-                                        <td style="vertical-align: middle !important;" width="60%">{{$menu->name}}</td>
-                                        <td style="vertical-align: middle !important;">{{$menu->category}}</td>
-                                        <td style="vertical-align: middle !important;"><a href="/webadmin/menu/{{$menu->id}}"><span class="glyphicon glyphicon-zoom-in"></span></a></td>
-                                        <td style="vertical-align: middle !important;"><a href="/webadmin/menu/{{$menu->id}}/edit"><span class="glyphicon glyphicon-pencil"></span></a></td>
-                                        <td style="vertical-align: middle !important;">{{FormHelper::delete('webadmin.menu.destroy', $menu->id)}}</td>
+                                        <td style="vertical-align: middle !important;" width="50%">{{$menu->menu_name}}</td>
+                                        <td style="vertical-align: middle !important;">{{$menu->category_name}}</td>
+                                        <td style="vertical-align: middle !important;"><a href="/webadmin/menu/{{$menu->menu_id}}/edit"><span class="glyphicon glyphicon-pencil"></span></a></td>
+                                        <td style="vertical-align: middle !important;">{{FormHelper::delete('webadmin.menu.destroy', $menu->menu_id)}}</td>
                                     </tr>
                                 @endforeach
                             </tbody>

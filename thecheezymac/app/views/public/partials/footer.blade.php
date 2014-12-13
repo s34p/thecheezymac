@@ -79,7 +79,9 @@
          <script type="text/javascript">
              $(document).ready(function(){
 
-                $('.recycleLogo img').hover(function(){
+
+
+                 $('.recycleLogo img').hover(function(){
                       $(this).attr('src','/img/recyclelogo-hover.png');
                    }, function(){
                       $(this).attr('src','/img/recyclelogo.png');

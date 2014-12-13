@@ -1,5 +1,5 @@
 @section('title')
-    News
+    Blog
 @stop
 
 @section('content')
@@ -11,15 +11,18 @@
                  <h1 class="heading">Our Blog</h1>
 
                 <div class="text-left">
-                    @foreach($news as $n)
-                        <h3><strong>{{$n->title}}</strong></h3>
+                    @foreach($blogs as $blog)
+                        <h3><strong>{{$blog->title}}</strong></h3>
                         <div>
-                        <?php
-                        $pos = strpos($n->body, ' ', 500);
-                         echo substr($n->body,0,$pos);
 
-                        ?>
-                        <a href="/our-news/{{$n->id}}" style="color:#bd2236; font-weight:bold">... Read More</a>
+                            {{$blog->body}}
+
+
+{{--                        $pos = strpos($blog->body, ' ', 500);--}}
+{{--                         echo substr($blog->body,0,$pos);--}}
+
+
+                        {{--<a href="/our-news/{{$blog->id}}" style="color:#bd2236; font-weight:bold">... Read More</a>--}}
                         </div>
                         <!-- Go to www.addthis.com/dashboard to customize your tools -->
                         <div class="addthis_sharing_toolbox"></div>

@@ -61,6 +61,10 @@ ul .menu-nav-pills{
     background-color: #bd2236;
 }
 
+.active-nav-pills{
+    color:#FFFFFF !important;
+    background-color: #bd2236;
+}
 .author
 {
     font-size: 12px;

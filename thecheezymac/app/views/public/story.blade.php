@@ -16,23 +16,36 @@
 
                                 <br/> <br/> <br/>
 
-                                <div id="carousel-example-generic" class="carousel slide small-slideshow" data-ride="carousel" >
-                                                  {{--<!-- Indicators -->--}}
-                                                  {{--<ol class="carousel-indicators">--}}
-                                                    {{--<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>--}}
 
-                                                  {{--</ol>--}}
+                                <div id="carousel-example-generic" class="carousel slide small-slideshow" data-ride="carousel" >
+                                                  
 
                                                   <!-- Wrapper for slides -->
-                                                  <div class="carousel-inner" role="listbox">
+
+
+
+
+
+                                                <div class="carousel-inner" role="listbox">
+
                                                     <div class="item active">
-                                                      <img src="/img/slide1.jpg" alt="Slide 1">
+                                                        <img src="/img/construction/Const9.jpg" alt="...">
 
                                                     </div>
-                                                    <div class="item">
-                                                      <img src="/img/slide1.jpg" alt="Slide 1">
+                                                    <?php
+                                                        $images = glob(public_path()."/img/construction/*.jpg");
+                                                        $img_path = "";
+                                                        foreach($images as $img)
+                                                            {
+                                                                $img_path = str_replace(public_path(),'',$img);
+                                                                ?>
+                                                            <div class="item">
+                                                                <img src="{{$img_path}}" alt="...">
 
-                                                    </div>
+                                                            </div>
+                                                                <?php
+                                                            }
+                                                    ?>
 
 
                                                   </div>

@@ -22,26 +22,40 @@
                                 <div class="form-group">
                                     {{Form::label('name','Item Name')}}
                                     {{Form::text('name', null, array('class'=>'form-control', 'placeholder'=>'Item Name'))}}
-                                    {{DisplayMessage::error('itemName', $errors)}}
+                                    {{DisplayMessage::error('name', $errors)}}
                                 </div>
 
                                 <div class="form-group">
-                                    {{Form::label('category','Category')}}
-                                    {{Form::select('category', [
-                                        'specials'      =>  'Specials',
-                                        'kids_meal'     =>  'Kids Meal',
-                                        ] , null,
-                                        [
-                                        'class'         =>  'form-control',
-                                        'placeholder'   =>  'Item Name',
+                                    {{Form::label('category_id','Category')}}
 
-                                        ])}}
-                                    {{DisplayMessage::error('category', $errors)}}
+                                    <select name="category_id" class="form-control" id="category_id">
+                                        @foreach($categories as $category)
+                                            <option value="{{$category->id}}">{{$category->name}}</option>
+                                        @endforeach
+                                    </select>
+
+                                    {{DisplayMessage::error('category_id', $errors)}}
                                 </div>
 
                                 <div class="form-group">
+
                                     {{Form::label('image',"Item's Image")}}
-                                    {{Form::file('image', null, array('class'=>'form-control','placeholder'=>"Item's Image"))}}
+                                        <div class="input-group">
+                                          <span class="input-group-btn">
+
+                                                <button class="btn btn-default" type="button">
+                                                    <a href="/plugins/ResponsiveFilemanager/filemanager/dialog.php?type=1&amp;field_id=fieldID" class="iframe-btn">Upload
+                                                </a>
+                                                </button>
+
+
+                                          </span>
+                                        <input id="fieldID" type="text" name="image" class="form-control">
+                                    </div><!-- /input-group -->
+
+
+
+
                                 </div>
 
                                 <div class="form-group">
@@ -62,6 +76,25 @@
                </div>
 
            </div>
+
+        <script>
+            $(document).ready(function ($) {
+                $('.iframe-btn').fancybox({
+                    maxWidth	: 1000,
+                    maxHeight	: 600,
+                    fitToView	: false,
+                    width		: '80%',
+                    height		: '80%',
+                    autoSize	: false,
+                    closeClick	: false,
+                    openEffect	: 'none',
+                    closeEffect	: 'none',
+
+                    'type': 'iframe',
+                    'autoScale': false
+                });
+            });
+        </script>
 
             @include('private.partials.tinymce')
 

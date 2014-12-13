@@ -55,9 +55,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => getenv("DB_NAME"),
-			'username'  => getenv("DB_USERNAME"),
-			'password'  => getenv("DB_PASSWORD"),
+			'database'  => 'studisf3_thecheezymac',
+			'username'  => 'studisf3',
+			'password'  => 'Wjr3422*2014',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

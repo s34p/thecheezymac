@@ -26,32 +26,49 @@
                                 </div>
 
                                 <div class="form-group">
-                                    {{Form::label('category','Category')}}
-                                    {{Form::select('category', [
-                                        'Specials'      =>  'Specials',
-                                        'Kids Meal'     =>  'Kids Meal',
-                                        ] , null,
-                                        [
-                                        'class'         =>  'form-control',
-                                        'placeholder'   =>  'Item Name',
-
-                                        ])}}
-                                    {{DisplayMessage::error('category', $errors)}}
+                                    {{Form::label('category_id','Category')}}
+                                    <select name="category_id" class="form-control" id="category_id">
+                                        @foreach($categories as $category)
+                                            @if($menu->category_id == $category->id)
+                                                <option selected value="{{$category->id}}">{{$category->name}}</option>
+                                            @else
+                                                <option value="{{$category->id}}">{{$category->name}}</option>
+                                            @endif
+                                        @endforeach
+                                    </select>
+                                    {{DisplayMessage::error('category_id', $errors)}}
                                 </div>
 
-                                <div class="form-group">
-                                    {{Form::label('image',"Item's Image")}}
-                                    {{Form::file('image', null, array('class'=>'form-control','placeholder'=>"Item's Image"))}}
-                                </div>
+                              <div class="form-group">
 
-                                <div class="form-group">
+                                  {{Form::label('image',"Item's Image")}}
+                                  <div class="input-group">
+                                          <span class="input-group-btn">
+
+                                                <button class="btn btn-default" type="button">
+                                                    <a href="/plugins/ResponsiveFilemanager/filemanager/dialog.php?type=1&amp;field_id=image" class="iframe-btn">Upload
+                                                    </a>
+                                                </button>
+
+
+                                          </span>
+                                      {{Form::text('image', null, array('class'=>'form-control', 'placeholder'=>'Item image','id'=>'image'))}}
+                                  </div><!-- /input-group -->
+
+
+
+
+                              </div>
+
+
+                              <div class="form-group">
                                     {{Form::label('description','Description')}}
                                     {{Form::textarea('description', null, array('class'=>'form-control editme', 'placeholder'=>'Description'))}}
                                     {{DisplayMessage::error('description', $errors)}}
                                 </div>
 
                                 <div class="form-group">
-                                    {{Form::submit('Add',array('class'=>'btn btn-primary', 'name'=>'submit'))}}
+                                    {{Form::submit('update',array('class'=>'btn btn-primary', 'name'=>'submit'))}}
                                 </div>
                           {{Form::close()}}
                           </div>
@@ -64,6 +81,25 @@
                </div>
 
            </div>
+
+        <script>
+            $(document).ready(function ($) {
+                $('.iframe-btn').fancybox({
+                    maxWidth	: 1000,
+                    maxHeight	: 600,
+                    fitToView	: false,
+                    width		: '80%',
+                    height		: '80%',
+                    autoSize	: false,
+                    closeClick	: false,
+                    openEffect	: 'none',
+                    closeEffect	: 'none',
+
+                    'type': 'iframe',
+                    'autoScale': false
+                });
+            });
+        </script>
 
 
 

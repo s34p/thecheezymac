@@ -8,6 +8,12 @@
            <div class="wrapper">
                <h1 class="heading">{{$news->title}}</h1>
 
+               <script>
+                   $(function() {
+                       $( "#datepicker" ).datepicker();
+                   });
+               </script>
+
                <div class="row">
 
 
@@ -31,7 +37,7 @@
                                 </div>
                                 <div class="form-group">
                                     {{Form::label('created_at','Published On')}}
-                                    {{Form::text('created_at', null, array('class'=>'form-control','placeholder'=>'Published On'))}}
+                                    {{Form::text('created_at', null, array('class'=>'form-control','placeholder'=>'Published On','id'=>'datepicker'))}}
                                     {{DisplayMessage::error('created_at', $errors)}}
                                 </div>
                                 <div class="form-group">

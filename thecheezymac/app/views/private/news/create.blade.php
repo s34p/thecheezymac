@@ -11,6 +11,13 @@
                <div class="row">
 
 
+                   <script>
+                       $(function() {
+                           $( "#datepicker" ).datepicker();
+
+                       });
+                   </script>
+
                    <div class="center-block">
 
                         <div class="panel panel-default">
@@ -31,7 +38,7 @@
                                 </div>
                                 <div class="form-group">
                                     {{Form::label('created_at','Published On')}}
-                                    {{Form::text('created_at', null, array('class'=>'form-control','placeholder'=>'Published On'))}}
+                                    {{Form::text('created_at', null, array('class'=>'form-control','placeholder'=>'Published On','id'=>'datepicker'))}}
                                     {{DisplayMessage::error('created_at', $errors)}}
                                 </div>
                                 <div class="form-group">

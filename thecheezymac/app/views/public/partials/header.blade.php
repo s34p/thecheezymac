@@ -6,13 +6,19 @@
 
 <title>@yield('title')</title>
 
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+
+    {{HTML::style('/plugins/fancybox/source/jquery.fancybox.css')}}
+
 {{HTML::style('/css/min/thecheezymac.css')}}
 
 {{HTML::script('/js/thecheezymac.js')}}
 
 {{HTML::script('/plugins/tinymce/js/tinymce/tinymce.min.js')}}
 
+{{HTML::script('/plugins/fancybox/source/jquery.fancybox.pack.js')}}
 
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f708a1900255165"></script>
 
 
@@ -64,7 +70,7 @@
                                 @endif
 
                                 <li><a href="/story" class="menu-button"><img  src="/img/buttons/story.png" data-link="story" class=" img-responsive" alt="Our Story"/></a></li>
-                                <li><a href="/menu/specials" class="menu-button"><img  src="/img/buttons/menu.png" data-link="menu" class=" img-responsive" alt="Menu"/></a></li>
+                                <li><a href="/menu/Specials" class="menu-button"><img  src="/img/buttons/menu.png" data-link="menu" class=" img-responsive" alt="Menu"/></a></li>
                                 {{--<li class="dropdown">--}}
                                     {{--<a href="/menu" class="menu-button dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img  src="/img/buttons/menu.png" data-link="menu" class=" img-responsive" alt=""/></a>--}}
                                     {{--<ul class="dropdown-menu" role="menu">--}}
@@ -75,7 +81,7 @@
                                 {{--</li>--}}
                                 <li><a href="/catering" class="menu-button"><img  src="/img/buttons/catering.png" data-link="catering" class=" img-responsive" alt=""/></a></li>
                                 <li><a href="/our-news" class="menu-button"><img  src="/img/buttons/news.png" data-link="news" class=" img-responsive" alt=""/></a></li>
-                                <li><a href="/blog" class="menu-button"><img  src="/img/buttons/blog.png" data-link="blog" class=" img-responsive" alt=""/></a></li>
+                                <li><a href="/our-blog" class="menu-button"><img  src="/img/buttons/blog.png" data-link="blog" class=" img-responsive" alt=""/></a></li>
                                 <li><a href="/club" class="menu-button"><img  src="/img/buttons/loyalty.png" data-link="club" class=" img-responsive" alt=""/></a></li>
                                 <li><a href="/contact-us" class="menu-button"><img  src="/img/buttons/contact.png" data-link="contact-us" class=" img-responsive" alt=""/></a></li>
 

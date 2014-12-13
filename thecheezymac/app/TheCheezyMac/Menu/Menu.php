@@ -11,8 +11,10 @@ namespace TheCheezyMac\Menu;
 
 class Menu extends \Eloquent {
 
-    protected $fillable = ['name','description','image','category'];
+    protected $fillable = ['name','description','image','category_id'];
 
     protected $table = 'menu';
+
+
 
 } 

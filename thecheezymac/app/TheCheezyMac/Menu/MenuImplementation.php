@@ -29,7 +29,7 @@ class MenuImplementation implements MenuInterface{
         {
             $this->menuModel->image = $inputs['image'];
         }
-        $this->menuModel->category = $inputs['category'];
+        $this->menuModel->category_id = $inputs['category_id'];
         return $this->menuModel->save();
     }
 
@@ -39,7 +39,7 @@ class MenuImplementation implements MenuInterface{
 
         $menu->name = $inputs['name'];
         $menu->description = $inputs['description'];
-        $menu->category = $inputs['category'];
+        $menu->category_id = $inputs['category_id'];
         if(isset($inputs['image']))
         {
             $menu->image = $inputs['image'];

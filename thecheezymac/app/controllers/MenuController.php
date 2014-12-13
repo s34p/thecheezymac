@@ -3,6 +3,7 @@
 use TheCheezyMac\Menu\Menu;
 use TheCheezyMac\Menu\MenuInterface;
 use TheCheezyMac\Menu\MenuValidation;
+use TheCheezyMac\MenuCategories\MenuCategories;
 
 class MenuController extends \BaseController {
 
@@ -19,14 +20,19 @@ class MenuController extends \BaseController {
      * @var MenuInterface
      */
     private $menuInterface;
+	/**
+	 * @var MenuCategories
+	 */
+	private $categories;
 
-    public function __construct(Menu $menuModel, MenuValidation $menuValidation, MenuInterface $menuInterface)
+	public function __construct(Menu $menuModel, MenuValidation $menuValidation, MenuInterface $menuInterface, MenuCategories $categories)
 	{
 
         $this->menuModel = $menuModel;
         $this->menuValidation = $menuValidation;
         $this->menuInterface = $menuInterface;
-    }
+		$this->categories = $categories;
+	}
 
 
     /**
@@ -36,7 +42,12 @@ class MenuController extends \BaseController {
 	 */
 	public function index()
 	{
-        $menus = $this->menuModel->orderBy('category')->get();
+
+		$menus = DB::table('menu')
+			->join('menu_categories', 'menu.category_id','=','menu_categories.id')
+			->select('*','menu.name as menu_name','menu_categories.name as category_name','menu.id as menu_id')
+			->get();
+
 
         $this->layout->content = View::make('private.menu.index', compact('menus'));
 	}
@@ -49,7 +60,8 @@ class MenuController extends \BaseController {
 	 */
 	public function create()
 	{
-		$this->layout->content = View::make('private.menu.create');
+		$categories = $this->categories->orderBy('name','ASC')->get();
+		$this->layout->content = View::make('private.menu.create', compact('categories'));
 	}
 
 
@@ -90,8 +102,10 @@ class MenuController extends \BaseController {
 	public function edit($id)
 	{
 		$menu = $this->menuModel->findOrFail($id);
+		$categories = $this->categories->orderBy('name','ASC')->get();
 
-        $this->layout->content = View::make('private.menu.edit',compact('menu'));
+
+		$this->layout->content = View::make('private.menu.edit',compact('menu','categories'));
 	}
 
 
@@ -127,9 +141,13 @@ class MenuController extends \BaseController {
 
     public function menuType($type = "specials")
     {
-        $menus = $this->menuModel->where('category','like', $type)->get();
+		$menus = DB::table('menu')
+			->join('menu_categories', 'menu.category_id','=','menu_categories.id')
+			->select('*','menu.name as menu_name','menu_categories.name as category_name','menu.id as menu_id')
+			->where('menu_categories.slug','=',$type)
+			->get();
 
-        $categories = $this->menuModel->select('category')->groupBy('category')->get();
+        $categories = $this->categories->groupBy('slug')->get();
 
 
 

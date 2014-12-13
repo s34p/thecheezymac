@@ -26,7 +26,7 @@ class NewsImplementation implements NewsInterface{
         $this->newsModel->title = $inputs['title'];
         $this->newsModel->body = $inputs['body'];
         $this->newsModel->author = $inputs['author'];
-        $this->newsModel->created_at = $inputs['created_at'];
+        $this->newsModel->created_at = strtotime($inputs['created_at']);
         return $this->newsModel->save();
     }
 
@@ -36,7 +36,7 @@ class NewsImplementation implements NewsInterface{
         $news->title = $inputs['title'];
         $news->body = $inputs['body'];
         $news->author = $inputs['author'];
-        $news->created_at = $inputs['created_at'];
+        $news->created_at = strtotime($inputs['created_at']);
         return $news->save();
     }
 

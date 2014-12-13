@@ -16,8 +16,8 @@ Route::post('/comments','PagesController@comments');
 Route::get('/our-news','NewsController@getAllNews');
 Route::get('/our-news/{id}', 'NewsController@getNews');
 
-Route::get('/blog','NewsController@getAllNews');
-Route::get('/blog/{id}', 'NewsController@getNews');
+Route::get('/our-blog','BlogController@getAllBlogs');
+Route::get('/our-blog/{id}', 'BlogController@getBlog');
 
 Route::get('/menu/{type}','MenuController@menuType');
 
@@ -34,8 +34,10 @@ Route::group(['prefix'=>'webadmin','before'=>'isLoggedIn'], function()
     Route::get('dashboard', 'PagesController@dashboard');
 
     Route::resource('news', 'NewsController');
+    Route::resource('blog', 'BlogController');
     Route::resource('users', 'UsersController');
     Route::resource('menu', 'MenuController');
+    Route::resource('category', 'MenuCategoriesController');
 
     Route::post('users/passEdit/{id}', 'UsersController@updatePassword');
     Route::get('logout','AuthController@logout');
