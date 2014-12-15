@@ -24,12 +24,13 @@ class MenuImplementation implements MenuInterface{
     public function add(array $inputs)
     {
         $this->menuModel->name = $inputs['name'];
-        $this->menuModel->name = $inputs['price'];
+        $this->menuModel->price = $inputs['price'];
         $this->menuModel->description = $inputs['description'];
         if(isset($inputs['image']))
         {
             $this->menuModel->image = $inputs['image'];
         }
+        $this->menuModel->weekly_special = $inputs['weekly_special'];
         $this->menuModel->category_id = $inputs['category_id'];
         return $this->menuModel->save();
     }
@@ -39,9 +40,10 @@ class MenuImplementation implements MenuInterface{
         $menu = $this->menuModel->findOrFail($menuId);
 
         $menu->name = $inputs['name'];
-        $menu->name = $inputs['price'];
+        $menu->price = $inputs['price'];
         $menu->description = $inputs['description'];
         $menu->category_id = $inputs['category_id'];
+        $menu->weekly_special = $inputs['weekly_special'];
         if(isset($inputs['image']))
         {
             $menu->image = $inputs['image'];

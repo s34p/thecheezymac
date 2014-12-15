@@ -27,7 +27,7 @@
 
                                 <div class="form-group">
                                     {{Form::label('price','Price')}}
-                                    {{Form::number('price', null, array('class'=>'form-control', 'placeholder'=>'Price'))}}
+                                    {{Form::number('price', null, array('class'=>'form-control', 'placeholder'=>'Price','step'=>'any'))}}
                                     {{DisplayMessage::error('price', $errors)}}
                                 </div>
 
@@ -68,6 +68,17 @@
                                     {{Form::label('description','Description')}}
                                     {{Form::textarea('description', null, array('class'=>'form-control editme', 'placeholder'=>'Description'))}}
                                     {{DisplayMessage::error('description', $errors)}}
+                                </div>
+
+                                 <div class="form-group">
+                                    {{Form::label('weekly_special','Is this item a weekly special?')}}
+
+                                    <select name="weekly_special" class="form-control" id="weekly_special">
+                                        <option value="0" selected="selected">No</option>
+                                        <option value="1">Yes</option>
+                                    </select>
+
+                                    {{DisplayMessage::error('weekly_special', $errors)}}
                                 </div>
 
                                 <div class="form-group">

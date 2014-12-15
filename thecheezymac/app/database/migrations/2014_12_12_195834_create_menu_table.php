@@ -16,8 +16,10 @@ class CreateMenuTable extends Migration {
 		{
 			$table->increments('id');
             $table->string('name');
+            $table->string('price');
             $table->text('description');
             $table->string('image');
+            $table->boolean('weekly_special');
             $table->integer('category_id');
 			$table->timestamps();
 		});
