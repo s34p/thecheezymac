@@ -22,7 +22,13 @@
                                 <div class="form-group">
                                     {{Form::label('name','Item Name')}}
                                     {{Form::text('name', null, array('class'=>'form-control', 'placeholder'=>'Item Name'))}}
-                                    {{DisplayMessage::error('itemName', $errors)}}
+                                    {{DisplayMessage::error('name', $errors)}}
+                                </div>
+
+                                <div class="form-group">
+                                    {{Form::label('price','Price')}}
+                                    {{Form::number('price', null, array('class'=>'form-control', 'placeholder'=>'Price'))}}
+                                    {{DisplayMessage::error('price', $errors)}}
                                 </div>
 
                                 <div class="form-group">

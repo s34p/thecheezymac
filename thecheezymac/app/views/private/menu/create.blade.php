@@ -26,6 +26,12 @@
                                 </div>
 
                                 <div class="form-group">
+                                    {{Form::label('price','Price')}}
+                                    {{Form::number('price', null, array('class'=>'form-control', 'placeholder'=>'Price'))}}
+                                    {{DisplayMessage::error('price', $errors)}}
+                                </div>
+
+                                <div class="form-group">
                                     {{Form::label('category_id','Category')}}
 
                                     <select name="category_id" class="form-control" id="category_id">

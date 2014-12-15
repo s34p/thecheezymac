@@ -48,6 +48,7 @@
                        </div>
                        <div class="col-sm-8">
                        <h3>{{$menu->menu_name}}</h3>
+                           {{$menu->price}}<br/>
                            {{$menu->description}}
 
                        </div>
