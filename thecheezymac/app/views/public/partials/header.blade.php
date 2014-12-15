@@ -70,7 +70,7 @@
                                 @endif
 
                                 <li><a href="/story" class="menu-button"><img  src="/img/buttons/story.png" data-link="story" class=" img-responsive" alt="Our Story"/></a></li>
-                                <li><a href="/menu/Specials" class="menu-button"><img  src="/img/buttons/menu.png" data-link="menu" class=" img-responsive" alt="Menu"/></a></li>
+                                <li><a href="/menu/BuildYourOwn" class="menu-button"><img  src="/img/buttons/menu.png" data-link="menu" class=" img-responsive" alt="Menu"/></a></li>
                                 {{--<li class="dropdown">--}}
                                     {{--<a href="/menu" class="menu-button dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img  src="/img/buttons/menu.png" data-link="menu" class=" img-responsive" alt=""/></a>--}}
                                     {{--<ul class="dropdown-menu" role="menu">--}}

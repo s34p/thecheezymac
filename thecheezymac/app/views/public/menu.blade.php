@@ -5,7 +5,13 @@
 @section('content')
 
             <div class="main">
-                <ul class="menu-nav-pills">
+
+
+                <div class="wrapper">
+
+                    <h1 class="heading">Menu</h1>
+
+                 <ul class="menu-nav-pills">
                     @foreach($categories as $cat)
                     <li data-link="{{$cat->slug}}"><a href="/menu/{{$cat->slug}}" >{{$cat->name}}</a></li>
                     @endforeach
@@ -22,35 +28,37 @@
                     });
                 </script>
 
-                <div class="wrapper">
-
-                    <h1 class="heading">Menu</h1>
-
                 <div class="row">
 
 
 
-                   <div class="col-md-4 text-center">
-                        <blockquote>
+
+                    <div class="text-center jumbotron" style="font-weight:bold; font-style: italic; font-size: 20px">
+
                         "Amazed by the flavor in the Cavatapi Macaroni with Chicken and Broccoli" <br>
                         <small> Jerry Seinfield</small>
-                        </blockquote>
+
 
 
                    </div>
-                   <div class="col-md-8 specialsBlocks storytext">
+
+
+                   <div class="specialsBlocks storytext">
 
 
                        @foreach($menus as $menu)
-                       <div class="col-sm-4" style="padding-left:0px">
-
-                       <img src="{{$menu->image}}" class="img-responsive" alt=""/>
+                       <div class="col-sm-4" style="padding-left:0px; ">
+                        @if($menu->image)
+                       <img src="{{$menu->image}}" style="border:thin solid black" class="img-responsive" alt=""/>
+                       @endif
                        </div>
                        <div class="col-sm-8">
                        <h3>{{$menu->menu_name}}</h3>
-                           {{$menu->price}}<br/>
-                           {{$menu->description}}
 
+                           {{$menu->description}}
+                        @if($menu->price)
+                        <h4>${{$menu->price}}</h4>
+                        @endif
                        </div>
                        <div class="clearfix"></div>
                        <br/><br/>

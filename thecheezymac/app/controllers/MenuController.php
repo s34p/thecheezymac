@@ -45,7 +45,7 @@ class MenuController extends \BaseController {
 
 		$menus = DB::table('menu')
 			->join('menu_categories', 'menu.category_id','=','menu_categories.id')
-			->select('*','menu.name as menu_name','menu_categories.name as category_name','menu.id as menu_id')
+			->select('*','menu.name as menu_name','menu_categories.name as category_name','menu.id as menu_id','menu.price as price')
 			->get();
 
 
@@ -139,7 +139,7 @@ class MenuController extends \BaseController {
 	}
 
 
-    public function menuType($type = "specials")
+    public function menuType($type = "BuildYourOwn")
     {
 		$menus = DB::table('menu')
 			->join('menu_categories', 'menu.category_id','=','menu_categories.id')

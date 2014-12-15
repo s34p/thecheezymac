@@ -35,11 +35,15 @@
                                         <td style="vertical-align: middle !important;">
                                         <div class="col-xs-12" style="padding-left:0px">
 
-                                           <img src="{{$menu->image}}" class="img-responsive" alt=""/>
+                                           <img src="{{$menu->image}}" class="img-responsive" style="width:200px" alt=""/>
                                            </div>
                                        </td>
                                         <td style="vertical-align: middle !important;">{{$menu->menu_name}}</td>
-                                        <td style="vertical-align: middle !important;">${{$menu->price}}</td>
+                                        <td style="vertical-align: middle !important;">
+                                        @if($menu->price)
+                                            ${{$menu->price}}
+                                        @endif
+                                        </td>
                                         <td style="vertical-align: middle !important;">
 
                                             @if($menu->weekly_special == 1)
