@@ -18,12 +18,12 @@
                         <div>
                             <ul class="footer-list-items">
                                 <li><a href="/">HOME</a></li>
-                                <li><a href="/news">NEWS</a></li>
+                                <li><a href="/our-news">NEWS</a></li>
                                 <li><a href="/giftcard">GIFT CARDS</a></li>
                                 <li><a href="/club">LOYALTY CLUB</a></li>
                                 <li><a href="/story">OUR STORY</a></li>
-                                <li><a href="/menu">OUR MENU</a></li>
-                                <li><a href="/specials">OUR SPECIALS</a></li>
+                                <li><a href="/menu/">OUR MENU</a></li>
+                                <li><a href="/menu/Specials">OUR SPECIALS</a></li>
                             </ul>
                         </div>
                     </div>
@@ -46,7 +46,8 @@
                             3031 Richmond Road, Suite 120 <br/>
                             Lexington, KY 40509 <br/>
                             <i class="glyphicon glyphicon-phone"></i> 859-2CHEEZY (859-224-3399) <br/>
-                            <i class="glyphicon glyphicon-phone-alt"></i> 844-624-3399 (Corporate)
+                            <i class="glyphicon glyphicon-phone-alt"></i> 844-624-3399 (Corporate)<br/>
+                            <i class="glyphicon glyphicon-envelope"></i> corp@thecheezymac.com (Corporate)
                         </div>
                     </div>
 

@@ -16,7 +16,7 @@
 
                                    </div>
                                    <div class="col-md-8 storytext">
-                                        <h3>CATERING!</h3>
+                                        <h3>CATERING</h3>
 
                                        <p>
 Tired of cold cuts and deli sandwiches? Try something different. Surprise your guest with a dish everyone loves… Mac & Cheese! It’s fast, fun, easy and delicious. Call today and let The Cheezy Mac cater your next party!

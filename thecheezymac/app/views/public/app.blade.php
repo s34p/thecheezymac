@@ -7,7 +7,7 @@
             <div class="main">
 
                                <div class="wrapper">
-                                   <h1 class="heading">Download our App!</h1>
+                                   <h1 class="heading">Download our App</h1>
 
                                    <div class="row">
 

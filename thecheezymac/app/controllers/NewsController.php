@@ -132,4 +132,10 @@ class NewsController extends \BaseController {
         $this->layout->content = View::make('public.news.show', compact('news'));
     }
 
+	public function calendar()
+	{
+		$news = $this->news->get();
+		return Response::json($news);
+	}
+
 }

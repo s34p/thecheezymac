@@ -15,11 +15,12 @@ Route::post('/comments','PagesController@comments');
 
 Route::get('/our-news','NewsController@getAllNews');
 Route::get('/our-news/{id}', 'NewsController@getNews');
+Route::get('/our-news/json', 'NewsController@calendar');
 
 Route::get('/our-blog','BlogController@getAllBlogs');
 Route::get('/our-blog/{id}', 'BlogController@getBlog');
 
-Route::get('/menu/{type}','MenuController@menuType');
+Route::get('/menu/{type?}','MenuController@menuType');
 
 
 

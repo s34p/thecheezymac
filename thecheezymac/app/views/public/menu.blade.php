@@ -8,7 +8,6 @@
 
 
                 <div class="wrapper">
-
                     <h1 class="heading">Menu</h1>
 
                  <ul class="menu-nav-pills">
@@ -38,7 +37,9 @@
                         "Amazed by the flavor in the Cavatapi Macaroni with Chicken and Broccoli" <br>
                         <small> Jerry Seinfield</small>
 
-
+                        <div class="text-right">
+                            Printable Menu
+                        </div>
 
                    </div>
 

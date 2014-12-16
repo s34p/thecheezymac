@@ -10,6 +10,8 @@
 
     {{HTML::style('/plugins/fancybox/source/jquery.fancybox.css')}}
 
+
+
 {{HTML::style('/css/min/thecheezymac.css')}}
 
 {{HTML::script('/js/thecheezymac.js')}}
@@ -20,6 +22,8 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f708a1900255165"></script>
+
+
 
 
 

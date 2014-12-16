@@ -15,7 +15,7 @@
                                            <img src="/img/storypic.jpg" alt=""/>
                                        </div>
                                        <div class="col-md-8 storytext">
-                                            <h3>LOYALTY CLUB!</h3>
+                                            <h3>LOYALTY CLUB</h3>
 
                                            <p>
 Mac & Cheese lovers unite! Sign-up to receive the latest news, upcoming events, weekly specials, and exclusive “members only” coupons. Simply fill out the form below to “Join the Club” and instantly receive a “Buy One Entree, Get One Free” voucher.

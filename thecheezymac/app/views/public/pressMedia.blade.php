@@ -7,7 +7,7 @@
             <div class="main">
 
                                <div class="wrapper">
-                                   <h1 class="heading">PRESS/MEDIA!</h1>
+                                   <h1 class="heading">PRESS/MEDIA</h1>
 
                                    <div class="row">
 
