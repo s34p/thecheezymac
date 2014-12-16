@@ -37,12 +37,13 @@
                         "Amazed by the flavor in the Cavatapi Macaroni with Chicken and Broccoli" <br>
                         <small> Jerry Seinfield</small>
 
-                        <div class="text-right">
-                            Printable Menu
-                        </div>
+
 
                    </div>
 
+                    <div class="text-right">
+                       <button class="btn">Printable Menu <span class="glyphicon glyphicon-print"></span></button>
+                   </div>
 
                    <div class="specialsBlocks storytext">
 
