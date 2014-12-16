@@ -24,11 +24,20 @@ Route::get('/menu/{type?}','MenuController@menuType');
 
 
 
-Route::get('/webadmin','AuthController@authenticate');
+Route::get('/webadmin',['before'=>'alreadyLoggedIn','uses'=>'AuthController@authenticate']);
 Route::post('/webadmin',[
     'as' => 'login.process',
     'uses' => 'AuthController@postAuthenticate'
 ]);
+
+Route::get('/webadmin/forgot-password',['before'=>'alreadyLoggedIn','uses'=>'AuthController@forgotPassword']);
+Route::post('/webadmin/forgot-password',[
+    'as' => 'login.forgotPassword',
+    'uses' => 'AuthController@postForgotPassword'
+]);
+
+Route::get('/webadmin/reset-password/{userId}/{resetCode}',['before'=>'alreadyLoggedIn','uses'=>'AuthController@resetPassword']);
+Route::post('/webadmin/reset-password/{userId}/{resetCode}','AuthController@postResetPassword');
 
 Route::group(['prefix'=>'webadmin','before'=>'isLoggedIn'], function()
 {
@@ -36,11 +45,14 @@ Route::group(['prefix'=>'webadmin','before'=>'isLoggedIn'], function()
 
     Route::resource('news', 'NewsController');
     Route::resource('blog', 'BlogController');
-    Route::resource('users', 'UsersController');
-    Route::resource('menu', 'MenuController');
-    Route::resource('category', 'MenuCategoriesController');
+    Route::group(['before'=>'isAdmin'], function(){
+        Route::resource('users', 'UsersController');
+        Route::resource('menu', 'MenuController');
+        Route::resource('category', 'MenuCategoriesController');
 
-    Route::post('users/passEdit/{id}', 'UsersController@updatePassword');
+        Route::post('users/passEdit/{id}', 'UsersController@updatePassword');
+    });
+
     Route::get('logout','AuthController@logout');
 
 });

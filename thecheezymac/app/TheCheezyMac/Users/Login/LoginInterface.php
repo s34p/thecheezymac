@@ -12,5 +12,7 @@ namespace TheCheezyMac\Users\Login;
 interface LoginInterface {
 
     public function login(array $inputs);
+    public function passwordReminder($email);
+    public function resetPassword($userId, $resetCode, $password);
 
 } 

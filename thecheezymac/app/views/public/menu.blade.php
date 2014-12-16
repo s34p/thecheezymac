@@ -69,7 +69,10 @@
                    </div>
                    <div class="clearfix"></div>
                 </div>
-
+                @if(Request::segment(2) == 'FoodForThought')
+                    <h2 align="center">The Ultimate Taste Tour!</h2>
+                    <p>First, ask your cashier for a "Macaroni World Map". Then "travel" to each of the above geographic locations on our Food For Thought menu. We will stamp each location as you complete your journey. Complete the tour and earn a <strong>free entree</strong> on us!</p>
+                @endif
                 </div>
 
 

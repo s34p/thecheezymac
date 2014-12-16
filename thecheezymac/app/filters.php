@@ -42,6 +42,20 @@ Route::filter('isLoggedIn', function()
 	}
 });
 
+Route::filter('alreadyLoggedIn',function()
+{
+	if(Sentry::check()) return Redirect::to('/webadmin/dashboard');
+});
+
+Route::filter('isAdmin', function()
+{
+	$user = Sentry::findUserById(Session::get('id'));
+
+	$admin = Sentry::findGroupByName('admins');
+
+	if(!$user->inGroup($admin)) return Redirect::to('/webadmin/dashboard');
+});
+
 //Route::filter('auth', function()
 //{
 //	if (Auth::guest())

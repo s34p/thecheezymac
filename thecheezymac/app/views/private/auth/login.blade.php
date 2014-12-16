@@ -19,6 +19,7 @@
                           </div>
                           <div class="panel-body">
                           {{DisplayMessage::sentryError(Session::get('sentryError'))}}
+                          {{DisplayMessage::success(Session::get('success'))}}
                           {{Form::open(array('route'=>'login.process','role'=>'form'))}}
                                 <div class="form-group">
                                     {{Form::label('email','Email Address')}}
@@ -29,6 +30,7 @@
                                 <div class="form-group">
                                     {{Form::label('password','Password')}}
                                     {{Form::password('password', array('class'=>'form-control','required'=>'required','placeholder'=>'Password'))}}
+                                    <a href="/webadmin/forgot-password" style="color:#bd2236"><small>Forgot your password?</small></a>
                                     {{DisplayMessage::error('password', $errors)}}
                                 </div>
                                 <div class="form-group">

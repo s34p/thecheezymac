@@ -147,8 +147,7 @@ class MenuController extends \BaseController {
 			->where('menu_categories.slug','=',$type)
 			->get();
 
-        $categories = $this->categories->groupBy('slug')->get();
-
+        $categories = $this->categories->groupBy('slug')->orderBy('order','ASC')->get();
 
 
         $this->layout->content = View::make('public.menu',compact('menus','categories'));

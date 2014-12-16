@@ -38,30 +38,30 @@
                 </div>
             </div>
 
-            <link media="all" type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/1.6.4/fullcalendar.css">
-            <link media="all" type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/1.6.4/fullcalendar.print.css">
-            <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/1.6.4/fullcalendar.min.js"></script>
+            {{--<link media="all" type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/1.6.4/fullcalendar.css">--}}
+            {{--<link media="all" type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/1.6.4/fullcalendar.print.css">--}}
+            {{--<script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/1.6.4/fullcalendar.min.js"></script>--}}
 
 
-            <script type="text/javascript">
-                $(document).ready(function() {
+            {{--<script type="text/javascript">--}}
+                {{--$(document).ready(function() {--}}
 
-                    // page is now ready, initialize the calendar...
+                    {{--// page is now ready, initialize the calendar...--}}
 
-                    $('#calendar').fullCalendar({
-                        // put your options and callbacks here
-                        theme: true,
-                        header: {
-                            left: 'prev,next today',
-                            center: 'title'
-                        },
-                       // events: '/our-news/calendar'
+                    {{--$('#calendar').fullCalendar({--}}
+                        {{--// put your options and callbacks here--}}
+                        {{--theme: true,--}}
+                        {{--header: {--}}
+                            {{--left: 'prev,next today',--}}
+                            {{--center: 'title'--}}
+                        {{--},--}}
+                       {{--// events: '/our-news/calendar'--}}
 
 
 
-                    });
+                    {{--});--}}
 
-                });
-            </script>
+                {{--});--}}
+            {{--</script>--}}
 
 @stop
