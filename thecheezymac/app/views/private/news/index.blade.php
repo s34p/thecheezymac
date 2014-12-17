@@ -11,7 +11,7 @@
                <div class="row">
                     <div class="center-block table-responsive">
                         {{DisplayMessage::success(Session::get('success'))}}
-                        <table class="table table-striped table-condensed">
+                         <table class="display" id="datatable">
                         <caption class="text-right">
                         <a href="/webadmin/news/create">
                             <button class="btn btn-danger"><span class="glyphicon glyphicon-plus"></span> New Post </button>

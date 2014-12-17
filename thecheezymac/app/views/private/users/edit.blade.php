@@ -36,19 +36,33 @@
                                     {{DisplayMessage::error('email', $errors)}}
                                 </div>
                                 <div class="form-group">
+                                    {{Form::label('group_id','Permission')}}
+
+                                    <select name="group_id" class="form-control" id="group_id">
+
+                                        <?php
+                                        foreach($userInfo as $u)
+                                        {
+                                            $userGroup = $u->id;
+                                        }
+                                        ?>
+                                        @foreach($groups as $group)
+                                            @if($userGroup == $group->id)
+                                                <option selected value="{{$group->id}}">{{ucfirst($group->name)}}</option>
+                                            @else
+                                                <option value="{{$group->id}}">{{ucfirst($group->name)}}</option>
+                                            @endif
+                                        @endforeach
+
+                                    </select>
+
+                                    {{DisplayMessage::error('group_id', $errors)}}
+                                </div>
+                                <div class="form-group">
                                     {{Form::submit('Submit',array('class'=>'btn btn-primary','name'=>'submit'))}}
                                 </div>
 
-                                {{--<div class="form-group">--}}
-                                    {{--{{Form::label('password','Password')}}--}}
-                                    {{--{{Form::password('password', array('class'=>'form-control','placeholder'=>'Password'))}}--}}
-                                    {{--{{DisplayMessage::error('password', $errors)}}--}}
-                                {{--</div>--}}
-                                {{--<div class="form-group">--}}
-                                    {{--{{Form::label('password_confirmation','Confirm Password')}}--}}
-                                    {{--{{Form::password('password_confirmation', array('class'=>'form-control','placeholder'=>'Confirm Password'))}}--}}
-                                    {{--{{DisplayMessage::error('password_confirmation', $errors)}}--}}
-                                {{--</div>--}}
+
 
                           {{Form::close()}}
                           </div>

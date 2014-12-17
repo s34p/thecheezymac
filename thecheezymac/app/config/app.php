@@ -130,6 +130,8 @@ return array(
         'TheCheezyMac\Blog\BlogServiceProvider',
         'TheCheezyMac\Menu\MenuServiceProvider',
         'TheCheezyMac\Gallery\GalleryServiceProvider',
+        'TheCheezyMac\Comments\CommentsServiceProvider',
+        'TheCheezyMac\Composers\ComposerServiceProvider',
 
 	),
 

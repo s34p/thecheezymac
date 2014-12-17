@@ -15,6 +15,7 @@ class CreateValidation extends FormValidator {
     protected $rules = [
         'first_name' => 'required',
         'last_name' => 'required',
+        'group_id' => 'required|numeric',
         'email' => 'required|email|unique:users',
         'password'=>'required|confirmed|min:8',
         'password_confirmation'=>'required',

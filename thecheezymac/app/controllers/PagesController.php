@@ -1,5 +1,6 @@
 <?php
 
+use TheCheezyMac\Comments\Comments;
 use TheCheezyMac\Mailers\MailerInterface as Mailer;
 
 class PagesController extends BaseController {
@@ -10,11 +11,17 @@ class PagesController extends BaseController {
      */
     private $mailer;
 
+    /**
+     * @var Comments
+     */
+    private $commentModel;
 
-    public function __construct(Mailer $mailer)
+
+    public function __construct(Mailer $mailer, Comments $commentModel)
     {
 
         $this->mailer = $mailer;
+        $this->commentModel = $commentModel;
     }
 
     public function index()
@@ -100,6 +107,7 @@ class PagesController extends BaseController {
         }
 
 
+
         $recipient = $this->recipient();
         $sender = $this->sender();
         $formInputs = $this->employmentInputs();
@@ -135,6 +143,11 @@ class PagesController extends BaseController {
                 'errors' => $validation->getMessageBag()->toArray()
             ]);
         }
+
+        $this->commentModel->author = Input::get('fullName');
+        $this->commentModel->body = Input::get('comment');
+        $this->commentModel->visible = 0;
+        $this->commentModel->save();
 
         $recipient = $this->recipient();
         $sender = $this->sender();

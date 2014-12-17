@@ -19,12 +19,17 @@
 {{HTML::script('/plugins/tinymce/js/tinymce/tinymce.min.js')}}
 
 {{HTML::script('/plugins/fancybox/source/jquery.fancybox.pack.js')}}
+{{HTML::script('/plugins/DataTables/media/js/jquery.dataTables.min.js')}}
 
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f708a1900255165"></script>
 
 
-
+<script>
+$(document).ready( function () {
+    $('#datatable').DataTable();
+} );
+</script>
 
 
 </head>

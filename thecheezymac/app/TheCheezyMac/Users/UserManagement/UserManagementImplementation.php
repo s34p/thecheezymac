@@ -27,9 +27,9 @@ class UserManagementImplementation implements UserManagementInterface{
                 'activated' => true,
             ]);
 
-            $adminGroup = Sentry::findGroupById(1);
+            $group = Sentry::findGroupById($inputs['group_id']);
 
-            $user->addGroup($adminGroup);
+            $user->addGroup($group);
 
             return \Redirect::to('/webadmin/users')->with('success','The user has been created successfully');
         }
@@ -45,9 +45,27 @@ class UserManagementImplementation implements UserManagementInterface{
         {
             $user = Sentry::findUserById($userId);
 
+            $allGroups = Sentry::findAllGroups();
+
+
+            foreach($allGroups as $group)
+            {
+                $gp = Sentry::findGroupById($group->id);
+                if($user->inGroup($gp))
+                {
+                    $user->removeGroup($gp);
+                }
+            }
+
+            $group = Sentry::findGroupById($inputs['group_id']);
+
+            $user->addGroup($group);
+
             $user->first_name = $inputs['first_name'];
             $user->last_name = $inputs['last_name'];
             $user->email = $inputs['email'];
+
+
 
             if($user->save())
             {

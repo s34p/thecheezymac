@@ -32,14 +32,7 @@
 
 
 
-                    <div class="text-center jumbotron" style="font-weight:bold; font-style: italic; font-size: 20px">
-
-                        "Amazed by the flavor in the Cavatapi Macaroni with Chicken and Broccoli" <br>
-                        <small> Jerry Seinfield</small>
-
-
-
-                   </div>
+                    @include('public.partials.comments')
 
                     <div class="text-right">
                        <button class="btn">Printable Menu <span class="glyphicon glyphicon-print"></span></button>

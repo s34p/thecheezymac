@@ -53,10 +53,21 @@ Route::group(['prefix'=>'webadmin','before'=>'isLoggedIn'], function()
         Route::resource('menu', 'MenuController');
         Route::resource('category', 'MenuCategoriesController');
         Route::resource('gallery', 'GalleryController');
+        Route::resource('comments', 'CommentsController');
 
         Route::post('users/passEdit/{id}', 'UsersController@updatePassword');
     });
 
     Route::get('logout','AuthController@logout');
 
+});
+
+
+Route::get('groups', function()
+{
+   $groups = Sentry::findAllGroups();
+    foreach($groups as $group)
+    {
+        echo $group['name'];
+    }
 });

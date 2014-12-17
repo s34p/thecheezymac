@@ -54,7 +54,8 @@ class UsersController extends \BaseController {
 	 */
 	public function create()
 	{
-		$this->layout->content = View::make('private.users.create');
+		$groups = \Sentry::findAllGroups();
+		$this->layout->content = View::make('private.users.create', compact('groups'));
 	}
 
 	/**
@@ -92,9 +93,16 @@ class UsersController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		$user = $this->userModel->findOrFail($id);
+		//$user = $this->userModel->findOrFail($id);
 
-		$this->layout->content = View::make('private.users.edit', compact('user'));
+		$groups = Sentry::findAllGroups();
+
+		$user = Sentry::findUserById($id);
+
+		$userInfo = $user->getGroups();
+
+
+		$this->layout->content = View::make('private.users.edit', compact('user','groups','userInfo'));
 	}
 
 	/**

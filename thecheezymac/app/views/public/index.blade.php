@@ -47,7 +47,7 @@
                     <a href="/giftcard"><img  src="/img/giftcardhomebutton.png" class="img-responsive"  alt="Gift Card"/></a>
                 </div>
                 <div class="col-sm-3" style="">
-                    <a href="#"><img  src="/img/photogalleryhomebutton.png" class="img-responsive"  alt="Photo Gallery"/></a>
+                    <a href="/gallery"><img  src="/img/photogalleryhomebutton.png" class="img-responsive"  alt="Photo Gallery"/></a>
                 </div>
                 <div class="col-sm-3">
                     <a href="#"><img  src="/img/reciepewinnerhomebutton.png" class="img-responsive" alt="Reciepe Winners"/></a>

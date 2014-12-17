@@ -2,6 +2,7 @@
 @import "../bootstrap/css/bootstrap-theme.min.css";
 @import "../font-awesome-4.2/css/font-awesome.min.css";
 @import "partials/navbar.css";
+@import "../DataTables/css/jquery.dataTables.min.css";
 
 body{
     background: url("/img/bg/brickbgblack.jpg") repeat-x;
