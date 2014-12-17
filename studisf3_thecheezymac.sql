@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 15, 2014 at 06:01 PM
+-- Generation Time: Dec 16, 2014 at 06:31 PM
 -- Server version: 5.5.40-36.1-log
 -- PHP Version: 5.4.23
 
@@ -95,17 +95,17 @@ CREATE TABLE IF NOT EXISTS `menu` (
 
 INSERT INTO `menu` (`id`, `price`, `weekly_special`, `category_id`, `name`, `description`, `image`, `created_at`, `updated_at`) VALUES
 (6, '6.99', 0, 5, 'Childrens Choice', '<p>Mac n Cheese, Fried Macaroni Fritters, or MacGrilled Cheese, Chocolate Chip Cookie, choice of Milk, Juice box, or Fountain Drink</p>', '', '2014-12-15 21:46:25', '2014-12-16 02:54:50'),
-(7, '8.99', 0, 6, 'Buffalo Wings', '<p>Fried Buffalo Style Chicken drenched in our Special Blue Cheese Sauce and topped with more cheese and breadcrumbs. (Buffalo, New York)</p>', 'http://thecheezymac.studio34productions.com/uploads/Menu%20Items/buffalo.jpg', '2014-12-15 21:50:02', '2014-12-16 04:14:01'),
-(8, '8.99', 0, 6, 'Southwestern Taco', '<p>Inspired by our owners childhood in the Southwest, this is his version of comfort food. Your Choice of Chicken, Ground Beef or Chilli. (Santa Fe, New Mexico)</p>', 'http://thecheezymac.studio34productions.com/uploads/Menu%20Items/taco.jpg', '2014-12-15 21:51:12', '2014-12-16 04:16:08'),
-(9, '8.99', 0, 6, 'Chicago Mac Dog', '<p>The Cheezy Mac hits it out of the Part with 100% Kosher Ball Park Hotdogs and all the good Fixings just like in Chicago. (Chicago, Illinois)</p>', 'http://thecheezymac.studio34productions.com/uploads/Menu%20Items/chicagodog.jpg', '2014-12-15 21:52:18', '2014-12-16 04:18:04'),
-(10, '8.99', 0, 6, 'Chicken Pot Pie', '<p>One of our most popular dishes! We took Grandma''s Recipe, and Mac''d it up! (Rome, Italy)</p>', 'http://thecheezymac.studio34productions.com/uploads/Menu%20Items/potpie.jpg', '2014-12-15 21:52:59', '2014-12-16 04:20:09'),
+(7, '8.99', 0, 6, 'Buffalo Wings', '<p>Fried Buffalo Style Chicken drenched in our Special Blue Cheese Sauce and topped with more cheese and breadcrumbs.</p>\r\n<p><strong>(Buffalo, New York)</strong></p>', 'http://thecheezymac.studio34productions.com/uploads/Menu%20Items/buffalo.jpg', '2014-12-15 21:50:02', '2014-12-17 03:43:49'),
+(8, '8.99', 0, 6, 'Southwestern Taco', '<p>Inspired by our owners childhood in the Southwest, this is his version of comfort food. Your Choice of Chicken, Ground Beef or Chilli.</p>\r\n<p><strong>(Santa Fe, New Mexico)</strong></p>', 'http://thecheezymac.studio34productions.com/uploads/Menu%20Items/taco.jpg', '2014-12-15 21:51:12', '2014-12-17 03:44:03'),
+(9, '8.99', 0, 6, 'Chicago Mac Dog', '<p>The Cheezy Mac hits it out of the Part with 100% Kosher Ball Park Hotdogs and all the good Fixings just like in Chicago.</p>\r\n<p><strong>(Chicago, Illinois)</strong></p>', 'http://thecheezymac.studio34productions.com/uploads/Menu%20Items/chicagodog.jpg', '2014-12-15 21:52:18', '2014-12-17 03:44:14'),
+(10, '8.99', 0, 6, 'Chicken Pot Pie', '<p>One of our most popular dishes! We took Grandma''s Recipe, and Mac''d it up!</p>\r\n<p><strong>(Rome, Italy)</strong></p>', 'http://thecheezymac.studio34productions.com/uploads/Menu%20Items/potpie.jpg', '2014-12-15 21:52:59', '2014-12-17 03:44:25'),
 (11, '8.99', 0, 6, 'Noodles Orlean', '<p>Our Salute to the Saints and the people of the Bayou. Cajun Good!</p>', 'http://thecheezymac.studio34productions.com/uploads/Menu%20Items/cajun.jpg', '2014-12-15 21:53:28', '2014-12-16 04:23:21'),
-(12, '8.99', 0, 6, 'Chicken Pesto Mac', '<p>Fresh homemade Pesto Sauce mixed with an Aged White Cheddar and topped with Grilled Chicken. (Genoa,Northern Italy)</p>', 'http://thecheezymac.studio34productions.com/uploads/Menu%20Items/pesto.jpg', '2014-12-15 21:54:20', '2014-12-16 04:21:43'),
-(13, '8.99', 0, 6, 'Pulled Pork', '<p>A salute to the South. Original Mac w/ Pulled Pork piled on top &amp; Blanket of Grippo''s BBQ Potato Chips. (South Carolina)</p>', 'http://thecheezymac.studio34productions.com/uploads/Menu%20Items/porksand.jpg', '2014-12-15 21:55:40', '2014-12-16 04:11:13'),
-(14, '8.99', 0, 6, 'Cheeseburger Deluxe', '<p>This is definitely not like any other Cheeseburger you have ever had! (Pasadena, California)</p>', 'http://thecheezymac.studio34productions.com/uploads/Menu%20Items/cheeseburger.jpg', '2014-12-15 21:56:37', '2014-12-16 04:25:11'),
-(15, '8.99', 0, 6, 'New World Lasagna', '<p>Where the city of Naples meets the city of Cheezy Mac, with our New World Version. (Naples, Italy)</p>', 'http://thecheezymac.studio34productions.com/uploads/Menu%20Items/lasagna.jpg', '2014-12-15 21:57:40', '2014-12-16 04:26:54'),
+(12, '8.99', 0, 6, 'Chicken Pesto Mac', '<p>Fresh homemade Pesto Sauce mixed with an Aged White Cheddar and topped with Grilled Chicken.</p>\r\n<p><strong>(Genoa,Northern Italy)</strong></p>', 'http://thecheezymac.studio34productions.com/uploads/Menu%20Items/pesto.jpg', '2014-12-15 21:54:20', '2014-12-17 03:44:49'),
+(13, '8.99', 0, 6, 'Pulled Pork', '<p>A salute to the South. Original Mac w/ Pulled Pork piled on top &amp; Blanket of Grippo''s BBQ Potato Chips.</p>\r\n<p><strong>(South Carolina)</strong></p>', 'http://thecheezymac.studio34productions.com/uploads/Menu%20Items/porksand.jpg', '2014-12-15 21:55:40', '2014-12-17 03:45:05'),
+(14, '8.99', 0, 6, 'Cheeseburger Deluxe', '<p>This is definitely not like any other Cheeseburger you have ever had!</p>\r\n<p><strong>(Pasadena, California)</strong></p>', 'http://thecheezymac.studio34productions.com/uploads/Menu%20Items/cheeseburger.jpg', '2014-12-15 21:56:37', '2014-12-17 03:45:22'),
+(15, '8.99', 0, 6, 'New World Lasagna', '<p>Where the city of Naples meets the city of Cheezy Mac, with our New World Version.</p>\r\n<p><strong>(Naples, Italy)</strong></p>', 'http://thecheezymac.studio34productions.com/uploads/Menu%20Items/lasagna.jpg', '2014-12-15 21:57:40', '2014-12-17 03:45:40'),
 (16, '4.99', 0, 5, 'Mini Mac N'' Cheese', '<p>Smaller portion of or original Mac N'' Cheese.</p>', '', '2014-12-15 21:59:00', '2014-12-16 03:44:32'),
-(17, '4.99', 0, 5, 'MacGrilled Cheese', '<p>A kid friendly size sandwich.</p>', '', '2014-12-15 21:59:41', '2014-12-16 03:44:44'),
+(17, '4.99', 0, 5, 'MacGrilled Cheese', '<p>A kid friendly size sandwich. Mac &amp; Cheese inside grilled cheese bread. Your choice of cheese &amp; noodle</p>', '', '2014-12-15 21:59:41', '2014-12-17 03:37:51'),
 (18, '8.99', 0, 9, 'Pic 2 ', '<p>Mini Mac N'' Cheese</p>\r\n<p>Half Salad</p>\r\n<p>Cup of Soup</p>', '', '2014-12-15 22:00:39', '2014-12-16 03:45:06'),
 (20, '1.99', 0, 8, 'Heavenly Hash Bar', '<p>So goey and delicious</p>', '', '2014-12-15 22:02:36', '2014-12-16 03:46:04'),
 (21, '2.49', 0, 8, 'Mac N'' Cheese Cake', '<p>Cheese Cake</p>', '', '2014-12-15 22:03:03', '2014-12-16 03:46:21'),
@@ -116,12 +116,12 @@ INSERT INTO `menu` (`id`, `price`, `weekly_special`, `category_id`, `name`, `des
 (26, '2.99', 0, 11, 'Fruit Cup', '', '', '2014-12-15 22:09:51', '2014-12-16 03:37:55'),
 (27, '3.99', 0, 11, 'Southwestern Chipotle Pasta', '', '', '2014-12-15 22:10:11', '2014-12-16 03:38:08'),
 (29, '1.49', 0, 11, 'Cheezy Mac Rolls (3)', '', '', '2014-12-15 22:10:52', '2014-12-16 03:38:29'),
-(30, '8.99', 0, 7, 'Step 1: Choose Your Noodle', '<p>Original Cavatappi Noodle<br />Cavatappi Wheat Noodle<br />Penne<strong> Gluten-Free</strong> Noodle<br />Salad Greens</p>', 'http://thecheezymac.studio34productions.com/uploads/Menu%20Items/cavatappi%202.jpg', '2014-12-15 22:13:13', '2014-12-16 03:05:18'),
-(31, '', 0, 7, 'Step 2: Choose up to 2 Cheeses or Sauces', '<p>White Aged Sharp Cheddar<br />Yellow Cheddar<br />Blue Cheese</p>\r\n<p><span style="color: #800080;"><strong>Gluten-Free</strong></span></p>\r\n<p>Chipotle<br />Provolone<br />Ghost Pepper Jack<br />Ricotta<br />Pink Sauce</p>\r\n<p><span style="color: #ff0000;">(Additional Cheeses/sauces $.75 each)</span></p>', 'http://thecheezymac.studio34productions.com/uploads/Menu%20Items/artisan%20cheeses.png', '2014-12-15 22:15:17', '2014-12-16 03:06:22'),
-(32, '', 0, 7, 'Step 3: Choose up to 4 Ingredients', '<p>Black Olives<br />Shredded Carrots<br />Chopped Celery<br />Broccoli Floret<br />Red Cabbage<br />Peas<br />Fresh Sliced Mishrooms<br />Roasted Corn<br />Vidalia Onions<br />Green Onions<br />Red Onions<br />Bell Peppers<br />Jalapeno Peppers<br />Pablano Peppers<br />Roasted Red Peppers<br />Sun Dried Tomatoes<br />Diced Tomatoes<br />Pico De Gallo<br />Fried Crispy Onions<br />Crumbled Pie Crust<br />Fritos Corn Chips<br />Grippo''s BBQ Potato Chips<br />Chopped Walnuts<br />Black Bean</p>', 'http://thecheezymac.studio34productions.com/uploads/Menu%20Items/toppings.jpg', '2014-12-15 22:17:19', '2014-12-16 04:05:51'),
-(33, '', 0, 7, 'Step 4: Choose Your Protien', '<p>Ham<br />Chopped Steak<br />Pulled Pork<br />Andouille Sausage<br />100% Kosher Hotdogs<br />Bacon<br />Hamburger<br />Grilled Chicken<br />Fried Chicken<br />Chili<br />Seasonal Chef''s Choices</p>\r\n<p>&nbsp;</p>\r\n<h3>Make It 2 Ways</h3>\r\n<p>(Ask about our Mac Grilled Cheese)</p>\r\n<p>$2 Upcharge</p>\r\n<p>&nbsp;</p>', 'http://thecheezymac.studio34productions.com/uploads/Menu%20Items/meats.jpg', '2014-12-15 22:19:59', '2014-12-16 04:00:50'),
-(34, '', 0, 10, 'Fountain Drinks', '<h3><strong>Coke Products</strong></h3>\r\n<h3><span style="color: #ff0000;">$1.79 Kids Size<br />$2.19 24 oz.</span></h3>\r\n<p><span style="color: #000000;">Apple Juice</span></p>\r\n<p><strong><span style="color: #ff0000;">Iced Tea 24 oz.</span></strong></p>\r\n<p><span style="color: #ff0000;"><span style="color: #000000;">1% Milk or Chocolate Milk</span><br /><strong>$2.49</strong></span></p>', '', '2014-12-15 22:21:33', '2014-12-15 22:23:45'),
-(35, '', 0, 4, 'Friday Special', '<h2><span style="color: #ff0000;">Maine Lobster Mac N'' Cheese</span></h2>\r\n<p>Fresh Maine Lobster flown in, Shallots, Sharp White Cheddar Cheese, Garlic, Topped with Breadcrumbs</p>\r\n<p><strong><span style="color: #ff0000;">(Limited Availability &amp; Market Price)</span></strong></p>', '', '2014-12-16 00:04:17', '2014-12-16 00:04:17'),
+(30, '8.99', 0, 7, 'Step 1: Choose Your Noodle', '<p>Original Cavatappi Noodle<br />Cavatappi Wheat Noodle<br />Penne<strong> Gluten-Free</strong> Noodle (Add $1.00)<br /><span style="color: #008000;">Salad Greens (Mixed Greens, Romaine, Spinach)</span></p>', 'http://thecheezymac.studio34productions.com/uploads/Menu%20Items/cavatappi%202.jpg', '2014-12-15 22:13:13', '2014-12-17 03:31:03'),
+(31, '', 0, 7, 'Step 2: Choose up to 2 Cheeses or Sauces', '<p>White Aged Sharp Cheddar<br />Yellow Cheddar<br />Blue Cheese<br /><strong><span style="color: #800080;">Gluten-Free</span><br /></strong>Chipotle<br />Provolone<br />Ghost Pepper Jack<br />Ricotta<br />Pink Sauce<br />Weekly Artesian Cheese</p>\r\n<p><span style="color: #ff0000;">(Additional Cheeses/Sauces $.75 each)</span></p>', 'http://thecheezymac.studio34productions.com/uploads/Menu%20Items/artisan%20cheeses.png', '2014-12-15 22:15:17', '2014-12-17 03:41:31'),
+(32, '', 0, 7, 'Step 3: Choose up to 4 Ingredients', '<p>Black Olives<br />Shredded Carrots<br />Chopped Celery<br />Broccoli Floret<br />Red Cabbage<br />Peas<br />Fresh Sliced Mishrooms<br />Roasted Corn<br />Vidalia Onions<br />Green Onions<br />Red Onions<br />Bell Peppers<br />Jalapeno Peppers<br />Poblano Peppers<br />Roasted Red Peppers<br />Sun Dried Tomatoes<br />Diced Tomatoes<br />Pico De Gallo<br />Fried Crispy Onions<br />Crumbled Pie Crust<br />Fritos Corn Chips<br />Grippo''s BBQ Potato Chips<br />Chopped Walnuts<br />Black Bean<br />Daily Fruit</p>\r\n<p><span style="color: #ff0000;">(Additional Ingredients $.75)</span></p>', 'http://thecheezymac.studio34productions.com/uploads/Menu%20Items/toppings.jpg', '2014-12-15 22:17:19', '2014-12-17 03:40:18'),
+(33, '', 0, 7, 'Step 4: Choose Your Protien', '<p>Ham<br />Chopped Steak<br />Pulled Pork<br />Andouille Sausage<br />100% Kosher Hotdogs<br />Bacon<br />Hamburger<br />Grilled Chicken<br />Fried Chicken<br />Chili<br />Seasonal Chef''s Choices</p>\r\n<p>&nbsp;</p>\r\n<h3>Make It 2 Ways</h3>\r\n<p>(Ask about our Mac Grilled Cheese)</p>\r\n<p>$2 Upcharge</p>\r\n<h3><span style="color: #008000;">Salad Dressings</span></h3>\r\n<p><span style="color: #008000;">Ranch</span><br /><span style="color: #008000;">Fat-Free Ranch</span><br /><span style="color: #008000;">Italian</span><br /><span style="color: #008000;">French</span><br /><span style="color: #008000;">Blue Cheese</span><br /><span style="color: #008000;">Thousand Island</span><br /><span style="color: #008000;">Poppy Seed</span><br /><span style="color: #008000;">Cilantro Lime</span><br /><span style="color: #008000;">Aged&nbsp;Balsamic Vinegar</span><br /><span style="color: #008000;">Oil &amp; Vinegar</span></p>', 'http://thecheezymac.studio34productions.com/uploads/Menu%20Items/meats.jpg', '2014-12-15 22:19:59', '2014-12-17 03:34:26'),
+(34, '', 0, 10, 'Fountain Drinks', '<h3><strong>Coke Products</strong></h3>\r\n<p><strong>Adult Size Fountain Drink (20 oz) $2.19</strong></p>\r\n<p><strong>Kids Size Fountain Drink $1.79</strong></p>\r\n<p><span style="color: #000000;">Apple Juice</span></p>\r\n<p><strong><span style="color: #ff0000;">Iced Tea 20 oz.</span></strong></p>\r\n<p><span style="color: #ff0000;"><span style="color: #000000;">1% Milk or Chocolate Milk</span><br /><strong>$2.49</strong></span></p>', '', '2014-12-15 22:21:33', '2014-12-17 03:28:50'),
+(35, '14.99', 0, 4, 'Friday Special', '<h2><span style="color: #ff0000;">Maine Lobster Mac N'' Cheese</span></h2>\r\n<p>Fresh Maine Lobster flown in, Shallots, Sharp White Cheddar Cheese, Garlic, Topped with Breadcrumbs</p>\r\n<p><strong><span style="color: #ff0000;">(Limited Availability)</span></strong></p>', '', '2014-12-16 00:04:17', '2014-12-17 03:35:38'),
 (36, '2.00', 0, 11, 'Texas Cheezy Toast', '', '', '2014-12-16 03:39:17', '2014-12-16 03:39:17');
 
 -- --------------------------------------------------------
@@ -135,6 +135,7 @@ CREATE TABLE IF NOT EXISTS `menu_categories` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `slug` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `order` int(11) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   PRIMARY KEY (`id`)
@@ -144,15 +145,15 @@ CREATE TABLE IF NOT EXISTS `menu_categories` (
 -- Dumping data for table `menu_categories`
 --
 
-INSERT INTO `menu_categories` (`id`, `slug`, `name`, `created_at`, `updated_at`) VALUES
-(4, 'Specials', 'Specials', '2014-12-13 13:04:57', '2014-12-13 13:04:57'),
-(5, 'KidsMeals', 'Kids Meals', '2014-12-13 13:06:45', '2014-12-15 21:46:44'),
-(6, 'FoodForThought', 'Food For Thought', '2014-12-15 21:46:57', '2014-12-15 21:46:57'),
-(7, 'BuildYourOwn', 'Build Your Own', '2014-12-15 21:47:07', '2014-12-15 21:47:07'),
-(8, 'Treats', 'Treats', '2014-12-15 21:47:39', '2014-12-16 04:47:43'),
-(9, 'Combos', 'Combos', '2014-12-15 21:47:48', '2014-12-15 21:47:48'),
-(10, 'Drinks', 'Drinks', '2014-12-15 21:47:56', '2014-12-15 21:47:56'),
-(11, 'Sides', 'Sides', '2014-12-15 22:05:35', '2014-12-15 22:05:35');
+INSERT INTO `menu_categories` (`id`, `slug`, `name`, `order`, `created_at`, `updated_at`) VALUES
+(4, 'Specials', 'Specials', 8, '2014-12-13 13:04:57', '2014-12-13 13:04:57'),
+(5, 'KidsMeals', 'Kids Meals', 3, '2014-12-13 13:06:45', '2014-12-15 21:46:44'),
+(6, 'FoodForThought', 'Food For Thought', 2, '2014-12-15 21:46:57', '2014-12-15 21:46:57'),
+(7, 'BuildYourOwn', 'Build Your Own', 1, '2014-12-15 21:47:07', '2014-12-15 21:47:07'),
+(8, 'Treats', 'Treats', 6, '2014-12-15 21:47:39', '2014-12-16 04:47:43'),
+(9, 'Combos', 'Combos', 4, '2014-12-15 21:47:48', '2014-12-15 21:47:48'),
+(10, 'Drinks', 'Drinks', 7, '2014-12-15 21:47:56', '2014-12-15 21:47:56'),
+(11, 'Sides', 'Sides', 5, '2014-12-15 22:05:35', '2014-12-15 22:05:35');
 
 -- --------------------------------------------------------
 
@@ -270,7 +271,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `email`, `password`, `permissions`, `activated`, `activation_code`, `activated_at`, `last_login`, `persist_code`, `reset_password_code`, `first_name`, `last_name`, `created_at`, `updated_at`) VALUES
-(2, 'rrafiatech@gmail.com', '$2y$10$gme3WPCtrr.ofr9Z2SVJluIP1qFR9rjF0zCXHvtbj8KL2siIOHELG', NULL, 1, NULL, NULL, '2014-12-15 20:46:50', '$2y$10$jrGFZnKPct8H7YoiSWioheVZduzsOth5spovYYWPt8MrsF63tIXQG', NULL, 'Rachid', 'Rafia', '2014-12-13 05:24:59', '2014-12-15 20:46:50'),
+(2, 'rrafiatech@gmail.com', '$2y$10$XBU1/Tfa4D7.zwYFMFvy.OItncEJGPGfZzl9JZWfq4CirE/guoDyq', NULL, 1, NULL, NULL, '2014-12-17 03:20:53', '$2y$10$xhKc.Reblsd5UgppuEOMzeYBhbVW10oIF96xU25Q6JtH5znA/JNP.', NULL, 'Rachid', 'Rafia', '2014-12-13 05:24:59', '2014-12-17 03:20:53'),
 (3, 'rmork07@gmail.com', '$2y$10$uToG2PwP1eRFZ45zi4aAHO68OQFOpwZLeTI6ZGjhRt9fu0sE7IjaK', NULL, 1, NULL, NULL, '2014-12-16 03:20:52', '$2y$10$nGT0DgdEFSoTadwn5vLr3e7pArGTnC7myK3N7LhNbIxB6P6YDgOJW', NULL, 'Ryan', 'Mork', '2014-12-13 13:02:02', '2014-12-16 03:20:52'),
 (4, 'pmahan@studio34productions.com', '$2y$10$.YTZA7d9YCmaYDUoWH7bR.gB2uKjK7PSRGS9DCEuZ1yGN7PxGCGke', NULL, 1, NULL, NULL, NULL, NULL, NULL, 'Patrick', 'Mahan', '2014-12-13 13:02:44', '2014-12-13 13:02:44'),
 (5, 'jerry@thecheezymac.com', '$2y$10$6pAgq9332DQowe5fvSzPPuKZZy.grmyUwlglCRIIcHdO4eZZ1OVSy', NULL, 1, NULL, NULL, '2014-12-16 05:12:36', '$2y$10$ehgRkYVXp2u3bbgK9mg9uudjywkA2NL9pwhPqCZfwSLlLDluCEVXK', NULL, 'Jerry', 'Adamany', '2014-12-16 05:03:52', '2014-12-16 05:12:36');

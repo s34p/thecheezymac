@@ -72,6 +72,46 @@ class PagesController extends BaseController {
     	$this->layout->content = View::make('public.franchise');
     }
 
+    public function gallery()
+    {
+    	$this->layout->content = View::make('public.gallery');
+    }
+    public function employment()
+    {
+    	$this->layout->content = View::make('public.employment');
+    }
+
+    public function postEmployment()
+    {
+        $rules = [
+            'position' => 'required',
+            'startDate' => 'required',
+            'firstName' => 'required',
+            'lastName' => 'required',
+            'email'    =>  'required|email',
+            'phone'    =>  'required',
+        ];
+
+        $validation = Validator::make(Input::all(), $rules);
+
+        if($validation->fails())
+        {
+            return Redirect::back()->withErrors($validation);
+        }
+
+
+        $recipient = $this->recipient();
+        $sender = $this->sender();
+        $formInputs = $this->employmentInputs();
+        $view = 'emails.employment';
+        $subject = 'Job Application';
+
+        $this->mailer->sendTo($recipient, $sender, $subject, $view, $formInputs);
+
+        return Redirect::back()->withSuccess('Your application was submitted. Thank you!');
+
+    }
+
 
     /**
      * Process Comment's Form
@@ -144,6 +184,18 @@ class PagesController extends BaseController {
     	$this->layout->content = View::make('private.dashboard');
     }
 
+    private function employmentInputs()
+    {
+        return $formInputs = [
+            'position' =>  Input::get('position'),
+            'startDate' =>  Input::get('startDate'),
+            'firstName' =>  Input::get('firstName'),
+            'lastName' =>  Input::get('lastName'),
+            'email' =>  Input::get('email'),
+            'phone' =>  Input::get('phone'),
+            'additionalInfo' =>  Input::get('additionalInfo')
+        ];
+    }
 
 
 }

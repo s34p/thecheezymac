@@ -12,6 +12,9 @@ Route::get('/app','PagesController@app');
 Route::get('/press-media','PagesController@pressMedia');
 Route::get('/franchise','PagesController@franchise');
 Route::post('/comments','PagesController@comments');
+Route::get('/employment','PagesController@employment');
+Route::post('/employment','PagesController@postEmployment');
+Route::get('/gallery','PagesController@gallery');
 
 Route::get('/our-news','NewsController@getAllNews');
 Route::get('/our-news/{id}', 'NewsController@getNews');

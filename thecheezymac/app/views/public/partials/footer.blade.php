@@ -31,7 +31,7 @@
                         <ul class="footer-list-items footer-link-2">
                             <li><a href="/app">DOWNLOAD OUR APP</a></li>
                             <li><a href="/franchise">FRANCHISE INFO</a></li>
-                            <li><a href="#">EMPLOYMENT</a></li>
+                            <li><a href="/employment">EMPLOYMENT</a></li>
                             <li><a href="/press-media">PRESS/MEDIA</a></li>
                             <li><a href="#">WEEKLY WINNER</a></li>
                             <li><a href="/catering">CATERING</a></li>
