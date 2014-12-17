@@ -129,6 +129,7 @@ return array(
         'TheCheezyMac\News\NewsServiceProvider',
         'TheCheezyMac\Blog\BlogServiceProvider',
         'TheCheezyMac\Menu\MenuServiceProvider',
+        'TheCheezyMac\Gallery\GalleryServiceProvider',
 
 	),
 

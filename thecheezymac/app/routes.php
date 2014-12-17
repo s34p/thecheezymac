@@ -14,7 +14,7 @@ Route::get('/franchise','PagesController@franchise');
 Route::post('/comments','PagesController@comments');
 Route::get('/employment','PagesController@employment');
 Route::post('/employment','PagesController@postEmployment');
-Route::get('/gallery','PagesController@gallery');
+Route::get('/gallery','GalleryController@getAll');
 
 Route::get('/our-news','NewsController@getAllNews');
 Route::get('/our-news/{id}', 'NewsController@getNews');
@@ -52,6 +52,7 @@ Route::group(['prefix'=>'webadmin','before'=>'isLoggedIn'], function()
         Route::resource('users', 'UsersController');
         Route::resource('menu', 'MenuController');
         Route::resource('category', 'MenuCategoriesController');
+        Route::resource('gallery', 'GalleryController');
 
         Route::post('users/passEdit/{id}', 'UsersController@updatePassword');
     });
