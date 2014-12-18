@@ -3,12 +3,12 @@
 
                     <div class="col-md-4 dashed-border">
                         <div>
-                            <div ><img src="/img/gflogopurple.png" class="img-circle" style="border:thin solid white" alt=""/>
-                            <img src="/img/freestylelogo.jpg" style="padding-left:20px"  alt="" />
+                            <div ><img src="/img/gflogopurple.png" class="img-circle gflogo" alt="Gluten Free Logo"/>
+                            <img src="/img/freestylelogo.jpg" class="freestylelogo"  alt="Freestyle Logo" />
                             </div>
 
                             <div class="recycleLogo">
-                                <img src="/img/recyclelogo.png" style="width:60px" alt=""/>
+                                <img src="/img/recyclelogo.png" class="recyclelogo" alt="Recycle Logo"/>
                                 <div class="recycleLogo-text"><small>We are proud to be an eco-friendly, environmentally conscious restaurant</small></div>
                                 <div class="clearfix"></div>
                             </div>
@@ -75,12 +75,24 @@
          </div>
 
 
+        {{HTML::script('/plugins/tinymce/js/tinymce/tinymce.min.js',['defer'=>'defer'])}}
 
+        {{HTML::script('/plugins/fancybox/source/jquery.fancybox.pack.js',['defer'=>'defer'])}}
+
+            <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js" defer="defer"></script>
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f708a1900255165" defer="defer"></script>
+
+
+        {{--<script>--}}
+        {{--$(document).ready( function () {--}}
+            {{--$('#datatable').DataTable();--}}
+        {{--} );--}}
+        {{--</script>--}}
 
          <script type="text/javascript">
              $(document).ready(function(){
 
-
+                $('#datatable').DataTable();
 
                  $('.recycleLogo img').hover(function(){
                       $(this).attr('src','/img/recyclelogo-hover.png');
