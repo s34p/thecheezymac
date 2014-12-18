@@ -132,6 +132,7 @@ return array(
         'TheCheezyMac\Gallery\GalleryServiceProvider',
         'TheCheezyMac\Comments\CommentsServiceProvider',
         'TheCheezyMac\Composers\ComposerServiceProvider',
+        'TheCheezyMac\NewsLetters\NewsLetterListServiceProvider',
 
 	),
 

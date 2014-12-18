@@ -26,6 +26,12 @@ Route::get('/our-blog/{id}', 'BlogController@getBlog');
 Route::get('/menu/{type?}','MenuController@menuType');
 
 
+Route::post('/newsletter',[
+    'as' => 'newsletter.subscribe',
+    'uses' => 'NewsLetterController@subscribe'
+]);
+
+
 
 Route::get('/webadmin',['before'=>'alreadyLoggedIn','uses'=>'AuthController@authenticate']);
 Route::post('/webadmin',[
@@ -58,16 +64,17 @@ Route::group(['prefix'=>'webadmin','before'=>'isLoggedIn'], function()
         Route::post('users/passEdit/{id}', 'UsersController@updatePassword');
     });
 
+
+
+    Route::get('newsletter','NewsLetterController@send');
+    Route::post('newsletter','NewsLetterController@postSend');
+
+
     Route::get('logout','AuthController@logout');
 
 });
 
-
-Route::get('groups', function()
-{
-   $groups = Sentry::findAllGroups();
-    foreach($groups as $group)
-    {
-        echo $group['name'];
-    }
-});
+//Route::get('hostname', function()
+//{
+//   return getenv('MAILCHIMP_APIKEY');
+//});

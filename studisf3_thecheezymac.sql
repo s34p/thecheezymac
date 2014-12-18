@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 16, 2014 at 06:31 PM
+-- Generation Time: Dec 17, 2014 at 06:03 PM
 -- Server version: 5.5.40-36.1-log
 -- PHP Version: 5.4.23
 
@@ -44,6 +44,46 @@ CREATE TABLE IF NOT EXISTS `blogs` (
 INSERT INTO `blogs` (`id`, `title`, `body`, `author`, `created_at`, `updated_at`) VALUES
 (4, 'Mac and Cheese lovers rejoice', '<p><em><strong>Mac and Cheese lovers rejoice</strong></em></p>\r\n<p>A new restaurant offering gourmet macaroni and cheese is coming to Lexington in January.</p>\r\n<p>The Cheezy Mac will open in front of the Kroger store on Richmond Road. Reports indicate that the owner hopes to open six to eight more restaurants of the same kind in the area over the next two years.</p>', 'Donna Elder', '2014-12-01 07:00:00', '2014-12-16 04:52:20'),
 (5, 'Cheesy Mac to open in Lexington Ky', '<p>We seem to attract the newest and trendiest restaurants from fast casual chains to more upscale venues. It&rsquo;s apparent that young franchises and brand new ones see Lexington as a great place to test the market before expanding nationwide. For example Coba Cocina and Shakespeare and Co. opened their very first stores here with plans to expand the concept to other locales. Shakespeare already had a chain of restaurants overseas before choosing Lexington for their first U.S. store (a second one has since opened across town). The latest entry into our market is Cheesy Mac which will be serving gourmet macaroni and cheese starting in January.</p>\r\n<p>Winter is the perfect time of year to test a menu that will no doubt be full of comfort food options. Diners visiting this fast casual restaurant will get to choose the type of noodles, cheese, sauce, and even add meat to their dish. Their entree is then topped with bread crumbs, more cheese and broiled. Meanwhile, the customer pays for the order and sits down to await quick delivery of the meal to the table.</p>\r\n<p>Cheesy Mac will open in the Kroger plaza on Richmond Road. This shopping center is near some great neighborhoods, especially if you are a first time homebuyer. Residents enjoy a full range of shops in the immediate area including a Walmart, Baskin Robbins, Porter Paints, and much more. This area of Richmond Road is near Man-o-War and the many office and medical buildings off Blazer Road. It is also convenient to downtown and Hamburg.</p>', 'Donna Elder', '2014-11-20 07:00:00', '2014-12-16 04:53:11');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `comments`
+--
+
+DROP TABLE IF EXISTS `comments`;
+CREATE TABLE IF NOT EXISTS `comments` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `author` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `body` text COLLATE utf8_unicode_ci NOT NULL,
+  `visible` tinyint(1) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=5 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `gallery`
+--
+
+DROP TABLE IF EXISTS `gallery`;
+CREATE TABLE IF NOT EXISTS `gallery` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `caption` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `image` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `gallery`
+--
+
+INSERT INTO `gallery` (`id`, `caption`, `image`, `created_at`, `updated_at`) VALUES
+(3, 'Almost There', 'http://thecheezymac.studio34productions.com/uploads/Gallery/Const26.jpg', '2014-12-17 21:57:48', '2014-12-17 21:57:48');
 
 -- --------------------------------------------------------
 
@@ -271,7 +311,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `email`, `password`, `permissions`, `activated`, `activation_code`, `activated_at`, `last_login`, `persist_code`, `reset_password_code`, `first_name`, `last_name`, `created_at`, `updated_at`) VALUES
-(2, 'rrafiatech@gmail.com', '$2y$10$XBU1/Tfa4D7.zwYFMFvy.OItncEJGPGfZzl9JZWfq4CirE/guoDyq', NULL, 1, NULL, NULL, '2014-12-17 03:20:53', '$2y$10$xhKc.Reblsd5UgppuEOMzeYBhbVW10oIF96xU25Q6JtH5znA/JNP.', NULL, 'Rachid', 'Rafia', '2014-12-13 05:24:59', '2014-12-17 03:20:53'),
+(2, 'rrafiatech@gmail.com', '$2y$10$XBU1/Tfa4D7.zwYFMFvy.OItncEJGPGfZzl9JZWfq4CirE/guoDyq', NULL, 1, NULL, NULL, '2014-12-18 01:58:32', '$2y$10$gqHLwPNnt7BoHSf.WydViu352wwZLNncYFTbK39JyV8xCXgwqR3/2', NULL, 'Rachid', 'Rafia', '2014-12-13 05:24:59', '2014-12-18 01:58:32'),
 (3, 'rmork07@gmail.com', '$2y$10$uToG2PwP1eRFZ45zi4aAHO68OQFOpwZLeTI6ZGjhRt9fu0sE7IjaK', NULL, 1, NULL, NULL, '2014-12-16 03:20:52', '$2y$10$nGT0DgdEFSoTadwn5vLr3e7pArGTnC7myK3N7LhNbIxB6P6YDgOJW', NULL, 'Ryan', 'Mork', '2014-12-13 13:02:02', '2014-12-16 03:20:52'),
 (4, 'pmahan@studio34productions.com', '$2y$10$.YTZA7d9YCmaYDUoWH7bR.gB2uKjK7PSRGS9DCEuZ1yGN7PxGCGke', NULL, 1, NULL, NULL, NULL, NULL, NULL, 'Patrick', 'Mahan', '2014-12-13 13:02:44', '2014-12-13 13:02:44'),
 (5, 'jerry@thecheezymac.com', '$2y$10$6pAgq9332DQowe5fvSzPPuKZZy.grmyUwlglCRIIcHdO4eZZ1OVSy', NULL, 1, NULL, NULL, '2014-12-16 05:12:36', '$2y$10$ehgRkYVXp2u3bbgK9mg9uudjywkA2NL9pwhPqCZfwSLlLDluCEVXK', NULL, 'Jerry', 'Adamany', '2014-12-16 05:03:52', '2014-12-16 05:12:36');

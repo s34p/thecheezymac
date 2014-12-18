@@ -26,7 +26,10 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(function()
 {
-    return getenv("ENV") ?: "development";
+    $server = gethostname();
+
+    return (strpos($server, "bluehost")!==false) ? 'production' : 'development';
+
 });
 
 /*
