@@ -74,7 +74,7 @@ Route::group(['prefix'=>'webadmin','before'=>'isLoggedIn'], function()
 
 });
 
-//Route::get('hostname', function()
+//Route::get('env', function()
 //{
-//   return getenv('MAILCHIMP_APIKEY');
+//   return App::environment();
 //});
