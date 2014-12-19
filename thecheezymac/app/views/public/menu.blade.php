@@ -8,7 +8,7 @@
 
 
                 <div class="wrapper">
-                    <h1 class="heading">Menu</h1>
+                    <h1 class="heading" style="text-align: center !important; font-size: 60px; margin-top:0px !important;padding:0px !important">Menu</h1>
 
                  <ul class="menu-nav-pills">
                     @foreach($categories as $cat)
@@ -38,7 +38,7 @@
                        {{--<button class="btn">Printable Menu <span class="glyphicon glyphicon-print"></span></button>--}}
                    {{--</div>--}}
 
-                    <div class="specialsBlocks storytext">
+                    <div>
 
 
 
@@ -52,24 +52,101 @@
 
                         <?php
                         $i = 0;
+                        $c = 0;
                         ?>
 
+                        <div class="menu-items-wrapper">
+
+
                         @while($i < count($menus))
-                             <div class="col-sm-6" style="padding:25px;">
-                                   <h3>{{$menus[$i]->menu_name}}</h3>
+                            @if(Request::segment(2) == 'BuildYourOwn')
+                                @if(strpos($menus[$i]->menu_name,'Step 3') !== false || strpos($menus[$i]->menu_name,'Step 1') !== false)
+                                        {{--{{substr_count($menus[$i]->description,"<br />")}}--}}
+                                        <?php
+                                            $clean1 = str_replace("<p>","", $menus[$i]->description);
+                                            $clean2 = str_replace("</p>","", $menus[$i]->description);
+                                            $items = explode("<br />", $clean2);
+                                            ?>
+                                            <h3>{{$menus[$i]->menu_name}}
+                                                   <div>
+                                                   &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733;
+                                                   </div>
+                                           </h3>
+                                            <?php
+                                            while($c < count($items))
+                                            {
+                                               ?>
+
+                                                    <div class="col-sm-3">
+                                                        {{$items[$c]}}
+                                                    </div>
+
+
+                                               <?php
+                                               $c++;
+                                               ?>
+                                               @if($c % 4 == 0)
+                                                  <span class="clearfix"></span>
+                                             @endif
+                                               <?php
+                                            }
+
+                                            $i++;
+
+                                        ?>
+                                        @if($menus[$i]->price)
+                                       <h3 class="price yellow">${{$menus[$i]->price}}</h3>
+                                       @endif
+                                       <span class="clearfix"></span>
+
+                                @else
+                                    <div class="col-sm-6">
+                                           <h3>{{$menus[$i]->menu_name}}
+                                                                       <div>
+                                                                       &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733;
+                                                                       </div>
+                                           </h3>
+
+                                              {{$menus[$i]->description}}
+                                           @if($menus[$i]->price)
+                                           <h3 class="price yellow">${{$menus[$i]->price}}</h3>
+                                           @endif
+                                       </div>
+                                       <?php
+                                       $i++;
+                                       ?>
+                                       @if($i % 2 == 0)
+                                           <div class="clearfix"></div>
+                                      @endif
+
+
+                                @endif
+                            @endif
+
+                             <div class="col-sm-6">
+                                   <h3>{{$menus[$i]->menu_name}}
+                                                               <div>
+                                                               &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733;
+                                                               </div>
+                                   </h3>
 
                                       {{$menus[$i]->description}}
                                    @if($menus[$i]->price)
-                                   <h2>${{$menus[$i]->price}}</h2>
+                                   <h3 class="price yellow">${{$menus[$i]->price}}</h3>
                                    @endif
                                </div>
-                               <?php
-                               $i++;
-                               ?>
-                               @if($i % 2 == 0)
-                                   <div class="clearfix"></div>
-                              @endif
+                                   <?php
+                                   $i++;
+                                   ?>
+                                   @if($i % 2 == 0)
+                                       <div class="clearfix"></div>
+                                  @endif
+
+
+
                         @endwhile
+
+                        </div>
 
 
 

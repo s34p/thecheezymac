@@ -107,7 +107,7 @@ ul .menu-nav-pills{
     background-color: #363636;
     color: white;
     padding: 50px 30px 10px 25px;
-
+    box-shadow: inset 0 0 50px #000000;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 12px;
     text-align: left;
@@ -255,12 +255,27 @@ ul .dropdown-menu{
     color: #ffffff !important;
     font-family: "Patua One", normal !important;
     line-height: 20px;
+    box-shadow: inset 0 0 375px #000000;
+    padding-bottom: 40px;
 }
 
-.menuBg div h3{
-    color: #ffffff !important;
-    border-bottom: 5px solid white;
-    padding: 0px 0px 10px 0px;
+.menuBg div h3 div{
+    font-size: 16px;
+    padding-top:5px;
+    color: #ffffff;
+}
+
+.yellow{
+    color:#ffff00;
+
+}
+
+.price{
+    margin:0px !important;
+}
+
+.menu-items-wrapper{
+    padding: 0px 40px !important;
 }
 
 .stars{
@@ -273,7 +288,7 @@ ul .dropdown-menu{
 .menuBg div h1{
     color: #ffffff !important;
     text-align: center !important;
-    padding: 20px;
+    padding-top: 20px;
     font-size:50px
 }
 
@@ -412,6 +427,11 @@ ul .dropdown-menu{
 
     .storytext{
         padding: 25px 10px;
+    }
+
+    .menuBg{
+
+        box-shadow: inset 0 0 50px #000000;
     }
 }
 
