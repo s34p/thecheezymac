@@ -50,45 +50,46 @@
                             </div>
                         </h1>
 
+                        <?php
+                        $i = 0;
+                        ?>
+
+                        @while($i < count($menus))
+                             <div class="col-sm-6" style="padding:25px;">
+                                   <h3>{{$menus[$i]->menu_name}}</h3>
+
+                                      {{$menus[$i]->description}}
+                                   @if($menus[$i]->price)
+                                   <h2>${{$menus[$i]->price}}</h2>
+                                   @endif
+                               </div>
+                               <?php
+                               $i++;
+                               ?>
+                               @if($i % 2 == 0)
+                                   <div class="clearfix"></div>
+                              @endif
+                        @endwhile
 
 
 
-                        @for($i = 0; $i< count($menus); $i++)
+                        {{--@for($i = 0; $i< count($menus); $i++)--}}
 
-                            <div class="col-sm-6" style="padding:25px;">
-                           <h3>{{$menus[$i]->menu_name}}</h3>
+                            {{--<div class="col-sm-6" style="padding:25px;">--}}
+                           {{--<h3>{{$menus[$i]->menu_name}}</h3>--}}
 
-                              {{$menus[$i]->description}}
-                           @if($menus[$i]->price)
-                           <h2>${{$menus[$i]->price}}</h2>
-                           @endif
-                           </div>
+                              {{--{{$menus[$i]->description}}--}}
+                           {{--@if($menus[$i]->price)--}}
+                           {{--<h2>${{$menus[$i]->price}}</h2>--}}
+                           {{--@endif--}}
+                           {{--</div>--}}
 
-                        @endfor
+                           {{--@if($i % 2 == 0)--}}
+                                {{--<div class="clearfix"></div>--}}
+                           {{--@endif--}}
+
+                        {{--@endfor--}}
                          <div class="clearfix"></div>
-
-
-
-
-
-                           {{--<div class="col-sm-6" style="padding:0px 50px; ">--}}
-                           {{--<h3>{{$menus[1]->menu_name}}</h3>--}}
-
-                               {{--{{$menus[1]->description}}--}}
-                            {{--@if($menus[1]->price)--}}
-                            {{--<h4>${{$menus[1]->price}}</h4>--}}
-                            {{--@endif--}}
-                           {{--</div>--}}
-
-                           {{--<div class="col-sm-6" style="padding:0px 50px; ">--}}
-                           {{--<h3>{{$menus[1]->menu_name}}</h3>--}}
-
-                               {{--{{$menus[1]->description}}--}}
-                            {{--@if($menus[1]->price)--}}
-                            {{--<h4>${{$menus[1]->price}}</h4>--}}
-                            {{--@endif--}}
-                           {{--</div>--}}
-                       <div class="clearfix"></div>
 
                         </div>
                    </div>
