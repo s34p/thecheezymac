@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 17, 2014 at 06:03 PM
+-- Generation Time: Dec 18, 2014 at 01:15 PM
 -- Server version: 5.5.40-36.1-log
 -- PHP Version: 5.4.23
 
@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS `comments` (
   `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -311,7 +311,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `email`, `password`, `permissions`, `activated`, `activation_code`, `activated_at`, `last_login`, `persist_code`, `reset_password_code`, `first_name`, `last_name`, `created_at`, `updated_at`) VALUES
-(2, 'rrafiatech@gmail.com', '$2y$10$XBU1/Tfa4D7.zwYFMFvy.OItncEJGPGfZzl9JZWfq4CirE/guoDyq', NULL, 1, NULL, NULL, '2014-12-18 01:58:32', '$2y$10$gqHLwPNnt7BoHSf.WydViu352wwZLNncYFTbK39JyV8xCXgwqR3/2', NULL, 'Rachid', 'Rafia', '2014-12-13 05:24:59', '2014-12-18 01:58:32'),
+(2, 'rrafiatech@gmail.com', '$2y$10$XBU1/Tfa4D7.zwYFMFvy.OItncEJGPGfZzl9JZWfq4CirE/guoDyq', NULL, 1, NULL, NULL, '2014-12-18 20:27:04', '$2y$10$.Q9qCfjP9XLSfxup2cXYjuLkaghEI0g0Qsb10j2QAE2e8yAW8lElm', NULL, 'Rachid', 'Rafia', '2014-12-13 05:24:59', '2014-12-18 20:27:04'),
 (3, 'rmork07@gmail.com', '$2y$10$uToG2PwP1eRFZ45zi4aAHO68OQFOpwZLeTI6ZGjhRt9fu0sE7IjaK', NULL, 1, NULL, NULL, '2014-12-16 03:20:52', '$2y$10$nGT0DgdEFSoTadwn5vLr3e7pArGTnC7myK3N7LhNbIxB6P6YDgOJW', NULL, 'Ryan', 'Mork', '2014-12-13 13:02:02', '2014-12-16 03:20:52'),
 (4, 'pmahan@studio34productions.com', '$2y$10$.YTZA7d9YCmaYDUoWH7bR.gB2uKjK7PSRGS9DCEuZ1yGN7PxGCGke', NULL, 1, NULL, NULL, NULL, NULL, NULL, 'Patrick', 'Mahan', '2014-12-13 13:02:44', '2014-12-13 13:02:44'),
 (5, 'jerry@thecheezymac.com', '$2y$10$6pAgq9332DQowe5fvSzPPuKZZy.grmyUwlglCRIIcHdO4eZZ1OVSy', NULL, 1, NULL, NULL, '2014-12-16 05:12:36', '$2y$10$ehgRkYVXp2u3bbgK9mg9uudjywkA2NL9pwhPqCZfwSLlLDluCEVXK', NULL, 'Jerry', 'Adamany', '2014-12-16 05:03:52', '2014-12-16 05:12:36');

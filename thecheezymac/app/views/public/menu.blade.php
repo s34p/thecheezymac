@@ -31,35 +31,66 @@
 
 
 
-
+                <div class="menuBg">
                     @include('public.partials.comments')
 
-                    <div class="text-right">
-                       <button class="btn">Printable Menu <span class="glyphicon glyphicon-print"></span></button>
-                   </div>
+                    {{--<div class="text-right">--}}
+                       {{--<button class="btn">Printable Menu <span class="glyphicon glyphicon-print"></span></button>--}}
+                   {{--</div>--}}
 
-                   <div class="specialsBlocks storytext">
+                    <div class="specialsBlocks storytext">
 
 
-                       @foreach($menus as $menu)
-                       <div class="col-sm-4" style="padding-left:0px; ">
-                        @if($menu->image)
-                       <img src="{{$menu->image}}" style="border:thin solid black" class="img-responsive" alt=""/>
-                       @endif
-                       </div>
-                       <div class="col-sm-8">
-                       <h3>{{$menu->menu_name}}</h3>
 
-                           {{$menu->description}}
-                        @if($menu->price)
-                        <h4>${{$menu->price}}</h4>
-                        @endif
-                       </div>
+
+                        <h1>
+                            {{Request::segment(2)}}
+                            <div class="stars">
+                            &#9733; &#9733; &#9733; &#9733; &#9733;
+                            </div>
+                        </h1>
+
+
+
+
+                        @for($i = 0; $i< count($menus); $i++)
+
+                            <div class="col-sm-6" style="padding:25px;">
+                           <h3>{{$menus[$i]->menu_name}}</h3>
+
+                              {{$menus[$i]->description}}
+                           @if($menus[$i]->price)
+                           <h2>${{$menus[$i]->price}}</h2>
+                           @endif
+                           </div>
+
+                        @endfor
+                         <div class="clearfix"></div>
+
+
+
+
+
+                           {{--<div class="col-sm-6" style="padding:0px 50px; ">--}}
+                           {{--<h3>{{$menus[1]->menu_name}}</h3>--}}
+
+                               {{--{{$menus[1]->description}}--}}
+                            {{--@if($menus[1]->price)--}}
+                            {{--<h4>${{$menus[1]->price}}</h4>--}}
+                            {{--@endif--}}
+                           {{--</div>--}}
+
+                           {{--<div class="col-sm-6" style="padding:0px 50px; ">--}}
+                           {{--<h3>{{$menus[1]->menu_name}}</h3>--}}
+
+                               {{--{{$menus[1]->description}}--}}
+                            {{--@if($menus[1]->price)--}}
+                            {{--<h4>${{$menus[1]->price}}</h4>--}}
+                            {{--@endif--}}
+                           {{--</div>--}}
                        <div class="clearfix"></div>
-                       <br/><br/>
-                       @endforeach
 
-
+                        </div>
                    </div>
                    <div class="clearfix"></div>
                 </div>
@@ -69,7 +100,7 @@
                 @endif
                 </div>
 
-
+            </div>
 
 
 

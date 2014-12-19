@@ -49,6 +49,8 @@ class MenuController extends \BaseController {
 			->get();
 
 
+
+
         $this->layout->content = View::make('private.menu.index', compact('menus'));
 	}
 
@@ -145,7 +147,10 @@ class MenuController extends \BaseController {
 			->join('menu_categories', 'menu.category_id','=','menu_categories.id')
 			->select('*','menu.name as menu_name','menu_categories.name as category_name','menu.id as menu_id')
 			->where('menu_categories.slug','=',$type)
+            ->orderBy('menu_name','ASC')
 			->get();
+
+//        dd($menus[0]->menu_name);
 
         $categories = $this->categories->groupBy('slug')->orderBy('order','ASC')->get();
 

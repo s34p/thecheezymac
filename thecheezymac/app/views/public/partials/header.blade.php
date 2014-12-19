@@ -16,6 +16,8 @@
 
         {{HTML::script('/js/thecheezymac.js')}}
 
+         {{HTML::script('/plugins/tinymce/js/tinymce/tinymce.min.js')}}
+
 
         <style>
             .gflogo{
