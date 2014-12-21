@@ -225,6 +225,14 @@ ul .menu-nav-pills{
 
 }
 
+#NewsLetter{
+    background-color:#ffffff;
+    padding: 20px;
+    opacity: 0.6;
+    border: thin dashed darkred;
+    border-radius: 5px;
+}
+
 .wrapper{
     padding:20px;
     text-align: left;
