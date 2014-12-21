@@ -27,10 +27,10 @@
 	nav.primary .portfolioFilters a {font-style:italic;border-radius:20px;-webkit-border-radius:20px;-moz-border-radius:20px;padding: 7px 15px;font-size: 14px;line-height: 1.2; color: #FFFFFF; font-weight: normal; margin-top: 0 !important; padding: 7px 15px; text-align: center; width: auto;}
 	nav.primary .portfolioFilters a:hover {background: #E04B23;}
 
-	.portfolio figure.portfolio-item figcaption {background: #efefef; }
+	.portfolio figure.portfolio-item figcaption {background: transparent; }
 	.portfolio figure.portfolio-item figcaption a{color: #555;}
 	.portfolio figure.portfolio-item figcaption a:hover{color: #2376de;}
-	.portfolio figure.portfolio-item figcaption p {font-family: open sans;font-size: 13px; border-bottom: 3px solid #ddd;}
+	.portfolio figure.portfolio-item figcaption p {font-family: open sans;font-size: 13px;}
 	.portfolio figure.portfolio-item figcaption h4 {font-size: 18px; margin: 16px auto 10px auto;}
 
 
@@ -110,7 +110,7 @@
 	-moz-border-top-left-radius: 0px;-moz-border-top-right-radius: 0px;}
 	.PortfolioSection .portfolioDetails .list-group-item { border: none;display: block; margin-bottom: 0px; padding: 13px 0px;position: relative;color: #555;font-size: 14px;}
 
-	.PortfolioSection {background-color: #efefef !important;}
+	.PortfolioSection {background-color: transparent !important;}
 	.PortfolioSection .carousel { border: 4px solid #DDDDDD;}
 	.PortfolioSection .portfolioCarousel {min-height: 50px;}
 	.PortfolioSection nav.primary { padding: 10px;}
@@ -127,9 +127,9 @@
 
 	.portfolio { display:block; padding-bottom:20px; margin-bottom:20px; }
 	.portfolio h4, .recent-works-items h4, .shop-item h4, .side-list h5 { font-weight:400; margin:10px 0 7px; font-size:18px;}
-	.portfolio h4 a, .recent-works-items h4 a, .shop-item h4 a, .side-list h5 a { color:#494949; }
+	.portfolio h4 a, .recent-works-items h4 a, .shop-item h4 a, .side-list h5 a { color: #000000; }
 	.portfolio h4 a:hover, .recent-works-items h4 a:hover, .shop-item h4 a:hover, .side-list h5 a:hover { text-decoration:underline;}
-	.portfolio p, .recent-works-items p { color:#909090; margin-bottom:40px; padding-bottom:20px; border-bottom:4px solid #ededed; text-transform:uppercase;}
+	.portfolio p, .recent-works-items p { color:#909090; margin-bottom:40px; padding-bottom:20px; text-transform:uppercase;}
 	.portfolio-item h3 { color:#696969;}
 	.portfolio-item h5 { margin-top:8px;}
 

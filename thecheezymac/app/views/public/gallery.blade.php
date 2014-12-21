@@ -17,7 +17,7 @@
                                       ================================================== -->
 
                                       <section class="clearfix full-width PortfolioSection">
-                                       <hr class="vertical-space2">
+                                       {{--<hr class="vertical-space2">--}}
                                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 portfolioItems" id="">
 
 
