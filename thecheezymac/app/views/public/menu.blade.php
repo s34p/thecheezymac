@@ -56,95 +56,72 @@
                         ?>
 
                         <div class="menu-items-wrapper">
-
-
-                        @while($i < count($menus))
                             @if(Request::segment(2) == 'BuildYourOwn')
-                                @if(strpos($menus[$i]->menu_name,'Step 3') !== false || strpos($menus[$i]->menu_name,'Step 1') !== false)
-                                        {{--{{substr_count($menus[$i]->description,"<br />")}}--}}
-                                        <?php
-                                            $clean1 = str_replace("<p>","", $menus[$i]->description);
-                                            $clean2 = str_replace("</p>","", $menus[$i]->description);
-                                            $items = explode("<br />", $clean2);
-                                            ?>
-                                            <h3>{{$menus[$i]->menu_name}}
-                                                   <div>
-                                                   &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733;
-                                                   </div>
-                                           </h3>
-                                            <?php
-                                            while($c < count($items))
-                                            {
-                                               ?>
+                            @foreach($menus as $menu)
 
-                                                    <div class="col-sm-3">
-                                                        {{$items[$c]}}
-                                                    </div>
+                                <div class="col-md-6">
+                                    <h3>{{$menu->menu_name}}
+                                        <div>
+                                        &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733;
+                                        </div>
+                                    </h3>
+                                    {{$menu->description}}
+                                    @if($menu->price)
+                                    <h3 class="price yellow">${{$menu->price}}</h3>
+                                    @endif
 
-
-                                               <?php
-                                               $c++;
-                                               ?>
-                                               @if($c % 4 == 0)
-                                                  <span class="clearfix"></span>
-                                             @endif
-                                               <?php
-                                            }
-
-                                            $i++;
-
-                                        ?>
-                                        @if($menus[$i]->price)
-                                       <h3 class="price yellow">${{$menus[$i]->price}}</h3>
-                                       @endif
-                                       <span class="clearfix"></span>
-
-                                @else
-                                    <div class="col-sm-6">
-                                           <h3>{{$menus[$i]->menu_name}}
-                                                                       <div>
-                                                                       &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733;
-                                                                       </div>
-                                           </h3>
-
-                                              {{$menus[$i]->description}}
-                                           @if($menus[$i]->price)
-                                           <h3 class="price yellow">${{$menus[$i]->price}}</h3>
-                                           @endif
-                                       </div>
-                                       <?php
-                                       $i++;
-                                       ?>
-                                       @if($i % 2 == 0)
-                                           <div class="clearfix"></div>
-                                      @endif
-
-
+                                </div>
+                            <div class="col-md-6">
+                                @if(strpos($menu->menu_name,'Step 1') !== false)
+                                    <img src="/img/lasagna.jpg" class="img-responsive" style="width:100%; height:100%" alt=""/>
                                 @endif
+
+                                    @if(strpos($menu->menu_name,'Step 2') !== false)
+                                    <img src="/img/pesto.jpg" class="img-responsive" style="width:100%; height:100%" alt=""/>
+                                @endif
+
+                                    @if(strpos($menu->menu_name,'Step 3') !== false)
+                                    <img src="/img/ingredients.jpg" class="img-responsive" style="width:100%; height:100%" alt=""/>
+                                @endif
+
+                                    @if(strpos($menu->menu_name,'Step 4') !== false)
+                                    <img src="/img/ingredients.jpg" class="img-responsive" style="width:100%; height:100%" alt=""/>
+                                @endif
+                            </div>
+                                <div class="clearfix" style="margin:20px"></div>
+
+
+
+
+
+
+                         @endforeach
+                            @else
+                            @while($i < count($menus))
+
+                                    <div class="col-sm-6">
+                                    <h3>{{$menus[$i]->menu_name}}
+                                    <div>
+                                    &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733;
+                                    </div>
+                                    </h3>
+
+                                    {{$menus[$i]->description}}
+                                    @if($menus[$i]->price)
+                                    <h3 class="price yellow">${{$menus[$i]->price}}</h3>
+                                    @endif
+                                    </div>
+                                    <?php
+                                    $i++;
+                                    ?>
+                                    @if($i % 2 == 0)
+                                    <div class="clearfix"></div>
+                                    @endif
+
+                                @endwhile
                             @endif
 
-                             <div class="col-sm-6">
-                                   <h3>{{$menus[$i]->menu_name}}
-                                                               <div>
-                                                               &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733;
-                                                               </div>
-                                   </h3>
 
-                                      {{$menus[$i]->description}}
-                                   @if($menus[$i]->price)
-                                   <h3 class="price yellow">${{$menus[$i]->price}}</h3>
-                                   @endif
-                               </div>
-                                   <?php
-                                   $i++;
-                                   ?>
-                                   @if($i % 2 == 0)
-                                       <div class="clearfix"></div>
-                                  @endif
-
-
-
-                        @endwhile
 
                         </div>
 
@@ -179,6 +156,7 @@
                 </div>
 
             </div>
+
 
 
 

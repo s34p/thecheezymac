@@ -91,7 +91,29 @@
          <script type="text/javascript">
              $(document).ready(function(){
 
-                $('#datatable').DataTable();
+                 if (window.attachEvent && !window.addEventListener) {
+                     alert("Please Upgrade your browser to Internet Explorer 9 or higher. If you are using windows XP, please use chrome or firefox to view our website");
+                 }
+
+                 if(navigator.appVersion.indexOf("MSIE 9.")!=-1)
+                 {
+                    $("h4 a").removeClass('dark-button').addClass('ie-dark-button');
+                 }
+
+                 $("h1,h2,h3,h4,h5,h6").addClass('sketch');
+
+                 if (navigator.userAgent.match(/(iPod|iPhone|iPad)/))
+                 {
+                     $("h1, h2, h3, h4, h5, h6").css('font-family','arial, sans-serif');
+                 }
+
+                 if (navigator.appVersion.indexOf("Mac")!=-1)
+                 {
+                     $("h1, h2, h3, h4, h5, h6").removeClass('sketch');
+                 }
+
+
+                 $('#datatable').DataTable();
 
                  $('.recycleLogo img').hover(function(){
                       $(this).attr('src','/img/recyclelogo-hover.png');

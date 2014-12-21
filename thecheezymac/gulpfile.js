@@ -11,7 +11,7 @@ var jsTargetDir = '../public_html/thecheezymac/js/';
 
 gulp.task('css', function(){
    return gulp.src(assetDir + 'css/thecheezymac.css')
-       .pipe(autoprefixer('last 10 version'))
+       .pipe(autoprefixer('last 40 version'))
        .pipe(minifycss())
        .pipe(gulp.dest(cssTargetDir));
 });

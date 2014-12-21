@@ -29,12 +29,16 @@ body{
 
 h1, h2, h3, h4, h5
 {
-    font-family: 'Sketch' !important;
     color:#bd2236;
     text-align: left !important;
     /*text-shadow: 1px 1px #000000 ;*/
     opacity: .9;
 }
+
+.sketch{
+    font-family: 'Sketch' !important;
+}
+
 
 .heading{
     font-weight: bold;
@@ -338,6 +342,14 @@ ul .dropdown-menu{
     font-size: 18px;
 
     background-image: linear-gradient(to bottom, #424242 0%, #6a6a6a 100%);
+}
+.ie-dark-button{
+    color: #fff;
+    font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+
+    background-color: #424242;
 }
 
 .large-button
