@@ -44,7 +44,7 @@
 
 
                         <h1>
-                            {{Request::segment(2)}}
+                            {{Queries::menuCategory(Request::segment(2))}}
                             <div class="stars">
                             &#9733; &#9733; &#9733; &#9733; &#9733;
                             </div>
