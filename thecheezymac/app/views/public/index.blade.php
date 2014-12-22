@@ -50,7 +50,7 @@
                     <a href="/gallery"><img  src="/img/photogalleryhomebutton.png" class="img-responsive"  alt="Photo Gallery"/></a>
                 </div>
                 <div class="col-sm-3">
-                    <a href="#"><img  src="/img/reciepewinnerhomebutton.png" class="img-responsive" alt="Reciepe Winners"/></a>
+                    <a href="/winners"><img  src="/img/reciepewinnerhomebutton.png" class="img-responsive" alt="Reciepe Winners"/></a>
                 </div>
 
                 <div class="col-sm-3">

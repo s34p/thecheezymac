@@ -79,6 +79,34 @@ class PagesController extends BaseController {
     	$this->layout->content = View::make('public.franchise');
     }
 
+    public function postFranchise()
+    {
+        $rules = [
+            'fullName' => 'required',
+            'email'         =>  'required|email',
+            'phone'    =>  'alpha_dash|required',
+
+        ];
+
+        $validation = Validator::make(Input::all(), $rules);
+
+        if($validation->fails())
+        {
+            return Redirect::back()->withInput()->withErrors($validation);
+        }
+
+
+        $recipient = $this->franchiseRecipient();
+        $sender = $this->sender();
+        $formInputs = $this->franchiseInputs();
+        $view = 'emails.franchise';
+        $subject = 'New Franchise Request';
+
+        $this->mailer->sendTo($recipient, $sender, $subject, $view, $formInputs);
+
+        return Redirect::back()->withSuccess('Your request has been successfully sent. We will get back with you as soon as possible. Thank you');
+    }
+
     public function gallery()
     {
     	$this->layout->content = View::make('public.gallery');
@@ -174,7 +202,26 @@ class PagesController extends BaseController {
         ];
     }
 
+    private function franchiseInputs()
+    {
+        return $formInputs = [
+            'fullName' =>  Input::get('fullName'),
+            'email' =>  Input::get('email'),
+            'phone' =>  Input::get('phone'),
+            'purchaseDate' => Input::get('purchaseDate'),
+            'city' => Input::get('city'),
+            'state' => Input::get('state'),
+            'amount' => Input::get('amount')
+        ];
+    }
+
     private function recipient()
+    {
+        $userArray = ['email'=>'rrafiatech@gmail.com','fullName'=>'Rachid Rafia'];
+        return arrayToObject::execute($userArray);
+
+    }
+    private function franchiseRecipient()
     {
         $userArray = ['email'=>'rrafiatech@gmail.com','fullName'=>'Rachid Rafia'];
         return arrayToObject::execute($userArray);

@@ -59,11 +59,21 @@
                         DESIGNED BY: STUDIO 34 PRODUCTIONS
                     </div>
                     <div class="col-md-4 social-network">
-                        <a href="#" class="facebook"><i class="fa fa-facebook fa-2x"></i></a>
-                        <a href="#" class="twitter"><i class="fa fa-twitter fa-2x"></i></a>
-                        <a href="#" class="google"><i class="fa fa-google fa-2x"></i></a>
-                        <a href="#" class="pinterest"><i class="fa fa-pinterest fa-2x"></i></a>
-                        <a href="#" class="instagram"><i class="fa fa-instagram fa-2x"></i></a>
+                        <a href="#" class="facebook">
+                        <img src="/img/social/facebook.png" alt="Facebook">
+                        </a>
+                        <a href="#" class="twitter">
+                        <img src="/img/social/twitter.png" alt="Twitter">
+                        </a>
+                         <a href="#" class="google">
+                         <img src="/img/social/google.png" alt="Google">
+                        </a>
+                        <a href="#" class="pinterest">
+                        <img src="/img/social/pinterest.png" alt="Pinterest">
+                        </a>
+                        <a href="#" class="instagram">
+                        <img src="/img/social/instagram.png" alt="Instagram">
+                        </a>
                     </div>
 
                     <div class="clearfix"></div>
@@ -100,17 +110,17 @@
                     $("h4 a").removeClass('dark-button').addClass('ie-dark-button');
                  }
 
-                 $("h1,h2,h3,h4,h5,h6").addClass('sketch');
+//                 $("h1,h2,h3,h4,h5,h6").addClass('sketch');
 
-                 if (navigator.userAgent.match(/(iPod|iPhone|iPad)/))
-                 {
-                     $("h1, h2, h3, h4, h5, h6").css('font-family','arial, sans-serif');
-                 }
-
-                 if (navigator.appVersion.indexOf("Mac")!=-1)
-                 {
-                     $("h1, h2, h3, h4, h5, h6").removeClass('sketch');
-                 }
+//                 if (navigator.userAgent.match(/(iPod|iPhone|iPad)/))
+//                 {
+//                     $("h1, h2, h3, h4, h5, h6").css('font-family','arial, sans-serif');
+//                 }
+//
+//                 if (navigator.appVersion.indexOf("Mac")!=-1)
+//                 {
+//                     $("h1, h2, h3, h4, h5, h6").removeClass('sketch');
+//                 }
 
 
                  $('#datatable').DataTable();

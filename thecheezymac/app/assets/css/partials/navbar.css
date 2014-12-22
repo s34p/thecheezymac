@@ -30,79 +30,79 @@ nav{
     background: transparent !important;
 }
 
-@media screen and (max-width: 998px) {
-    /*
-    Navigation Bar
-    */
-    .navbar-header {
-        float: none;
-    }
+@media screen and (max-width: 768px) {
+    /**/
+    /*Navigation Bar*/
+    /**/
+    /*.navbar-header {*/
+        /*float: none;*/
+    /*}*/
 
-    .navbar-left, .navbar-right {
-        float: none !important;
-    }
+    /*.navbar-left, .navbar-right {*/
+        /*float: none !important;*/
+    /*}*/
 
-    .navbar-toggle {
-        display: block;
-    }
+    /*.navbar-toggle {*/
+        /*display: block;*/
+    /*}*/
 
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-    }
+    /*.navbar-collapse {*/
+        /*border-top: 1px solid transparent;*/
+        /*box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);*/
+    /*}*/
 
-    .navbar-fixed-top {
-        top: 0;
-        border-width: 0 0 1px;
-    }
+    /*.navbar-fixed-top {*/
+        /*top: 0;*/
+        /*border-width: 0 0 1px;*/
+    /*}*/
 
-    .navbar-collapse.collapse {
-        display: none !important;
-    }
+    /*.navbar-collapse.collapse {*/
+        /*display: none !important;*/
+    /*}*/
 
-    .navbar-nav {
-        float: none !important;
-        margin-top: 7.5px;
-    }
+    /*.navbar-nav {*/
+        /*float: none !important;*/
+        /*margin-top: 7.5px;*/
+    /*}*/
 
-    .navbar-nav > li {
-        float: none;
-    }
+    /*.navbar-nav > li {*/
+        /*float: none;*/
+    /*}*/
 
-    .navbar-nav > li > a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+    /*.navbar-nav > li > a {*/
+        /*padding-top: 10px;*/
+        /*padding-bottom: 10px;*/
+    /*}*/
 
-    .collapse.in {
-        display: block !important;
-    }
+    /*.collapse.in {*/
+        /*display: block !important;*/
+    /*}*/
 
-    .mynavbar .nav {
-        text-align: left;
-    }
+    /*.mynavbar .nav {*/
+        /*text-align: left;*/
+    /*}*/
 
-    .mynavbar {
-        padding-left: 0px;
-    }
+    /*.mynavbar {*/
+        /*padding-left: 0px;*/
+    /*}*/
 
-    .mynavbar .nav li {
-        display: block;
-        margin: 0
-    }
+    /*.mynavbar .nav li {*/
+        /*display: block;*/
+        /*margin: 0*/
+    /*}*/
 
-    .mynavbar .nav li a {
+    /*.mynavbar .nav li a {*/
 
-        display: block;
-    }
+        /*display: block;*/
+    /*}*/
 
-    .custom-toggle {
-        margin: 0px;
-    }
+    /*.custom-toggle {*/
+        /*margin: 0px;*/
+    /*}*/
 
-    .mynavbar{
-        background: url("/img/bg/header.jpg") no-repeat;
-    }
+    /*.mynavbar{*/
+        /*background: url("/img/bg/header.jpg") no-repeat;*/
+    /*}*/
 
 
 }

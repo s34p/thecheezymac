@@ -16,6 +16,7 @@
     <li role="presentation" data-link="gallery"><a href="/webadmin/gallery"><i class="fa fa-image"></i> Gallery</a></li>
     <li role="presentation" data-link="comments"><a href="/webadmin/comments"><i class="fa fa-comment"></i> Comments</a></li>
     <li role="presentation" data-link="newsletter"><a href="/webadmin/newsletter"><i class="fa fa-envelope"></i> NewsLetter</a></li>
+    <li role="presentation" data-link="winners"><a href="/webadmin/winners"><i class="fa fa-gift"></i> Winners</a></li>
     @endif
         <li role="presentation"><a href="/webadmin/logout"><i class="glyphicon glyphicon-log-out"></i> Logout</a></li>
 </ul>

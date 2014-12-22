@@ -176,18 +176,27 @@ $ext_misc 	= array('zip', 'rar','gz','tar','iso','dmg'); //Archives
 
 $ext = array_merge($ext_img, $ext_file, $ext_misc, $ext_video,$ext_music); //allowed extensions
 
+///******************
+// * AVIARY config
+//*******************/
+//$aviary_active 	= TRUE;
+//$aviary_secret	= "m6xaym5q42rpw433";
+//// Add or modify the Aviary options below as needed - they will be json encoded when added to the configuration so arrays can be utilized as needed
+//// For a list of options see: https://developers.aviary.com/docs/web/setup-guide#constructor-config
+//$aviary_options = array(
+//    'apiKey' => 'dvh8qudbp6yx2bnp',
+//    'apiVersion' => 3,
+//    'language' => 'en'
+//);
+
 /******************
  * AVIARY config
-*******************/
-$aviary_active 	= TRUE;
-$aviary_secret	= "m6xaym5q42rpw433";
-// Add or modify the Aviary options below as needed - they will be json encoded when added to the configuration so arrays can be utilized as needed
-// For a list of options see: https://developers.aviary.com/docs/web/setup-guide#constructor-config
-$aviary_options = array(
-    'apiKey' => 'dvh8qudbp6yx2bnp',
-    'apiVersion' => 3,
-    'language' => 'en'
-);
+ *******************/
+$aviary_active=true;
+$aviary_key="dvh8qudbp6yx2bnp";
+$aviary_secret="m6xaym5q42rpw433";
+$aviary_version=3;
+$aviary_language='en';
 
 
 //The filter and sorter are managed through both javascript and php scripts because if you have a lot of

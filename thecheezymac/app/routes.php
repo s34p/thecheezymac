@@ -15,6 +15,7 @@ Route::post('/comments','PagesController@comments');
 Route::get('/employment','PagesController@employment');
 Route::post('/employment','PagesController@postEmployment');
 Route::get('/gallery','GalleryController@getAll');
+Route::get('/winners','WinnersController@getWinners');
 
 Route::get('/our-news','NewsController@getAllNews');
 Route::get('/our-news/{id}', 'NewsController@getNews');
@@ -29,6 +30,11 @@ Route::get('/menu/{type?}','MenuController@menuType');
 Route::post('/newsletter',[
     'as' => 'newsletter.subscribe',
     'uses' => 'NewsLetterController@subscribe'
+]);
+
+Route::post('/franchise',[
+    'as' => 'franchise.join',
+    'uses' => 'PagesController@postFranchise'
 ]);
 
 
@@ -60,6 +66,7 @@ Route::group(['prefix'=>'webadmin','before'=>'isLoggedIn'], function()
         Route::resource('category', 'MenuCategoriesController');
         Route::resource('gallery', 'GalleryController');
         Route::resource('comments', 'CommentsController');
+        Route::resource('winners', 'WinnersController');
 
         Route::post('users/passEdit/{id}', 'UsersController@updatePassword');
     });

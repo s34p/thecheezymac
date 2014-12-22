@@ -133,6 +133,7 @@ return array(
         'TheCheezyMac\Comments\CommentsServiceProvider',
         'TheCheezyMac\Composers\ComposerServiceProvider',
         'TheCheezyMac\NewsLetters\NewsLetterListServiceProvider',
+        'TheCheezyMac\Winners\WinnersServiceProvider',
 
 	),
 

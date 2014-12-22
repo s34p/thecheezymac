@@ -129,7 +129,7 @@
 	.portfolio h4, .recent-works-items h4, .shop-item h4, .side-list h5 { font-weight:400; margin:10px 0 7px; font-size:18px;}
 	.portfolio h4 a, .recent-works-items h4 a, .shop-item h4 a, .side-list h5 a { color: #000000; }
 	.portfolio h4 a:hover, .recent-works-items h4 a:hover, .shop-item h4 a:hover, .side-list h5 a:hover { text-decoration:underline;}
-	.portfolio p, .recent-works-items p { color:#909090; margin-bottom:40px; padding-bottom:20px; text-transform:uppercase;}
+	.portfolio p, .recent-works-items p { color: #e8e8e8; margin-bottom:40px; padding-bottom:20px;}
 	.portfolio-item h3 { color:#696969;}
 	.portfolio-item h5 { margin-top:8px;}
 
@@ -143,7 +143,7 @@
 
 	.portfolio  h4 { font-size:21px; margin:16px 0 10px;}
 	.portfolio  h4 { font-size:16px;}
-	.portfolio  p { font-size:12px; border-bottom-width:3px;}
+	.portfolio  p { font-size:14px; border-bottom-width:3px;}
 
 
 	.col2-item img { width:420px; height:150px; margin-bottom:10px; }

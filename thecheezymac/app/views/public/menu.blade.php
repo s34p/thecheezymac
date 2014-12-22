@@ -56,47 +56,47 @@
                         ?>
 
                         <div class="menu-items-wrapper">
-                            @if(Request::segment(2) == 'BuildYourOwn')
-                            @foreach($menus as $menu)
+                            {{--@if(Request::segment(2) == 'BuildYourOwn')--}}
+                            {{--@foreach($menus as $menu)--}}
 
-                                <div class="col-md-6">
-                                    <h3>{{$menu->menu_name}}
-                                        <div>
-                                        &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733;
-                                        </div>
-                                    </h3>
-                                    {{$menu->description}}
-                                    @if($menu->price)
-                                    <h3 class="price yellow">${{$menu->price}}</h3>
-                                    @endif
+                                {{--<div class="col-md-6">--}}
+                                    {{--<h3>{{$menu->menu_name}}--}}
+                                        {{--<div>--}}
+                                        {{--&#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733;--}}
+                                        {{--</div>--}}
+                                    {{--</h3>--}}
+                                    {{--{{$menu->description}}--}}
+                                    {{--@if($menu->price)--}}
+                                    {{--<h3 class="price yellow">${{$menu->price}}</h3>--}}
+                                    {{--@endif--}}
 
-                                </div>
-                            <div class="col-md-6">
-                                @if(strpos($menu->menu_name,'Step 1') !== false)
-                                    <img src="/img/lasagna.jpg" class="img-responsive" style="width:100%; height:100%" alt=""/>
-                                @endif
+                                {{--</div>--}}
+                            {{--<div class="col-md-6">--}}
+                                {{--@if(strpos($menu->menu_name,'Step 1') !== false)--}}
+                                    {{--<img src="/img/lasagna.jpg" class="img-responsive" style="width:100%; height:100%" alt=""/>--}}
+                                {{--@endif--}}
 
-                                    @if(strpos($menu->menu_name,'Step 2') !== false)
-                                    <img src="/img/pesto.jpg" class="img-responsive" style="width:100%; height:100%" alt=""/>
-                                @endif
+                                    {{--@if(strpos($menu->menu_name,'Step 2') !== false)--}}
+                                    {{--<img src="/img/pesto.jpg" class="img-responsive" style="width:100%; height:100%" alt=""/>--}}
+                                {{--@endif--}}
 
-                                    @if(strpos($menu->menu_name,'Step 3') !== false)
-                                    <img src="/img/ingredients.jpg" class="img-responsive" style="width:100%; height:100%" alt=""/>
-                                @endif
+                                    {{--@if(strpos($menu->menu_name,'Step 3') !== false)--}}
+                                    {{--<img src="/img/ingredients.jpg" class="img-responsive" style="width:100%; height:100%" alt=""/>--}}
+                                {{--@endif--}}
 
-                                    @if(strpos($menu->menu_name,'Step 4') !== false)
-                                    <img src="/img/ingredients.jpg" class="img-responsive" style="width:100%; height:100%" alt=""/>
-                                @endif
-                            </div>
-                                <div class="clearfix" style="margin:20px"></div>
-
-
+                                    {{--@if(strpos($menu->menu_name,'Step 4') !== false)--}}
+                                    {{--<img src="/img/ingredients.jpg" class="img-responsive" style="width:100%; height:100%" alt=""/>--}}
+                                {{--@endif--}}
+                            {{--</div>--}}
+                                {{--<div class="clearfix" style="margin:20px"></div>--}}
 
 
 
 
-                         @endforeach
-                            @else
+
+
+                         {{--@endforeach--}}
+                            {{--@else--}}
                             @while($i < count($menus))
 
                                     <div class="col-sm-6">
@@ -119,7 +119,7 @@
                                     @endif
 
                                 @endwhile
-                            @endif
+                            {{--@endif--}}
 
 
 

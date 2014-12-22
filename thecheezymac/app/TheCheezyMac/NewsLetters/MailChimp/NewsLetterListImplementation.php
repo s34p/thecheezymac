@@ -21,7 +21,7 @@ class NewsLetterListImplementation implements NewsLetterListInterface {
     protected $mailchimp;
 
     protected $lists = [
-        'Subscribers'   =>  '58cc1c5e9f'
+        'Subscribers'   =>  '3d67eae76c'
     ];
 
     public function __construct(Mailchimp $mailchimp)

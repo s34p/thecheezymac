@@ -24,7 +24,7 @@ Mac & Cheese lovers unite! Sign-up to receive the latest news, upcoming events, 
                                             <h3>HOW IT WORKS</h3>
 
                                             <p>
-                                            Earn 1 point for every dollar you spend. 60 points = free entree. Also, be sure to ask for your Cheezy Mac passport (punch card). Complete the form below to become a loyalty club member. Throughout the year, we offer exclusive specials to loyalty club members. You may pick up your card when you arrive at the restaurant.
+                                            Earn 1 point for every dollar you spend. 90 points = free entree. Also, be sure to ask for your Cheezy Mac passport (punch card). Complete the form below to become a loyalty club member. Throughout the year, we offer exclusive specials to loyalty club members. You may pick up your card when you arrive at the restaurant.
                                             </p>
 
                                            <div id="NewsLetter">
