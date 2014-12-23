@@ -11,6 +11,7 @@
 
     @if($user->inGroup($admin))
     <li role="presentation" data-link="users"><a href="/webadmin/users"><i class="fa fa-users"></i> Users</a></li>
+    <li role="presentation" data-link="pages"><a href="/webadmin/pages"><i class="fa fa-users"></i> Pages</a></li>
     <li role="presentation" data-link="category"><a href="/webadmin/category"><i class="fa fa-folder"></i> Menu Categories</a></li>
     <li role="presentation" data-link="menu"><a href="/webadmin/menu"><i class="fa fa-cutlery"></i> Menu</a></li>
     <li role="presentation" data-link="gallery"><a href="/webadmin/gallery"><i class="fa fa-image"></i> Gallery</a></li>

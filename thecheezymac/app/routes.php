@@ -2,10 +2,11 @@
 
 Route::when('*', 'csrf', array('post', 'put', 'delete'));
 
-Route::get('/', 'PagesController@index');
-Route::get('/story','PagesController@story');
+Route::get('/', 'PagesController@home');
+Route::get('/home', 'PagesController@home');
+//Route::get('/story','PagesController@story');
 Route::get('/catering','PagesController@catering');
-Route::get('/giftcard','PagesController@giftcard');
+//Route::get('/giftcard','PagesController@giftcard');
 Route::get('/club','PagesController@club');
 Route::get('/contact-us','PagesController@contactus');
 Route::get('/app','PagesController@app');
@@ -67,6 +68,7 @@ Route::group(['prefix'=>'webadmin','before'=>'isLoggedIn'], function()
         Route::resource('gallery', 'GalleryController');
         Route::resource('comments', 'CommentsController');
         Route::resource('winners', 'WinnersController');
+        Route::resource('pages', 'PagesController');
 
         Route::post('users/passEdit/{id}', 'UsersController@updatePassword');
     });
@@ -80,6 +82,9 @@ Route::group(['prefix'=>'webadmin','before'=>'isLoggedIn'], function()
     Route::get('logout','AuthController@logout');
 
 });
+
+Route::get('/{pageSlug}','PagesController@dynamicPages');
+
 
 //Route::get('env', function()
 //{

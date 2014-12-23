@@ -2,6 +2,9 @@
 
 use TheCheezyMac\Comments\Comments;
 use TheCheezyMac\Mailers\MailerInterface as Mailer;
+use TheCheezyMac\Pages\Pages;
+use TheCheezyMac\Pages\PagesInterface;
+use TheCheezyMac\Pages\PagesValidation;
 
 class PagesController extends BaseController {
 
@@ -15,16 +18,72 @@ class PagesController extends BaseController {
      * @var Comments
      */
     private $commentModel;
+    /**
+     * @var Pages
+     */
+    private $pageModel;
+    /**
+     * @var PagesInterface
+     */
+    private $pagesInterface;
+    /**
+     * @var PagesValidation
+     */
+    private $pagesValidation;
 
 
-    public function __construct(Mailer $mailer, Comments $commentModel)
+    public function __construct(Mailer $mailer, Comments $commentModel, Pages $pageModel, PagesInterface $pagesInterface, PagesValidation $pagesValidation)
     {
 
         $this->mailer = $mailer;
         $this->commentModel = $commentModel;
+        $this->pageModel = $pageModel;
+        $this->pagesInterface = $pagesInterface;
+        $this->pagesValidation = $pagesValidation;
+    }
+
+
+    public function dynamicPages($slug)
+    {
+        $page = $this->pageModel->where('slug','like',$slug)->first();
+
+        if($page->col_num == 2)
+        {
+            return View::make('public.layout.double-column', compact('page'));
+        }
+
+        if($page->col_num == 1)
+        {
+            return View::make('public.layout.single-column', compact('page'));
+        }
     }
 
     public function index()
+    {
+        $pages = $this->pageModel->orderBy('slug','ASC')->get();
+
+        $this->layout->content = View::make('private.pages.index', compact('pages'));
+    }
+
+
+    public function edit($id)
+    {
+        $page = $this->pageModel->findOrFail($id);
+
+        $this->layout->content = View::make('private.pages.edit', compact('page'));
+    }
+
+    public function update($id)
+    {
+        $this->pagesValidation->validate(Input::all());
+
+        $this->pagesInterface->update(Input::all(), $id);
+
+        return Redirect::to('/webadmin/pages')->withSuccess('Page was updated successfully');
+    }
+
+
+    public function home()
 	{
 		$this->layout->content = View::make('public.index');
 	}
