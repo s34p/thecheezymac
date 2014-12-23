@@ -12,10 +12,19 @@
                     @if($page->slug == "story" && $page->col_num == 2)
                         @include('public.partials.sideSlideShow')
                     @endif
+
                 </div>
 
                 <div class="col-md-8 storytext">
                     {{$page->body}}
+
+                    @if($page->slug == "club")
+                        @include('public.partials.newsletter')
+                    @endif
+
+                    @if($page->slug == "franchise")
+                        @include('public.partials.franchise')
+                    @endif
                 </div>
 
             </div>

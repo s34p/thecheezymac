@@ -8,7 +8,7 @@
                 {{--Slideshow--}}
 
 
-                <div id="carousel-example-generic" class="carousel slide custom-slider" data-ride="carousel" >
+                <div id="carousel-example-generic" class="carousel slide custom-slider hidden-xs" data-ride="carousel" >
                   <!-- Indicators -->
                   <ol class="carousel-indicators">
                     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>

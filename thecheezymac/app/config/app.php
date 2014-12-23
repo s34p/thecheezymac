@@ -135,6 +135,7 @@ return array(
         'TheCheezyMac\NewsLetters\NewsLetterListServiceProvider',
         'TheCheezyMac\Winners\WinnersServiceProvider',
         'TheCheezyMac\Pages\PagesServiceProvider',
+        'TheCheezyMac\Merchandise\MerchandiseServiceProvider',
 
 	),
 

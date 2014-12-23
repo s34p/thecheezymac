@@ -4,13 +4,15 @@
 
 @section('content')
 
+            <link href='http://fonts.googleapis.com/css?family=Patrick+Hand' rel='stylesheet' type='text/css'>
+
             <div class="main">
                                 {{HTML::style('/plugins/portfolio/portfolio.css')}}
 
                                <div class="wrapper">
                                    <h1 class="heading">Monthly Winners</h1>
 
-                                   <div class="row">
+                                   <div class="row" style="margin-left:0px; margin-right: 0px">
 
 
                                     <!-- Portfolio Start
@@ -22,8 +24,10 @@
 
 
 
-
-
+                                        <h3 style="margin-top:0px">How to enter</h3>
+                                        <p style="padding-bottom: 20px">
+                                        Build Your Own macaroni masterpiece, ask cashier for a recipe card. Write down your recipe and drop it in the designated box. If you're chosen as the "guest chef" with the most unique and tasty dish, it will be featured for one month in our restaurant, on our website and social media channels. Also, you will receive one free entree per week during the month your dish is featured. Good luck and have fun!
+                                        </p>
                                     <div class="portfolio">
 
                                     @foreach($winners as $winner)
@@ -31,7 +35,7 @@
 
 
                                         <figure class="portfolio-item col-sm-4" >
-                                        <div class="img-item">  <img src="{{$winner->image}}" class="img-responsive img-circle" style="width:200px; height:200px; border: thin solid white" alt=""> </div>
+                                        <div class="img-item">  <img src="{{$winner->image}}" class="img-responsive img-thumbnail" style="width:100%; border: thin solid white" alt=""> </div>
                                         <figcaption ><h4 style="text-align: center !important;padding-right:15px !important; margin-bottom: 0px !important;"><a href="portfolio-item.html" style="color: #ffff00">{{$winner->fullName}}</a>
                                         <div style="padding-top: 5px">
                                         &#9733; &#9733; &#9733; &#9733; &#9733;
@@ -40,8 +44,8 @@
                                         <span class="ff"><a href="{{$winner->image}}" class="prettyPhoto fancybox" rel="gallery1" ><i class="fa fa-search-plus"></i></a></span>
                                         <span class="ll"><a href="#" ><i class="fa fa-link"></i></a></span>
                                       </figure>
-                                      <div class="col-sm-8">
-                                        <h3 style="color: #ffff00 !important;">{{$winner->recipeName}}
+                                      <div class="col-sm-8 winnerCard">
+                                        <h3>{{$winner->recipeName}}
                                             <div class="dot"></div>
                                         </h3>
                                         {{$winner->ingredients}}

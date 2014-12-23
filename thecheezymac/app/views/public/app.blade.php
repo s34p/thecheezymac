@@ -30,9 +30,6 @@ Delicious Mac & Cheese is just a tap away! Download The Cheezy Mac app on your i
 
                                </div>
 
-
-
-
                        </div>
 
 @stop

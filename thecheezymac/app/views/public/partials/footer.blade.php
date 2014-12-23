@@ -59,19 +59,19 @@
                         DESIGNED BY: STUDIO 34 PRODUCTIONS
                     </div>
                     <div class="col-md-4 social-network">
-                        <a href="#" class="facebook">
+                        <a href="http://facebook.com/thecheezymac"  target="_blank" class="facebook">
                         <img src="/img/social/facebook.png" alt="Facebook">
                         </a>
-                        <a href="#" class="twitter">
+                        <a href="http://twitter.com/thecheezymac" target="_blank"  class="twitter">
                         <img src="/img/social/twitter.png" alt="Twitter">
                         </a>
                          <a href="#" class="google">
                          <img src="/img/social/google.png" alt="Google">
                         </a>
-                        <a href="#" class="pinterest">
+                        <a href="http://pinterest.com/thecheezymac" target="_blank" class="pinterest">
                         <img src="/img/social/pinterest.png" alt="Pinterest">
                         </a>
-                        <a href="#" class="instagram">
+                        <a href="http://instagram.com/thecheezymac" target="_blank" class="instagram">
                         <img src="/img/social/instagram.png" alt="Instagram">
                         </a>
                     </div>
@@ -91,6 +91,7 @@
             <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
         <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f708a1900255165"></script>
 
+                {{HTML::script('/plugins/jasnyBootstrap/js/jasny-bootstrap.min.js')}}
 
         {{--<script>--}}
         {{--$(document).ready( function () {--}}
@@ -100,6 +101,9 @@
 
          <script type="text/javascript">
              $(document).ready(function(){
+
+
+//                 $('.navmenu').offcanvas('hide');
 
                  if (window.attachEvent && !window.addEventListener) {
                      alert("Please Upgrade your browser to Internet Explorer 9 or higher. If you are using windows XP, please use chrome or firefox to view our website");

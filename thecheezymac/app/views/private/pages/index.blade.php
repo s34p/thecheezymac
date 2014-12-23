@@ -23,7 +23,6 @@
                                     <th>Layout</th>
                                     <th></th>
                                     <th></th>
-                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -40,7 +39,6 @@
                                         </td>
                                         <td><a href="/{{$page->slug}}"><span class="glyphicon glyphicon-zoom-in"></span></a></td>
                                         <td><a href="/webadmin/pages/{{$page->id}}/edit"><span class="glyphicon glyphicon-pencil"></span></a></td>
-                                        <td>{{FormHelper::delete('webadmin.pages.destroy', $page->id)}}</td>
                                     </tr>
                                 @endforeach
                             </tbody>

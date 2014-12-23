@@ -93,6 +93,11 @@ class PagesController extends BaseController {
 	    $this->layout->content = View::make('public.story');
 	}
 
+    public function socialNetwork()
+	{
+	    $this->layout->content = View::make('public.social');
+	}
+
     public function menu()
     {
     	$this->layout->content = View::make('public.menu');
