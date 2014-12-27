@@ -72,6 +72,8 @@ Route::group(['prefix'=>'webadmin','before'=>'isLoggedIn'], function()
         Route::resource('winners', 'WinnersController');
         Route::resource('pages', 'PagesController');
         Route::resource('merchandise', 'MerchandiseController');
+        Route::get('settings', 'SettingsController@index');
+        Route::get('settings/database-backup', 'SettingsController@DbBackup');
 
         Route::post('users/passEdit/{id}', 'UsersController@updatePassword');
     });
@@ -86,10 +88,20 @@ Route::group(['prefix'=>'webadmin','before'=>'isLoggedIn'], function()
 
 });
 
+Route::get('env', function()
+{
+    return App::environment();
+});
+Route::get('db', function()
+{
+//    if(Dbbackup::backup() == true)
+//    {
+//        return "Success";
+//    }
+//    return "Error";
+    dd(Config::get("Dbbackup::DbMysqlDumpPath"));
+});
+
 Route::get('/{pageSlug}','PagesController@dynamicPages');
 
 
-//Route::get('env', function()
-//{
-//   return App::environment();
-//});

@@ -12,8 +12,17 @@
 
                 <div class="text-left">
                     @foreach($blogs as $blog)
-                        <h3><strong>{{$blog->title}}</strong></h3>
+                        <h3><a href="/our-blog/{{$blog->id}}"><strong>{{$blog->title}}</strong></a></h3>
+
+                        <div class="addthis_sharing_toolbox"></div>
+                        <span class="label label-default">{{date("F d Y", strtotime($blog->created_at))}}</span>
+
                         <div>
+                            <img src="{{$blog->image}}" class="img-responsive" style="display: block;margin-left: auto;margin-right: auto; width: 100%;" alt=""/>
+                        </div>
+
+
+
 
                             {{$blog->body}}
 
@@ -23,9 +32,9 @@
 
 
                         {{--<a href="/our-news/{{$blog->id}}" style="color:#bd2236; font-weight:bold">... Read More</a>--}}
-                        </div>
+
                         <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                        <div class="addthis_sharing_toolbox"></div>
+
 
                     @endforeach
                 </div>

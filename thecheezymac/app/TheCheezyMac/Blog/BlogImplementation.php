@@ -24,6 +24,7 @@ class BlogImplementation implements BlogInterface{
     public function add(array $inputs)
     {
         $this->blogModel->title = $inputs['title'];
+        $this->blogModel->image = $inputs['image'];
         $this->blogModel->body = $inputs['body'];
         $this->blogModel->author = $inputs['author'];
         $this->blogModel->created_at = strtotime($inputs['created_at']);
@@ -34,6 +35,7 @@ class BlogImplementation implements BlogInterface{
     {
         $blog = $this->blogModel->findOrFail($blogId);
         $blog->title = $inputs['title'];
+        $blog->image = $inputs['image'];
         $blog->body = $inputs['body'];
         $blog->author = $inputs['author'];
         $blog->created_at = strtotime($inputs['created_at']);

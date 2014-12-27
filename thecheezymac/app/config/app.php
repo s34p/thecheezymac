@@ -136,6 +136,8 @@ return array(
         'TheCheezyMac\Winners\WinnersServiceProvider',
         'TheCheezyMac\Pages\PagesServiceProvider',
         'TheCheezyMac\Merchandise\MerchandiseServiceProvider',
+		'Aracademia\Dbbackup\DbbackupServiceProvider',
+		'Clockwork\Support\Laravel\ClockworkServiceProvider'
 
 	),
 
@@ -204,6 +206,7 @@ return array(
 		'Validator'         => 'Illuminate\Support\Facades\Validator',
 		'View'              => 'Illuminate\Support\Facades\View',
         'Sentry' => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
+		'Clockwork' => 'Clockwork\Support\Laravel\Facade',
 	),
 
 );

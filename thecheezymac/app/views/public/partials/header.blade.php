@@ -56,7 +56,7 @@
     </div>
     <!-- Brand and toggle get grouped for better mobile display -->
 
-                                  <button type="button" class="navbar-toggle navbar-fixed-top" data-toggle="offcanvas" data-recalc="false" data-target=".navmenu" data-canvas=".canvas" style="color:white">
+                                  <button type="button" class="navbar-toggle navbar-fixed-top buttonCanvas" data-toggle="offcanvas" data-recalc="false" data-target=".navmenu" data-canvas=".canvas" style="color:white">
                                           {{--<span class="sr-only">Toggle navigation</span>--}}
                                           <span class="fa fa-th-list fa-2x"></span>
                                           {{--<span class="icon-bar"></span>--}}
@@ -67,7 +67,7 @@
 
 
 
-        <div class="container text-center">
+        <div class="container text-center canvas">
         <div class="col-lg-10">
 
 

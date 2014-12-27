@@ -6,6 +6,16 @@ class BaseController extends Controller {
     public function __construct()
     {
         $this->beforeFilter('csrf', array('on' => array('post', 'delete', 'put')));
+
+		$this->beforeFilter(function()
+		{
+			Event::fire('clockwork.controller.start');
+		});
+
+		$this->afterFilter(function()
+		{
+			Event::fire('clockwork.controller.end');
+		});
     }
     /**
 	 * Setup the layout used by the controller.

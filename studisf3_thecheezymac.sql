@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 22, 2014 at 06:18 PM
+-- Generation Time: Dec 23, 2014 at 06:47 PM
 -- Server version: 5.5.40-36.1-log
 -- PHP Version: 5.4.23
 
@@ -30,6 +30,7 @@ DROP TABLE IF EXISTS `blogs`;
 CREATE TABLE IF NOT EXISTS `blogs` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `image` text COLLATE utf8_unicode_ci NOT NULL,
   `body` text COLLATE utf8_unicode_ci NOT NULL,
   `author` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
@@ -41,9 +42,9 @@ CREATE TABLE IF NOT EXISTS `blogs` (
 -- Dumping data for table `blogs`
 --
 
-INSERT INTO `blogs` (`id`, `title`, `body`, `author`, `created_at`, `updated_at`) VALUES
-(4, 'Mac and Cheese Lovers Rejoice', '<p><em><strong>Mac and Cheese lovers rejoice</strong></em></p>\r\n<p>A new restaurant offering gourmet macaroni and cheese is coming to Lexington in January.</p>\r\n<p>The Cheezy Mac will open in front of the Kroger store on Richmond Road. Reports indicate that the owner hopes to open six to eight more restaurants of the same kind in the area over the next two years.</p>', 'Donna Elder', '2014-12-01 07:00:00', '2014-12-21 12:02:08'),
-(5, 'Cheezy Mac to Open in Lexington, KY', '<p>We seem to attract the newest and trendiest restaurants from fast casual chains to more upscale venues. It&rsquo;s apparent that young franchises and brand new ones see Lexington as a great place to test the market before expanding nationwide. For example Coba Cocina and Shakespeare and Co. opened their very first stores here with plans to expand the concept to other locales. Shakespeare already had a chain of restaurants overseas before choosing Lexington for their first U.S. store (a second one has since opened across town). The latest entry into our market is Cheesy Mac which will be serving gourmet macaroni and cheese starting in January.</p>\r\n<p>Winter is the perfect time of year to test a menu that will no doubt be full of comfort food options. Diners visiting this fast casual restaurant will get to choose the type of noodles, cheese, sauce, and even add meat to their dish. Their entree is then topped with bread crumbs, more cheese and broiled. Meanwhile, the customer pays for the order and sits down to await quick delivery of the meal to the table.</p>\r\n<p>Cheesy Mac will open in the Kroger plaza on Richmond Road. This shopping center is near some great neighborhoods, especially if you are a first time homebuyer. Residents enjoy a full range of shops in the immediate area including a Walmart, Baskin Robbins, Porter Paints, and much more. This area of Richmond Road is near Man-o-War and the many office and medical buildings off Blazer Road. It is also convenient to downtown and Hamburg.</p>', 'Donna Elder', '2014-11-20 07:00:00', '2014-12-21 14:26:43');
+INSERT INTO `blogs` (`id`, `title`, `image`, `body`, `author`, `created_at`, `updated_at`) VALUES
+(4, 'Mac and Cheese Lovers Rejoice', '', '<p><em><strong>Mac and Cheese lovers rejoice</strong></em></p>\r\n<p>A new restaurant offering gourmet macaroni and cheese is coming to Lexington in January.</p>\r\n<p>The Cheezy Mac will open in front of the Kroger store on Richmond Road. Reports indicate that the owner hopes to open six to eight more restaurants of the same kind in the area over the next two years.</p>', 'Donna Elder', '2014-12-01 07:00:00', '2014-12-21 12:02:08'),
+(5, 'Cheezy Mac to Open in Lexington, KY', '', '<p>We seem to attract the newest and trendiest restaurants from fast casual chains to more upscale venues. It&rsquo;s apparent that young franchises and brand new ones see Lexington as a great place to test the market before expanding nationwide. For example Coba Cocina and Shakespeare and Co. opened their very first stores here with plans to expand the concept to other locales. Shakespeare already had a chain of restaurants overseas before choosing Lexington for their first U.S. store (a second one has since opened across town). The latest entry into our market is Cheesy Mac which will be serving gourmet macaroni and cheese starting in January.</p>\r\n<p>Winter is the perfect time of year to test a menu that will no doubt be full of comfort food options. Diners visiting this fast casual restaurant will get to choose the type of noodles, cheese, sauce, and even add meat to their dish. Their entree is then topped with bread crumbs, more cheese and broiled. Meanwhile, the customer pays for the order and sits down to await quick delivery of the meal to the table.</p>\r\n<p>Cheesy Mac will open in the Kroger plaza on Richmond Road. This shopping center is near some great neighborhoods, especially if you are a first time homebuyer. Residents enjoy a full range of shops in the immediate area including a Walmart, Baskin Robbins, Porter Paints, and much more. This area of Richmond Road is near Man-o-War and the many office and medical buildings off Blazer Road. It is also convenient to downtown and Hamburg.</p>', 'Donna Elder', '2014-11-20 07:00:00', '2014-12-21 14:26:43');
 
 -- --------------------------------------------------------
 
@@ -201,6 +202,24 @@ INSERT INTO `menu_categories` (`id`, `slug`, `name`, `order`, `created_at`, `upd
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `merchandise`
+--
+
+DROP TABLE IF EXISTS `merchandise`;
+CREATE TABLE IF NOT EXISTS `merchandise` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `item_name` varchar(255) NOT NULL,
+  `price` varchar(255) NOT NULL,
+  `image` text NOT NULL,
+  `description` text NOT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `migrations`
 --
 
@@ -249,6 +268,38 @@ INSERT INTO `news` (`id`, `title`, `body`, `author`, `created_at`, `updated_at`)
 (2, 'New Restaurant for Mac and Cheese Lovers Coming to Lexington', '<p><strong>LEXINGTON, Ky. (WKYT) -</strong> There''s a new restaurant coming to Lexington and it''s perfect for mac&nbsp;and cheese lovers.&nbsp;The Cheezy Mac will offer gourmet macaroni and cheese.&nbsp;The restaurant will open in January in front of the Kroger on Richmond Road.&nbsp;Our partners at the the Lexington Herald-Leader report, the owner hopes to open six to eight more restaurants in the area over the next two years.</p>', 'WKYT', '2014-09-18 06:00:00', '2014-12-23 06:53:18'),
 (3, 'The Cheezy Mac', '<p>A new restaurant coming to Lexington seeks to hit you right in your comfort zone: The Cheezy Mac will offer gourmet macaroni and cheese in a fast-casual conceptthat lets you build your perfect mac.</p>\r\n<p>The first restaurant will open in January in front of Kroger on Richmond Road, owner Jerry Adamany said, and he hopes to have six to eight more in Central Kentucky in the next two years. The next location is likely to be near the University of Kentucky.</p>\r\n<p>Customers can pick noodles, the type of cheese or other sauce, and toppings for about $6.99; add meat for $2 more. It''s all topped with bread crumbs and more cheese, broiled to melt, and is brought to your table piping hot, with a roll, in seven minutes, he said.</p>\r\n<p>Why macaroni and cheese? Because it''s everywhere, he said, but it isn''t usually very good. "It''s a comfort food, and it''s popular," he said. "Let''s turn it into a hearty comfort food, with lots of options."</p>\r\n<p>Janet Patton: (859) 231-3264. Twitter: @janetpattonhl.</p>', 'Janet Patton - Kentucky.com', '2014-09-18 06:00:00', '2014-12-15 20:45:38'),
 (4, 'Cheesy Mac to Open in Lexington, KY', '<p>We seem to attract the newest and trendiest restaurants from fast casual chains to more upscale venues. It&rsquo;s apparent that young franchises and brand new ones see Lexington as a great place to test the market before expanding nationwide. For example Coba Cocina and Shakespeare and Co. opened their very first stores here with plans to expand the concept to other locales. Shakespeare already had a chain of restaurants overseas before choosing Lexington for their first U.S. store (a second one has since opened across town). The latest entry into our market is Cheesy Mac which will be serving gourmet macaroni and cheese starting in January.</p>\r\n<p>Winter is the perfect time of year to test a menu that will no doubt be full of comfort food options. Diners visiting this fast casual restaurant will get to choose the type of noodles, cheese, sauce, and even add meat to their dish. Their entree is then topped with bread crumbs, more cheese and broiled. Meanwhile, the customer pays for the order and sits down to await quick delivery of the meal to the table.</p>\r\n<p>Cheesy Mac will open in the Kroger plaza on Richmond Road. This shopping center is near some great neighborhoods, especially if you are a first time homebuyer. Residents enjoy a full range of shops in the immediate area including a Walmart, Baskin Robbins, Porter Paints, and much more. This area of Richmond Road is near Man-o-War and the many office and medical buildings off Blazer Road. It is also convenient to downtown and Hamburg.</p>', 'Donna Elder', '2014-10-06 06:00:00', '2014-12-21 12:14:38');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pages`
+--
+
+DROP TABLE IF EXISTS `pages`;
+CREATE TABLE IF NOT EXISTS `pages` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `slug` varchar(255) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `image` text NOT NULL,
+  `body` text NOT NULL,
+  `col_num` int(11) NOT NULL,
+  `edited_by` varchar(255) NOT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+
+--
+-- Dumping data for table `pages`
+--
+
+INSERT INTO `pages` (`id`, `slug`, `title`, `image`, `body`, `col_num`, `edited_by`, `created_at`, `updated_at`) VALUES
+(1, 'story', 'Our Story', 'http://thecheezymac.studio34productions.com/uploads/Pages/storypic.jpg', '<h3>Our Belief</h3>\r\n<p>What is the ultimate comfort food? It&rsquo;s food that evokes those warm, nostalgic and sentimental feelings that positively peeks the emotions from the greatest moments of our lives. It&rsquo;s &ldquo;positive&rdquo; food that creates &ldquo;positive&rdquo; feelings. Here, at The Cheezy Mac, we are enthusiasts, specializing in the creation of what we believe is the ultimate comfort food, the best macaroni and cheese around!</p>\r\n<h3>The Cheezy Mac Difference</h3>\r\n<p>What makes Cheezy Mac so special? It is our commitment to using only the finest ingredients in all of our recipes. This means using only the freshest cheeses, grated daily &ndash; from Sharp Cheddar, Swiss, Provolone, Colby and Pepper Jack to unique Artisan cheeses. Using only ribbed, corkscrew shaped macaroni, which in our opinion is the ultimate shape for holding all of our cheesy goodness. And of course our sauces - simply put, they are to-die-for! After all, we have to back up our name with out-of-this-world recipes that please even the most sophisticated palates.</p>\r\n<h3>The Cheezy Mac Choice</h3>\r\n<p>The Cheezy Mac is not about just coming in and picking from a menu. It&rsquo;s about choice. Choose from one of our many Chef&rsquo;s Specialties like our &ldquo;Pulled Pork Macaroni Grilled Cheese Sandwich with Grippo&rsquo;s Potato Chips&rdquo; mmmmmmmmm, sorry, got distracted there for a second. Or Create Your Own Dish! One of our Sous-Chefs will assist you as you choose from an array of fresh topping and proteins to assemble the perfect, custom Cheezy Mac dish for your particular taste.</p>\r\n<h3>Wait, I&rsquo;m not finished</h3>\r\n<p>We believe in generous portions so if you can&rsquo;t finish your meal in one sitting, no worries. Everything is served in an ecofriendly dish that you can just put a lid on and take with you.</p>\r\n<h3>Are you Cheezy?</h3>\r\n<p>We assume you are because you''re here, reading this. We hope you enjoy your Cheezy Mac dish today and look forward to seeing you again. Be sure to tell your friends and family so they can be Cheezy too!</p>', 2, '', '2014-12-22 00:00:00', '2014-12-23 03:04:54'),
+(2, 'giftcard', 'Gift Card', 'http://thecheezymac.studio34productions.com/uploads/Pages/giftcard.png', '<h3>GIFT CARDS!</h3>\r\n\r\n                           <p>\r\nMac & Cheese ... The ultimate comfort food! Just saying it makes you smile. We hope you love our twist on the old classic so much that you want to share it with others. Now you can! Buy a Gift Card and treat someone special to a dinner to remember at The Cheezy Mac!                           </p>\r\n', 2, '', '2014-12-22 00:00:00', '0000-00-00 00:00:00'),
+(3, 'app', 'Download Our App', 'http://thecheezymac.studio34productions.com/uploads/Pages/storypic.jpg', '<h3>Ordering Made Easy</h3>\r\n\r\n                                           <p>\r\nDelicious Mac & Cheese is just a tap away! Download The Cheezy Mac app on your iPhone or Android phone, then Build-Your-Own or choose one of our Chef’s Specialities. We’ll have it piping hot and ready to eat when you arrive! Ordering online has never been faster or easier!                                            </p>\r\n\r\n                                        <p>\r\n                                        <a href="https://mobileapp.vivonet.com/api/2.1/mobile/download?bundle=com.vivomobile.thecheezymac" target="_blank"><img  src="/img/applogo.png" alt="Download Our App"/></a>\r\n                                        </p>', 2, '', '2014-12-23 00:00:00', '0000-00-00 00:00:00'),
+(4, 'press-media', 'Press / Media', 'http://thecheezymac.studio34productions.com/uploads/Pages/storypic.jpg', '<h3>Press/Media!</h3>\r\n\r\n                                           <p>\r\nWe opened The Cheezy Mac to share our love for gourmet Macaroni & Cheese. And we’re thrilled to see that others love our unique twist on this old classic! Check out our press clippings and see what others are saying about us…\r\n</p>\r\n<p>\r\nQuestions? We’d love to talk. Media inquiries may be directed to press@thecheezymac.com\r\n</p>\r\n', 2, '', '2014-12-23 00:00:00', '0000-00-00 00:00:00'),
+(5, 'club', 'Loyalty club', 'http://thecheezymac.studio34productions.com/uploads/Pages/storypic.jpg', '<h3>LOYALTY CLUB</h3>\r\n<p>Mac &amp; Cheese lovers unite! Sign-up to receive the latest news, upcoming events, weekly specials, and exclusive &ldquo;members only&rdquo; coupons offered throughout the year.&nbsp;Complete the form below to become a loyalty club member and start earning points today!</p>\r\n<p>&nbsp;</p>\r\n<h3>HOW IT WORKS</h3>\r\n<p dir="ltr">Earn 1 point for every dollar you spend.<br /><strong>9</strong><strong>0 points = free entree&nbsp;</strong>($8.99 value)</p>\r\n<p dir="ltr">Simply fill out the form below to &ldquo;Join the Club&rdquo; and instantly receive a&nbsp;claim voucher. Then, hand that voucher to your cashier to receive your Loyalty Club Card and also&nbsp;<strong>one free drink</strong>!</p>', 2, '', '2014-12-23 00:00:00', '2014-12-23 16:19:22'),
+(6, 'franchise', 'Franchise Info', 'http://thecheezymac.studio34productions.com/uploads/Pages/storypic.jpg', '<h3>Franchise Info!</h3>\r\n\r\n                                           <p>\r\nHelp us spread the love of gourmet Mac & Cheese! Our business plan is designed for profit and growth. If you’d like to learn more about franchise opportunities, please fill out the Information Request form below, or contact our corporate office at 844-624-3399. We look forward to hearing from you!                                            </p>\r\n', 2, '', '2014-12-23 00:00:00', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -317,7 +368,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `email`, `password`, `permissions`, `activated`, `activation_code`, `activated_at`, `last_login`, `persist_code`, `reset_password_code`, `first_name`, `last_name`, `created_at`, `updated_at`) VALUES
-(2, 'rrafiatech@gmail.com', '$2y$10$XBU1/Tfa4D7.zwYFMFvy.OItncEJGPGfZzl9JZWfq4CirE/guoDyq', NULL, 1, NULL, NULL, '2014-12-23 02:23:22', '$2y$10$Jg4k1bN8RnxN26SYp6PVCeBc.HUdXWF9HW26kWXLYDADO5mLxIt5a', NULL, 'Rachid', 'Rafia', '2014-12-13 05:24:59', '2014-12-23 02:23:22'),
+(2, 'rrafiatech@gmail.com', '$2y$10$XBU1/Tfa4D7.zwYFMFvy.OItncEJGPGfZzl9JZWfq4CirE/guoDyq', NULL, 1, NULL, NULL, '2014-12-24 04:19:57', '$2y$10$Gyehujuy.YbS8e4cv/YwzuNRomCaFRAeFq3HaiATHD8UzF5A0UEYe', NULL, 'Rachid', 'Rafia', '2014-12-13 05:24:59', '2014-12-24 04:19:57'),
 (3, 'rmork07@gmail.com', '$2y$10$uToG2PwP1eRFZ45zi4aAHO68OQFOpwZLeTI6ZGjhRt9fu0sE7IjaK', NULL, 1, NULL, NULL, '2014-12-19 05:27:46', '$2y$10$AKCl/ZyIF7MbmqzHr6Rsfu4vlzs2CpsqAC0NOIfV7CarQFSeEIvHO', NULL, 'Ryan', 'Mork', '2014-12-13 13:02:02', '2014-12-19 05:27:46'),
 (4, 'pmahan@studio34productions.com', '$2y$10$.YTZA7d9YCmaYDUoWH7bR.gB2uKjK7PSRGS9DCEuZ1yGN7PxGCGke', NULL, 1, NULL, NULL, '2014-12-21 11:30:42', '$2y$10$AnHOCSOTozEiDjIIKqMciO6fOguuErCJzjUeZ5g64lXLh6P/wi.m6', NULL, 'Patrick', 'Mahan', '2014-12-13 13:02:44', '2014-12-21 11:30:42'),
 (5, 'jerry@thecheezymac.com', '$2y$10$6pAgq9332DQowe5fvSzPPuKZZy.grmyUwlglCRIIcHdO4eZZ1OVSy', NULL, 1, NULL, NULL, '2014-12-23 06:51:37', '$2y$10$tYY6NCJmR4elJKpbaiEk0.mbxMqtlgcp6weDwF4wZO0BgPH1kSJ/W', NULL, 'Jerry', 'Adamany', '2014-12-16 05:03:52', '2014-12-23 06:51:37');

@@ -152,7 +152,7 @@ class MenuController extends \BaseController {
 
 //        dd($menus[0]->menu_name);
 
-        $categories = $this->categories->groupBy('slug')->orderBy('order','ASC')->get();
+        $categories = $this->categories->groupBy('slug')->orderBy('order','ASC')->remember(10)->get();
 
 
         $this->layout->content = View::make('public.menu',compact('menus','categories'));

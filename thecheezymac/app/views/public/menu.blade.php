@@ -32,7 +32,7 @@
 
 
                 <div class="menuBg">
-                    @include('public.partials.comments')
+                    {{--@include('public.partials.comments')--}}
 
                     {{--<div class="text-right">--}}
                        {{--<button class="btn">Printable Menu <span class="glyphicon glyphicon-print"></span></button>--}}

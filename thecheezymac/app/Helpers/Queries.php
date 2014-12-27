@@ -16,7 +16,7 @@ class Queries {
      */
     public static function menuCategory($slug)
     {
-        $name = MenuCategories::where('slug','LIKE',$slug)->get();
+        $name = MenuCategories::where('slug','LIKE',$slug)->remember(10)->get();
 
         foreach($name as $n)
         {

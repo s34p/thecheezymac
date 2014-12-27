@@ -19,6 +19,7 @@
     <li role="presentation" data-link="newsletter"><a href="/webadmin/newsletter"><i class="fa fa-envelope"></i> NewsLetter</a></li>
     <li role="presentation" data-link="winners"><a href="/webadmin/winners"><i class="fa fa-gift"></i> Winners</a></li>
     <li role="presentation" data-link="merchandise"><a href="/webadmin/merchandise"><i class="fa fa-credit-card"></i> Merchandise</a></li>
+    <li role="presentation" data-link="settings"><a href="/webadmin/settings"><i class="fa fa-wrench"></i> Settings</a></li>
     @endif
         <li role="presentation"><a href="/webadmin/logout"><i class="glyphicon glyphicon-log-out"></i> Logout</a></li>
 </ul>

@@ -103,7 +103,11 @@
              $(document).ready(function(){
 
 
-//                 $('.navmenu').offcanvas('hide');
+//                 $(".buttonCanvas").click(function(){
+//                     $('.navmenu').offcanvas();
+//                 });
+
+
 
                  if (window.attachEvent && !window.addEventListener) {
                      alert("Please Upgrade your browser to Internet Explorer 9 or higher. If you are using windows XP, please use chrome or firefox to view our website");

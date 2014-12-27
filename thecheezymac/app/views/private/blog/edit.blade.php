@@ -40,6 +40,25 @@
                                     {{Form::text('created_at', null, array('class'=>'form-control','placeholder'=>'Published On','id'=>'datepicker'))}}
                                     {{DisplayMessage::error('created_at', $errors)}}
                                 </div>
+                              <div class="form-group">
+
+                                  {{Form::label('image',"Image")}}
+                                  <div class="input-group">
+                                          <span class="input-group-btn">
+
+                                                <button class="btn btn-default" type="button">
+                                                    <a href="/plugins/ResponsiveFilemanager/filemanager/dialog.php?type=1&amp;field_id=image" class="iframe-btn">Upload
+                                                    </a>
+                                                </button>
+
+
+                                          </span>
+                                      {{Form::text('image', null, array('class'=>'form-control', 'placeholder'=>'Item image','id'=>'image'))}}
+                                  </div><!-- /input-group -->
+
+
+
+                              </div>
                                 <div class="form-group">
                                     {{Form::label('body','Blog Content')}}
                                     {{Form::textarea('body', null, array('class'=>'form-control editme','placeholder'=>'Blog Content'))}}
@@ -53,6 +72,25 @@
                           {{Form::close()}}
                           </div>
                         </div>
+
+                       <script>
+                           $(document).ready(function ($) {
+                               $('.iframe-btn').fancybox({
+                                   maxWidth	: 1000,
+                                   maxHeight	: 600,
+                                   fitToView	: false,
+                                   width		: '80%',
+                                   height		: '80%',
+                                   autoSize	: false,
+                                   closeClick	: false,
+                                   openEffect	: 'none',
+                                   closeEffect	: 'none',
+
+                                   'type': 'iframe',
+                                   'autoScale': false
+                               });
+                           });
+                       </script>
 
                     @include('private.partials.tinymce')
 

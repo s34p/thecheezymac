@@ -12,6 +12,9 @@
 
                 <div class="text-left">
                     <div class="author">Published By {{$blog->author}} - {{date("F j, Y, g:i a",strtotime($blog->created_at))}}</div>
+                    <div>
+                        <img src="{{$blog->image}}" class="img-responsive" style="display: block;margin-left: auto;margin-right: auto; width: 100%;" alt=""/>
+                    </div>
                     <br/><br/>
                     {{$blog->body}}
                 </div>

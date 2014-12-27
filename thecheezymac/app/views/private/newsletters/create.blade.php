@@ -8,8 +8,12 @@
            <div class="wrapper">
                <h1 class="heading">Email Subscribers</h1>
 
-               <div class="row">
+               <div class="wrapper">
+                   @include('private.partials.adminNav')
+               </div>
 
+
+               <div class="row">
 
 
 
