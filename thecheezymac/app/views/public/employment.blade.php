@@ -18,6 +18,9 @@
 
 
                                         <div class="row">
+                                            <div id="NewsLetter">
+
+
                                             {{DisplayMessage::sentryError(Session::get('sentryError'))}}
                                             {{DisplayMessage::success(Session::get('success'))}}
                                             {{Form::open(['url'=>'/employment','role'=>'form'])}}
@@ -71,7 +74,7 @@
 
                                             {{Form::close()}}
 
-
+                                            </div>
                                         </div>
 
 

@@ -147,7 +147,7 @@ class MenuController extends \BaseController {
 			->join('menu_categories', 'menu.category_id','=','menu_categories.id')
 			->select('*','menu.name as menu_name','menu_categories.name as category_name','menu.id as menu_id')
 			->where('menu_categories.slug','=',$type)
-            ->orderBy('menu_name','ASC')
+            ->orderBy('menu.id','ASC')
 			->get();
 
 //        dd($menus[0]->menu_name);

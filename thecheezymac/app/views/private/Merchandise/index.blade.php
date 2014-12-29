@@ -14,7 +14,7 @@
                          <table class="display" id="datatable">
                         <caption class="text-right">
                         <a href="/webadmin/merchandise/create">
-                            <button class="btn btn-danger"><span class="glyphicon glyphicon-plus"></span> New Winner </button>
+                            <button class="btn btn-danger"><span class="glyphicon glyphicon-plus"></span> New Item </button>
                         </a>
                         </caption>
                             <thead>

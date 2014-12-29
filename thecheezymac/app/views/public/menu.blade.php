@@ -31,7 +31,7 @@
 
 
 
-                <div class="menuBg">
+                <div class="menuBg" style="border: 2px solid #000; ">
                     {{--@include('public.partials.comments')--}}
 
                     {{--<div class="text-right">--}}
@@ -56,7 +56,9 @@
                         ?>
 
                         <div class="menu-items-wrapper">
-                            {{--@if(Request::segment(2) == 'BuildYourOwn')--}}
+                            @if(Request::segment(2) == 'BuildYourOwn')
+
+
                             {{--@foreach($menus as $menu)--}}
 
                                 {{--<div class="col-md-6">--}}
@@ -90,13 +92,25 @@
                             {{--</div>--}}
                                 {{--<div class="clearfix" style="margin:20px"></div>--}}
 
+                                    @foreach($menus as $menu)
+
+                                        <div class="col-md-12 text-center">
+
+                                        <h3 style="color:yellow; text-align: center !important;">{{$menu->menu_name}}
+                                        <div>
+                                        &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733;
+                                        </div>
+                                        </h3>
+
+                                        {{$menu->description}}
+                                        @if($menu->price)
+                                        <h3 class="price" style="color:red; text-align: center !important;">${{$menu->price}}</h3>
+                                        @endif
+                                        </div>
 
 
-
-
-
-                         {{--@endforeach--}}
-                            {{--@else--}}
+                                        @endforeach
+                            @else
                             @while($i < count($menus))
 
                                     <div class="col-sm-6">
@@ -119,7 +133,7 @@
                                     @endif
 
                                 @endwhile
-                            {{--@endif--}}
+                            @endif
 
 
 

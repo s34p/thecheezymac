@@ -24,6 +24,7 @@
                                 <li><a href="/story">OUR STORY</a></li>
                                 <li><a href="/menu/">OUR MENU</a></li>
                                 <li><a href="/menu/Specials">OUR SPECIALS</a></li>
+                                <li><a href="/merchandise">MERCHANDISE</a></li>
                             </ul>
                         </div>
                     </div>

@@ -230,6 +230,7 @@ ul .menu-nav-pills{
     min-height:600px;
     z-index: 1000;
     box-shadow: inset 0 0 25px #000000;
+    margin-top: -10px;
     /*background-size:contain;*/
     /*background-position:center;*/
 
@@ -241,7 +242,7 @@ ul .menu-nav-pills{
     background-color: white;
     min-height:600px;
     z-index: 1000;
-    margin-top:-20px;
+    margin-top:-10px;
     box-shadow: inset 0 0 25px #000000;
     padding: 25px 50px;
     background: url("/img/bg/papertile2.jpg") repeat;
@@ -530,7 +531,8 @@ ul .dropdown-menu{
 
 
     .header{
-        height:135px;
+        height:140px;
+
     }
 
     .logo a img{

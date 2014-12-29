@@ -31,7 +31,7 @@
                                          @foreach($merchandise as $item)
 
                                         <figure class="portfolio-item col-sm-4">
-                                        <div class="img-item">  <img src="{{$item->image}}" class="img-responsive img-thumbnail" style="width:100%; border: thin solid white" alt=""> </div>
+                                        <div class="img-item">  <img src="{{$item->image}}" class="img-responsive" style="width:100%;" alt=""> </div>
                                         {{--<figcaption ><h4 style="text-align: center !important;padding-right:15px !important; margin-bottom: 0px !important;"><a href="portfolio-item.html" style="color: #ffff00">{{$item->item_name}}</a>--}}
                                         {{--<div style="padding-top: 5px">--}}
                                         {{--&#9733; &#9733; &#9733; &#9733; &#9733;--}}
@@ -49,11 +49,11 @@
 
                                         </figure>
                                         <div class="col-sm-8">
-                                            <h3>{{$item->item_name}}</h3>
+                                            <h3 style="color:yellow;">{{$item->item_name}}</h3>
                                             {{$item->description}}
                                             <h3>{{$item->price}}</h3>
                                         </div>
-
+                                        <div class="clearfix" style="margin:10px"></div>
                                         @endforeach
                                       <div class="clearfix" ></div>
                                         </div>
