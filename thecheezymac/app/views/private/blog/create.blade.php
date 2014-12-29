@@ -54,12 +54,10 @@
 
                                           </span>
                                       <input id="fieldID" type="text" name="image" class="form-control">
-                                  </div><!-- /input-group -->
-
-
-
+                                  </div>
 
                               </div>
+
                                 <div class="form-group">
                                     {{Form::label('body','Blog Content')}}
                                     {{Form::textarea('body', null, array('class'=>'form-control editme','placeholder'=>'Blog Content'))}}

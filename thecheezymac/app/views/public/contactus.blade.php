@@ -46,7 +46,7 @@
 
                                                 <div class="form-group">
                                                     {{Form::label('phone','Phone Number')}}
-                                                    {{Form::text('phone', null, array('class'=>'form-control','placeholder'=>'Phone Number'))}}
+                                                    {{Form::text('phone', null, array('class'=>'form-control','placeholder'=>'Phone Number','data-mask'=>'(999) 999 9999'))}}
                                                     <div id ="phone_error"></div>
                                                 </div>
 

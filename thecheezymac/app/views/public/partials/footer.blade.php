@@ -92,6 +92,8 @@
         <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f708a1900255165"></script>
 
                 {{HTML::script('/plugins/jasnyBootstrap/js/jasny-bootstrap.min.js')}}
+                {{HTML::script('/plugins/menuSlide/classie.js')}}
+                {{HTML::script('/plugins/menuSlide/main.js')}}
 
         {{--<script>--}}
         {{--$(document).ready( function () {--}}
