@@ -7,7 +7,6 @@
             <link href='http://fonts.googleapis.com/css?family=Patrick+Hand' rel='stylesheet' type='text/css'>
 
             <div class="main">
-                                {{HTML::style('/plugins/portfolio/portfolio.css')}}
 
                                <div class="wrapper">
                                    <h1 class="heading">Monthly Winners</h1>
@@ -61,13 +60,7 @@
 
                                     </div>
 
-                                    <script type="text/javascript">
-                                    	$(document).ready(function() {
-                                    		$(".fancybox").fancybox();
-                                    	});
-                                    </script>
 
-                                        <script src="js/jquery.prettyPhoto.js" ></script>
                                     	</div>
 
 

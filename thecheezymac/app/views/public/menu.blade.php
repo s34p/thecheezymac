@@ -32,11 +32,7 @@
 
 
                 <div class="menuBg" style="border: 2px solid #000; ">
-                    {{--@include('public.partials.comments')--}}
 
-                    {{--<div class="text-right">--}}
-                       {{--<button class="btn">Printable Menu <span class="glyphicon glyphicon-print"></span></button>--}}
-                   {{--</div>--}}
 
                     <div>
 
@@ -59,38 +55,7 @@
                             @if(Request::segment(2) == 'BuildYourOwn')
 
 
-                            {{--@foreach($menus as $menu)--}}
 
-                                {{--<div class="col-md-6">--}}
-                                    {{--<h3>{{$menu->menu_name}}--}}
-                                        {{--<div>--}}
-                                        {{--&#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733;--}}
-                                        {{--</div>--}}
-                                    {{--</h3>--}}
-                                    {{--{{$menu->description}}--}}
-                                    {{--@if($menu->price)--}}
-                                    {{--<h3 class="price yellow">${{$menu->price}}</h3>--}}
-                                    {{--@endif--}}
-
-                                {{--</div>--}}
-                            {{--<div class="col-md-6">--}}
-                                {{--@if(strpos($menu->menu_name,'Step 1') !== false)--}}
-                                    {{--<img src="/img/lasagna.jpg" class="img-responsive" style="width:100%; height:100%" alt=""/>--}}
-                                {{--@endif--}}
-
-                                    {{--@if(strpos($menu->menu_name,'Step 2') !== false)--}}
-                                    {{--<img src="/img/pesto.jpg" class="img-responsive" style="width:100%; height:100%" alt=""/>--}}
-                                {{--@endif--}}
-
-                                    {{--@if(strpos($menu->menu_name,'Step 3') !== false)--}}
-                                    {{--<img src="/img/ingredients.jpg" class="img-responsive" style="width:100%; height:100%" alt=""/>--}}
-                                {{--@endif--}}
-
-                                    {{--@if(strpos($menu->menu_name,'Step 4') !== false)--}}
-                                    {{--<img src="/img/ingredients.jpg" class="img-responsive" style="width:100%; height:100%" alt=""/>--}}
-                                {{--@endif--}}
-                            {{--</div>--}}
-                                {{--<div class="clearfix" style="margin:20px"></div>--}}
 
                                     @foreach($menus as $menu)
 
@@ -141,22 +106,7 @@
 
 
 
-                        {{--@for($i = 0; $i< count($menus); $i++)--}}
 
-                            {{--<div class="col-sm-6" style="padding:25px;">--}}
-                           {{--<h3>{{$menus[$i]->menu_name}}</h3>--}}
-
-                              {{--{{$menus[$i]->description}}--}}
-                           {{--@if($menus[$i]->price)--}}
-                           {{--<h2>${{$menus[$i]->price}}</h2>--}}
-                           {{--@endif--}}
-                           {{--</div>--}}
-
-                           {{--@if($i % 2 == 0)--}}
-                                {{--<div class="clearfix"></div>--}}
-                           {{--@endif--}}
-
-                        {{--@endfor--}}
                          <div class="clearfix"></div>
 
                         </div>

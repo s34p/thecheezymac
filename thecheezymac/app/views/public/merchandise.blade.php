@@ -6,7 +6,6 @@
 
 
             <div class="main">
-                                {{HTML::style('/plugins/portfolio/portfolio.css')}}
 
                                <div class="wrapper">
                                    <h1 class="heading">Merchandise</h1>
@@ -32,13 +31,7 @@
 
                                         <figure class="portfolio-item col-sm-4">
                                         <div class="img-item">  <img src="{{$item->image}}" class="img-responsive" style="width:100%;" alt=""> </div>
-                                        {{--<figcaption ><h4 style="text-align: center !important;padding-right:15px !important; margin-bottom: 0px !important;"><a href="portfolio-item.html" style="color: #ffff00">{{$item->item_name}}</a>--}}
-                                        {{--<div style="padding-top: 5px">--}}
-                                        {{--&#9733; &#9733; &#9733; &#9733; &#9733;--}}
-                                        {{--</div> </h4>--}}
-                                        {{--<p style="text-align: center; padding-right:15px !important; margin-bottom: 0px" class="yellow">{{$item->price}}</p>--}}
 
-                                        {{--</figcaption>--}}
 
                                         <span class="ff"><a href="{{$item->image}}" class="prettyPhoto fancybox" rel="gallery1" ><i class="fa fa-search-plus"></i></a></span>
                                         <span class="ll"><a href="#" ><i class="fa fa-link"></i></a></span>
@@ -64,13 +57,7 @@
 
                                     </div>
 
-                                    <script type="text/javascript">
-                                    	$(document).ready(function() {
-                                    		$(".fancybox").fancybox();
-                                    	});
-                                    </script>
 
-                                        <script src="js/jquery.prettyPhoto.js" ></script>
                                     	</div>
 
 
