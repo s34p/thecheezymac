@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://thecheezymac.dev',
+	'url' => 'http://thecheezymac.studio34productions.com',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -137,7 +137,8 @@ return array(
         'TheCheezyMac\Pages\PagesServiceProvider',
         'TheCheezyMac\Merchandise\MerchandiseServiceProvider',
 		'Aracademia\Dbbackup\DbbackupServiceProvider',
-		'Clockwork\Support\Laravel\ClockworkServiceProvider'
+		'Clockwork\Support\Laravel\ClockworkServiceProvider',
+		'Protechmaster\Gtmetrix\GtmetrixServiceProvider'
 
 	),
 
@@ -205,8 +206,8 @@ return array(
 		'URL'               => 'Illuminate\Support\Facades\URL',
 		'Validator'         => 'Illuminate\Support\Facades\Validator',
 		'View'              => 'Illuminate\Support\Facades\View',
-        'Sentry' => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
-		'Clockwork' => 'Clockwork\Support\Laravel\Facade',
+        'Sentry' 			=> 'Cartalyst\Sentry\Facades\Laravel\Sentry',
+		'Clockwork' 		=> 'Clockwork\Support\Laravel\Facade',
 	),
 
 );

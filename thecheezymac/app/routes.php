@@ -74,6 +74,7 @@ Route::group(['prefix'=>'webadmin','before'=>'isLoggedIn'], function()
         Route::resource('merchandise', 'MerchandiseController');
         Route::get('settings', 'SettingsController@index');
         Route::get('settings/database-backup', 'SettingsController@DbBackup');
+        Route::get('settings/performance', 'SettingsController@performance');
 
         Route::post('users/passEdit/{id}', 'UsersController@updatePassword');
     });

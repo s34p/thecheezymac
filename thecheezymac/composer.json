@@ -9,7 +9,8 @@
         "way/generators": "~2.0",
         "cartalyst/sentry": "2.1.*",
 		"mailchimp/mailchimp": "~2.0",
-	  	"aracademia/dbbackup": "1.0.*"
+	  	"aracademia/dbbackup": "1.0.*",
+	  	"protechmaster/gtmetrix": "1.0.*"
 	},
 	"autoload": {
 		"classmap": [
