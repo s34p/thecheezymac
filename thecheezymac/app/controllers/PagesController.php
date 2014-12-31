@@ -305,7 +305,7 @@ class PagesController extends BaseController {
 
     public function dashboard()
     {
-    	$this->layout->content = View::make('private.dashboard');
+    	$this->layout->content = View::make('private.news.index');
     }
 
     private function employmentInputs()

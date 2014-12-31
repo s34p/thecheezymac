@@ -41,6 +41,7 @@
                     </div>
                     <div class="col-md-3 dashed-border">
                         <div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m22!1m12!1m3!1d1730.1092312436806!2d-84.44593081260318!3d38.002943936450485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m7!1i0!3e2!4m0!4m3!3m2!1d38.0031721!2d-84.4459408!5e1!3m2!1sen!2sus!4v1418933275779" width="200" height="100" frameborder="0" style="border:0"></iframe>
                         </div>
                         <div class="footer-contactus">
                             3031 Richmond Road, Suite 120 <br/>
@@ -85,102 +86,22 @@
 
          </div>
 
-                {{HTML::script('/js/thecheezymac.js')}}
+
 
                 {{HTML::script('/plugins/tinymce/js/tinymce/tinymce.min.js')}}
 
                 {{HTML::script('/plugins/fancybox/source/jquery.fancybox.pack.js')}}
 
-                <!--[if IE]>
-                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-                <![endif]-->
+
 
                 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
                 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f708a1900255165"></script>
 
+                <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+                <![endif]-->
 
-
-         <script type="text/javascript">
-             $(document).ready(function(){
-
-                 $(".fancybox").fancybox();
-
-
-                 if (window.attachEvent && !window.addEventListener) {
-                     alert("Please Upgrade your browser to Internet Explorer 9 or higher. If you are using windows XP, please use chrome or firefox to view our website");
-                 }
-
-                 if(navigator.appVersion.indexOf("MSIE 9.")!=-1)
-                 {
-                    $("h4 a").removeClass('dark-button').addClass('ie-dark-button');
-                 }
-
-
-
-                 $('#datatable').DataTable();
-
-                 $('.recycleLogo img').hover(function(){
-                      $(this).attr('src','/img/recyclelogo-hover.png');
-                   }, function(){
-                      $(this).attr('src','/img/recyclelogo.png');
-                   });
-
-
-
-
-                 var activeButton = "<?php echo Request::segment(1); ?>";
-
-                 /**
-                  * Button Hover
-                  * @type {string}
-                  */
-                     $(".menu-button img").mouseover(function()
-                      {
-
-                          if($(this).attr('data-link') != activeButton)
-                          {
-                             var navButton = $(this).attr('src');
-                              var navHover = navButton.replace(".png","-hover.png");
-                              $(this).attr('src',navHover);
-                          }
-
-                      });
-                      $(".menu-button img").mouseout(function()
-                      {
-
-                          if($(this).attr('data-link') != activeButton)
-                          {
-                             var navButton = $(this).attr('src');
-                              var navHover = navButton.replace("-hover", "");
-                              $(this).attr('src', navHover);
-                          }
-                      });
-
-
-
-
-
-                 $("nav ul li a img").each(function()
-                 {
-                       //var classVal = $(this).attr("data-link");
-
-                     if(activeButton == $(this).attr("data-link"))
-                     {
-
-                         var navButton = $(this).attr('src');
-                         var navHover = navButton.replace(".png","-hover.png");
-                         $(this).attr('src',navHover);
-                     }
-                 });
-
-                         $('.navbar .dropdown').hover(function() {
-                 		  $(this).find('.dropdown-menu').first().stop(true, true).slideDown("slow");
-                 		}, function() {
-                 		  $(this).find('.dropdown-menu').first().stop(true, true).slideUp("slow")
-                 		});
-                });
-             </script>
-
+                {{HTML::script('/js/thecheezymac.js')}}
 
 </body>
 </html>

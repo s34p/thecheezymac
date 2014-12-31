@@ -49,7 +49,7 @@
     </div>
 
     <button type="button" class="navbar-toggle navbar-fixed-top" id="open-button" style="color:white">
-          <span class="sr-only">Toggle navigation</span>
+          <span class="sr-only">Toggle Menu</span>
           <span class="fa fa-th-list fa-2x"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>

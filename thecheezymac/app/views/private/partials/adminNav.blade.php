@@ -1,5 +1,5 @@
 <ul class="nav nav-tabs">
-    <li role="presentation" data-link="dashboard"><a href="/webadmin/dashboard"><i class="fa fa-cogs"></i> Dashboard</a></li>
+    {{--<li role="presentation" data-link="dashboard"><a href="/webadmin/dashboard"><i class="fa fa-cogs"></i> Dashboard</a></li>--}}
     <li role="presentation" data-link="news"><a href="/webadmin/news"><i class="fa fa-newspaper-o"></i> News</a></li>
     <li role="presentation" data-link="blog"><a href="/webadmin/blog"><i class="fa fa-file-o"></i> Blog</a></li>
     <?php

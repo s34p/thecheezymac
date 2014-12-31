@@ -55,7 +55,6 @@
                           </div>
                         </div>
 
-                    @include('private.partials.tinymce')
 
 
                    </div>

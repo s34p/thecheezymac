@@ -92,7 +92,7 @@
                            });
                        </script>
 
-                    @include('private.partials.tinymce')
+
 
 
                    </div>

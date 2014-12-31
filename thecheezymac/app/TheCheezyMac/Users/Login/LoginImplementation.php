@@ -48,7 +48,7 @@ class LoginImplementation implements LoginInterface{
             \Session::put('last_login', $user->last_login);
 
 
-            return \Redirect::intended('/webadmin/dashboard');
+            return \Redirect::intended('/webadmin/news');
         }
         catch (WrongPasswordException $e)
         {
@@ -110,7 +110,7 @@ class LoginImplementation implements LoginInterface{
 
                     Sentry::login($user, false);
 
-                    return \Redirect::to('/webadmin')->with('success','Your password has been changed');
+                    return \Redirect::to('/webadmin/news')->with('success','Your password has been changed');
                 }
                 else
                 {

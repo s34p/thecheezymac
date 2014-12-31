@@ -44,7 +44,7 @@ Route::filter('isLoggedIn', function()
 
 Route::filter('alreadyLoggedIn',function()
 {
-	if(Sentry::check()) return Redirect::to('/webadmin/dashboard');
+	if(Sentry::check()) return Redirect::to('/webadmin/news');
 });
 
 Route::filter('isAdmin', function()
@@ -53,7 +53,7 @@ Route::filter('isAdmin', function()
 
 	$admin = Sentry::findGroupByName('admins');
 
-	if(!$user->inGroup($admin)) return Redirect::to('/webadmin/dashboard');
+	if(!$user->inGroup($admin)) return Redirect::to('/webadmin/news');
 });
 
 //Route::filter('auth', function()
