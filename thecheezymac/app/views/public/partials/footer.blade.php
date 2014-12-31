@@ -22,7 +22,7 @@
                                 <li><a href="/giftcard">GIFT CARDS</a></li>
                                 <li><a href="/club">LOYALTY CLUB</a></li>
                                 <li><a href="/story">OUR STORY</a></li>
-                                <li><a href="/menu/">OUR MENU</a></li>
+                                <li><a href="/menu/BuildYourOwn">OUR MENU</a></li>
                                 <li><a href="/menu/Specials">OUR SPECIALS</a></li>
                                 <li><a href="/merchandise">MERCHANDISE</a></li>
                             </ul>
@@ -34,21 +34,22 @@
                             <li><a href="/franchise">FRANCHISE INFO</a></li>
                             <li><a href="/employment">EMPLOYMENT</a></li>
                             <li><a href="/press-media">PRESS/MEDIA</a></li>
-                            <li><a href="#">RECIPE WINNER</a></li>
+                            <li><a href="/winners">RECIPE WINNER</a></li>
                             <li><a href="/catering">CATERING</a></li>
                             <li><a href="/contact-us">CONTACT US</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3 dashed-border">
                         <div>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m22!1m12!1m3!1d1730.1092312436806!2d-84.44593081260318!3d38.002943936450485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m7!1i0!3e2!4m0!4m3!3m2!1d38.0031721!2d-84.4459408!5e1!3m2!1sen!2sus!4v1418933275779" width="200" height="100" frameborder="0" style="border:0"></iframe>
+                            <a href="https://www.google.com/maps/dir//38.0031721,-84.4459408/@38.002944,-84.445931,870m/data=!3m1!1e3?hl=en-US" target="_blank"> <img src="/img/footerMap.jpg" alt="Map"/></a>
                         </div>
                         <div class="footer-contactus">
-                            3031 Richmond Road, Suite 120 <br/>
-                            Lexington, KY 40509 <br/>
-                            <i class="glyphicon glyphicon-phone"></i> 859-2CHEEZY (859-224-3399) <br/>
-                            <i class="glyphicon glyphicon-phone-alt"></i> 844-624-3399 (Corporate)<br/>
-                            <i class="glyphicon glyphicon-envelope"></i> corp@thecheezymac.com (Corporate)
+                            <span>3031 Richmond Road, Suite 120</span>
+                            <span>Lexington, KY 40509 </span>
+                            <span><i class="glyphicon glyphicon-phone"></i> 859-2CHEEZY (859-224-3399)</span>
+                            <span><i class="glyphicon glyphicon-phone-alt"></i> 844-624-3399 (Corporate)</span>
+                            <span><i class="glyphicon glyphicon-envelope"></i> <a href="mailto:corp@thecheezymac.com" target="_top">corp@thecheezymac.com (Corporate)</a></span>
+                            <br/>
                         </div>
                     </div>
 
@@ -67,7 +68,7 @@
                         <a href="http://twitter.com/thecheezymac" target="_blank"  class="twitter">
                         <img src="/img/social/twitter.png" alt="Twitter">
                         </a>
-                         <a href="#" class="google">
+                         <a href="https://plus.google.com/109822309610986608407/posts" target="_blank" class="google">
                          <img src="/img/social/google.png" alt="Google">
                         </a>
                         <a href="http://pinterest.com/thecheezymac" target="_blank" class="pinterest">

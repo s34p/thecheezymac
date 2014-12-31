@@ -23,7 +23,7 @@ Tired of cold cuts and deli sandwiches? Try something different. Surprise your g
                                         </p>
                                         <br/>
                                         <h4>
-                                       <i class="glyphicon glyphicon-envelope"></i> catering@thecheezymac.com <br/><br/>
+                                       <i class="glyphicon glyphicon-envelope"></i> <a href="mailto:catering@thecheezymac.com" target="_top">catering@thecheezymac.com</a> <br/><br/>
                                        <i class="glyphicon glyphicon-phone"></i> 859-2CHEEZY (859-224-3399) <br/><br/>
                                        <i class="glyphicon glyphicon-phone-alt"></i> 844-624-3399 (Corporate)
                                        </h4>

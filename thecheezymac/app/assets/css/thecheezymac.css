@@ -182,6 +182,11 @@ ul .menu-nav-pills{
     font-size: 11px;
 }
 
+.footer-contactus span{
+    display: block;
+    padding-top: 5px;
+}
+
 .subfooter{
     padding-top: 20px;
 }
@@ -435,6 +440,47 @@ ul .dropdown-menu{
     margin-top:40px;
 }
 
+.list-group-item
+{
+    background-color: transparent !important;
+    border: 1px solid #5f5f5f;
+    color: #ffffff;
+    font-family: 'Sketch' !important;
+    /*text-align: left;*/
+    padding-left: 30px;
+    padding-right: 50px;
+    font-size:18px
+}
+
+.home-menu
+{
+    background-color: #363636;
+    box-shadow: inset 0 0 50px #000000;
+    display: none;
+}
+
+@media (max-width: 767px)
+{
+    .home-menu
+    {
+        display: inherit;
+    }
+
+    .menu-mobile
+    {
+        height: 25px;
+    }
+
+    .menu-nav-pills
+    {
+        padding-left:0px !important;
+    }
+    h1 .heading{
+        text-align: center !important;
+    }
+
+}
+
 @media (min-width: 768px) {
     .col-sm-15 {
         width: 20%;
@@ -460,7 +506,8 @@ ul .dropdown-menu{
 {
 
 
-    
+
+
     .col-lg-10, .main{
         width:100% !important;
     }
@@ -524,7 +571,7 @@ ul .dropdown-menu{
     .logo
     {
         text-align: center;
-        padding: 10px;
+        padding: 10px 10px 0px 10px;
     }
 
     .visible-xs{
@@ -534,16 +581,36 @@ ul .dropdown-menu{
 
 
     .header{
-        height:140px;
+        height:100%;
 
     }
 
     .logo a img{
-        margin-top:-30px;
+       padding-bottom: 0px;
     }
 
     .main{
         padding: 0px;
     }
+    .main-index{
+        padding: 0px;
+    }
+
+    #open-button{
+        color:white;
+        z-index: 1000;
+        padding-right: 0px;
+        margin-top: 0px
+    }
+    #open-button img
+    {
+        height: 20px
+    }
+    .important-links
+    {
+        margin: 0px !important;
+    }
+
+
 }
 

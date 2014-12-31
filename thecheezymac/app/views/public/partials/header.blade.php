@@ -32,9 +32,10 @@
 <body>
 
 
-    <div class="menu-wrap">
+    <div class="menu-wrap" style="z-index: 1001">
         <nav class="menu">
             <div class="icon-list">
+
                 <a href="/"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
                 <a href="/story"><i class="fa fa-fw fa-file-text"></i><span>Our Story</span></a>
                 <a href="/menu/FoodForThought"><i class="fa fa-fw fa-cutlery"></i><span>Menu</span></a>
@@ -44,17 +45,10 @@
                 <a href="/club"><i class="fa fa-fw fa-gift"></i><span>Loyalty Club</span></a>
                 <a href="/contact-us"><i class="fa fa-fw fa-envelope"></i><span>Contact Us</span></a>
             </div>
+
         </nav>
         <button class="close-button" id="close-button">Close Menu</button>
     </div>
-
-    <button type="button" class="navbar-toggle navbar-fixed-top" id="open-button" style="color:white">
-          <span class="sr-only">Toggle Menu</span>
-          <span class="fa fa-th-list fa-2x"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-   </button>
-
 
         <div class="container text-center">
 
@@ -68,10 +62,24 @@
                 <div class="logo">
                     <a href="/">
                     <img src="/img/logo.png" class="img-responsive" alt="The cheezy Mac Logo"/>
-
                     </a>
                 </div>
-                <div class="menu">
+
+                @if(Request::segment(1) != "" AND Request::segment(1) != "home")
+                <div style="width: 94px;" class="center-block">
+                 <button type="button" class="navbar-toggle pull-left" id="open-button" style="margin:0px; padding-left: 0px">
+
+                      <img src="/img/morebtn.png" alt="More"/>
+
+               </button>
+                </div>
+
+                 @endif
+                  @if(Request::segment(1) != "" AND Request::segment(1) != "home")
+                    <div class="menu">
+                  @else
+                    <div class="menu-mobile">
+                  @endif
                     <nav class="navbar" id="myNavmenu" role="navigation">
                         <div class="container-fluid">
 

@@ -1,7 +1,5 @@
 // = include ../bootstrap/js/bootstrap.min.js
 // = include ../DataTables/js/jquery.dataTables.min.js
-// = include ../menuSlide/classie.js
-// = include ../menuSlide/main.js
 // = include ../jasnyBootstrap/js/jasny-bootstrap.min.js
 
 $(document).ready(function(){
@@ -103,3 +101,6 @@ $(document).ready(function(){
         $(this).find('.dropdown-menu').first().stop(true, true).slideUp("slow")
     });
 });
+
+// = include ../menuSlide/classie.js
+// = include ../menuSlide/main.js

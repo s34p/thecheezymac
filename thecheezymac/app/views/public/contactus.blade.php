@@ -70,7 +70,7 @@
 
 
                                        <div class="row contact-text">
-                                       <h3>Franchise Info!</h3>
+
                                        <div>
                                            3031 Richmond Road, Suite 120 <br/>
                                            Lexington, KY 40509 <br/><br/>

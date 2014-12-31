@@ -7,10 +7,10 @@
             <div class="main">
 
 
-                <div class="wrapper">
+                <div class="wrapper" style="text-align: center;">
                     <h1 class="heading" style="text-align: center !important; font-size: 60px; margin-top:0px !important;padding:0px !important">Menu</h1>
 
-                 <ul class="menu-nav-pills">
+                 <ul class="menu-nav-pills" style="padding-left: 0px">
                     @foreach($categories as $cat)
                     <li data-link="{{$cat->slug}}"><a href="/menu/{{$cat->slug}}" >{{$cat->name}}</a></li>
                     @endforeach
@@ -51,7 +51,7 @@
                         $c = 0;
                         ?>
 
-                        <div class="menu-items-wrapper">
+                        <div class="menu-items-wrapper" style="font-size:15px">
                             @if(Request::segment(2) == 'BuildYourOwn')
 
 
