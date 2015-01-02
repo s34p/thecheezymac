@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.1.6
+-- version 4.1.12
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 23, 2014 at 09:15 PM
+-- Generation Time: Jan 01, 2015 at 05:14 PM
 -- Server version: 5.6.16
--- PHP Version: 5.5.9
+-- PHP Version: 5.5.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `pages` (
   `created_at` datetime NOT NULL,
   `updated_at` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
 
 --
 -- Dumping data for table `pages`
@@ -49,7 +49,10 @@ INSERT INTO `pages` (`id`, `slug`, `title`, `image`, `body`, `col_num`, `edited_
 (3, 'app', 'Download Our App', 'http://thecheezymac.studio34productions.com/uploads/Pages/storypic.jpg', '<h3>Ordering Made Easy</h3>\r\n\r\n                                           <p>\r\nDelicious Mac & Cheese is just a tap away! Download The Cheezy Mac app on your iPhone or Android phone, then Build-Your-Own or choose one of our Chef’s Specialities. We’ll have it piping hot and ready to eat when you arrive! Ordering online has never been faster or easier!                                            </p>\r\n\r\n                                        <p>\r\n                                        <a href="https://mobileapp.vivonet.com/api/2.1/mobile/download?bundle=com.vivomobile.thecheezymac" target="_blank"><img  src="/img/applogo.png" alt="Download Our App"/></a>\r\n                                        </p>', 2, '', '2014-12-23 00:00:00', '0000-00-00 00:00:00'),
 (4, 'press-media', 'Press / Media', 'http://thecheezymac.studio34productions.com/uploads/Pages/storypic.jpg', '<h3>Press/Media!</h3>\r\n\r\n                                           <p>\r\nWe opened The Cheezy Mac to share our love for gourmet Macaroni & Cheese. And we’re thrilled to see that others love our unique twist on this old classic! Check out our press clippings and see what others are saying about us…\r\n</p>\r\n<p>\r\nQuestions? We’d love to talk. Media inquiries may be directed to press@thecheezymac.com\r\n</p>\r\n', 2, '', '2014-12-23 00:00:00', '0000-00-00 00:00:00'),
 (5, 'club', 'Loyalty club', 'http://thecheezymac.studio34productions.com/uploads/Pages/storypic.jpg', '<h3>LOYALTY CLUB</h3>\r\n<p>Mac &amp; Cheese lovers unite! Sign-up to receive the latest news, upcoming events, weekly specials, and exclusive &ldquo;members only&rdquo; coupons offered throughout the year.&nbsp;Complete the form below to become a loyalty club member and start earning points today!</p>\r\n<p>&nbsp;</p>\r\n<h3>HOW IT WORKS</h3>\r\n<p dir="ltr">Earn 1 point for every dollar you spend.<br /><strong>9</strong><strong>0 points = free entree&nbsp;</strong>($8.99 value)</p>\r\n<p dir="ltr">Simply fill out the form below to &ldquo;Join the Club&rdquo; and instantly receive a&nbsp;claim voucher. Then, hand that voucher to your cashier to receive your Loyalty Club Card and also&nbsp;<strong>one free drink</strong>!</p>', 2, '', '2014-12-23 00:00:00', '2014-12-23 16:19:22'),
-(6, 'franchise', 'Franchise Info', 'http://thecheezymac.studio34productions.com/uploads/Pages/storypic.jpg', '<h3>Franchise Info!</h3>\r\n\r\n                                           <p>\r\nHelp us spread the love of gourmet Mac & Cheese! Our business plan is designed for profit and growth. If you’d like to learn more about franchise opportunities, please fill out the Information Request form below, or contact our corporate office at 844-624-3399. We look forward to hearing from you!                                            </p>\r\n', 2, '', '2014-12-23 00:00:00', '0000-00-00 00:00:00');
+(6, 'franchise', 'Franchise Info', 'http://thecheezymac.studio34productions.com/uploads/Pages/storypic.jpg', '<h3>Franchise Info!</h3>\r\n\r\n                                           <p>\r\nHelp us spread the love of gourmet Mac & Cheese! Our business plan is designed for profit and growth. If you’d like to learn more about franchise opportunities, please fill out the Information Request form below, or contact our corporate office at 844-624-3399. We look forward to hearing from you!                                            </p>\r\n', 2, '', '2014-12-23 00:00:00', '0000-00-00 00:00:00'),
+(7, 'catering', 'Catering', 'http://thecheezymac.studio34productions.com/uploads/Pages/storypic.jpg', '<h3>CATERING</h3>\r\n\r\n                                       <p>\r\nTired of cold cuts and deli sandwiches? Try something different. Surprise your guest with a dish everyone loves… Mac & Cheese! It’s fast, fun, easy and delicious. Call today and let The Cheezy Mac cater your next party!\r\n                                        </p>\r\n                                        <br/>', 2, '', '2015-01-01 00:00:00', '0000-00-00 00:00:00'),
+(8, 'contact-us', 'Contact Us', '', '<div>3031 Richmond Road, Suite 120 <br /> Lexington, KY 40509<br /><br /> 859-2CHEEZY (859-224-3399) <br /> 844-624-3399 (Corporate)<br /><br /></div>', 2, '', '2015-01-01 00:00:00', '2015-01-01 16:04:04'),
+(9, 'employment', 'Submit Your Application', '', '', 1, '', '2015-01-01 00:00:00', '2015-01-01 16:11:13');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

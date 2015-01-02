@@ -47,6 +47,11 @@ class PagesController extends BaseController {
     {
         $page = $this->pageModel->where('slug','like',$slug)->first();
 
+        if($slug == "contact-us")
+        {
+            return View::make('public.layout.contact-layout', compact('page'));
+        }
+
         if($page->col_num == 2)
         {
             return View::make('public.layout.double-column', compact('page'));
@@ -56,6 +61,7 @@ class PagesController extends BaseController {
         {
             return View::make('public.layout.single-column', compact('page'));
         }
+
     }
 
     public function index()
@@ -146,9 +152,9 @@ class PagesController extends BaseController {
     public function postFranchise()
     {
         $rules = [
-            'fullName' => 'required',
-            'email'         =>  'required|email',
-            'phone'    =>  'alpha_dash|required',
+            'fullName'  => 'required',
+            'email'     =>  'required|email',
+            'phone'     =>  'required',
 
         ];
 
@@ -221,7 +227,7 @@ class PagesController extends BaseController {
     	$rules = [
             'fullName' => 'required',
             'email'         =>  'required|email',
-            'phone'    =>  'alpha_dash',
+            'phone'    =>  'required',
             'comment'     =>  'required',
 
         ];
@@ -281,13 +287,13 @@ class PagesController extends BaseController {
 
     private function recipient()
     {
-        $userArray = ['email'=>'rrafiatech@gmail.com','fullName'=>'Rachid Rafia'];
+        $userArray = ['email'=>'thecheezymac@yahoo.com','fullName'=>'The Cheezy Mac'];
         return arrayToObject::execute($userArray);
 
     }
     private function franchiseRecipient()
     {
-        $userArray = ['email'=>'rrafiatech@gmail.com','fullName'=>'Rachid Rafia'];
+        $userArray = ['email'=>'thecheezymac@yahoo.com','fullName'=>'The Cheezy Mac'];
         return arrayToObject::execute($userArray);
 
     }

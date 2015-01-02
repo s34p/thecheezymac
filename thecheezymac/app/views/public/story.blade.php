@@ -61,7 +61,7 @@
                                                   </a>
                                                 </div>
                             </div>
-                            <div class="col-md-8 storytext">
+                            <div class="col-md-8 storytext" style="z-index: 1">
                                  <h3>Our Belief</h3>
 
                                 <p>

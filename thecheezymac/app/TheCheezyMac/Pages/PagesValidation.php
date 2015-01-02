@@ -14,7 +14,6 @@ class PagesValidation extends FormValidator {
 
     protected $rules = [
         'title' => 'required',
-        'body'    => 'required',
         'col_num' => 'required',
 
     ];
