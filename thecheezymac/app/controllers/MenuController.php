@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Cache;
 use TheCheezyMac\Menu\Menu;
 use TheCheezyMac\Menu\MenuInterface;
 use TheCheezyMac\Menu\MenuValidation;
@@ -45,11 +46,10 @@ class MenuController extends \BaseController {
 
 		$menus = DB::table('menu')
 			->join('menu_categories', 'menu.category_id','=','menu_categories.id')
-			->select('*','menu.name as menu_name','menu_categories.name as category_name','menu.id as menu_id','menu.price as price')
+			->select('*','menu.name as menu_name','menu.order as menu_order','menu_categories.name as category_name','menu.id as menu_id','menu.price as price')
 			->get();
 
-
-
+		Cache::flush();
 
         $this->layout->content = View::make('private.menu.index', compact('menus'));
 	}
@@ -77,6 +77,8 @@ class MenuController extends \BaseController {
         $this->menuValidation->validate(Input::all());
 
         $this->menuInterface->add(Input::all());
+
+		Cache::flush();
 
         return Redirect::to('/webadmin/menu')->withSuccess('Menu Item was added successfully');
 
@@ -106,7 +108,6 @@ class MenuController extends \BaseController {
 		$menu = $this->menuModel->findOrFail($id);
 		$categories = $this->categories->orderBy('name','ASC')->get();
 
-
 		$this->layout->content = View::make('private.menu.edit',compact('menu','categories'));
 	}
 
@@ -122,6 +123,8 @@ class MenuController extends \BaseController {
 		$this->menuValidation->validate(Input::all());
 
         $this->menuInterface->update(Input::all(), $id);
+
+		Cache::flush();
 
         return Redirect::to('/webadmin/menu')->withSuccess('Menu Item was updated!');
 	}
@@ -143,14 +146,19 @@ class MenuController extends \BaseController {
 
     public function menuType($type = "BuildYourOwn")
     {
-		$menus = DB::table('menu')
-			->join('menu_categories', 'menu.category_id','=','menu_categories.id')
-			->select('*','menu.name as menu_name','menu_categories.name as category_name','menu.id as menu_id')
-			->where('menu_categories.slug','=',$type)
-            ->orderBy('menu.id','ASC')
-			->get();
+//		$menus = DB::table('menu')
+//			->join('menu_categories', 'menu.category_id','=','menu_categories.id')
+//			->select('*','menu.name as menu_name','menu_categories.name as category_name','menu.id as menu_id')
+//			->where('menu_categories.slug','=',$type)
+//            ->orderBy('menu.order','ASC')
+//			->get();
 
 //        dd($menus[0]->menu_name);
+
+		$menus = $this->menuModel->whereHas('menuCategory', function($q) use ($type)
+		{
+			$q->where('slug', $type);
+		})->remember(60)->get();
 
         $categories = $this->categories->groupBy('slug')->orderBy('order','ASC')->remember(10)->get();
 

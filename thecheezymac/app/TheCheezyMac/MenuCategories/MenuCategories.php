@@ -14,7 +14,7 @@ class MenuCategories extends \Eloquent {
 
     protected $table = 'menu_categories';
 
-    public function menu()
+    public function menuItems()
     {
         return $this->hasMany('TheCheezyMac\Menu\Menu','category_id');
     }

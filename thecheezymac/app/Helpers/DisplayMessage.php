@@ -41,4 +41,12 @@ class DisplayMessage {
         }
     }
 
+    public static function mailchimpError($error)
+    {
+        if($error)
+        {
+            echo $error;
+        }
+    }
+
 } 

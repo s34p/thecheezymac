@@ -56,6 +56,12 @@ App::error(function(\TheCheezyMac\Forms\FormValidationException $exception, $cod
     return Redirect::back()->withInput()->withErrors($exception->getErrors());
 });
 
+App::error(function(\Mailchimp_Error $exception, $code)
+{
+    Session::save();
+    return Redirect::to("/club")->with('error',$exception->getMessage());
+});
+
 /*
 |--------------------------------------------------------------------------
 | Maintenance Mode Handler

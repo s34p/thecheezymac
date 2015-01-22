@@ -7,6 +7,7 @@
  */
 
 use TheCheezyMac\MenuCategories\MenuCategories;
+use TheCheezyMac\MenuFile\MenuFile;
 
 class Queries {
 
@@ -20,8 +21,19 @@ class Queries {
 
         foreach($name as $n)
         {
+            if($n->name == "Food For Thought")
+            {
+            	return $n->name."<br><small>CHEF'S SPECIALTIES</small>";
+            }
             return $n->name;
         }
+    }
+
+    public static function downloadMenu()
+    {
+        $file = MenuFile::first();
+
+        return $file->file_path;
     }
 
 

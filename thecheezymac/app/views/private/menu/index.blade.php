@@ -22,6 +22,7 @@
                                     <th>Item Image</th>
                                     <th>Name</th>
                                     <th>Price</th>
+                                    <th>Order</th>
                                     {{--<th>Weekly Special</th>--}}
                                     <th>Category</th>
 
@@ -53,6 +54,7 @@
                                             {{--@endif--}}
 
                                         {{--</td>--}}
+                                        <td style="vertical-align: middle !important;">{{$menu->menu_order}}</td>
                                         <td style="vertical-align: middle !important;">{{$menu->category_name}}</td>
                                         <td style="vertical-align: middle !important;"><a href="/webadmin/menu/{{$menu->menu_id}}/edit"><span class="glyphicon glyphicon-pencil"></span></a></td>
                                         <td style="vertical-align: middle !important;">{{FormHelper::delete('webadmin.menu.destroy', $menu->menu_id)}}</td>

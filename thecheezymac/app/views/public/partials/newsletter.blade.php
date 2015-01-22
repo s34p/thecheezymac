@@ -1,5 +1,10 @@
 <div id="NewsLetter">
 {{DisplayMessage::success(Session::get('success'))}}
+@if(Session::get('error'))
+<div class="alert alert-danger">
+    {{Session::get('error')}}
+</div>
+@endif
 {{Form::open(array('route'=>'newsletter.subscribe','role'=>'form'))}}
 
 

@@ -21,6 +21,7 @@
                                 <tr>
                                     <th>Item Image</th>
                                     <th>Caption</th>
+                                    <th>Video</th>
                                     <th></th>
                                     <th></th>
                                 </tr>
@@ -35,6 +36,7 @@
                                            </div>
                                        </td>
                                         <td style="vertical-align: middle !important;">{{$image->caption}}</td>
+                                        <td style="vertical-align: middle !important;">{{!empty($image->video)? "Yes":"No"}}</td>
 
                                         <td style="vertical-align: middle !important;"><a href="/webadmin/gallery/{{$image->id}}/edit"><span class="glyphicon glyphicon-pencil"></span></a></td>
                                         <td style="vertical-align: middle !important;">{{FormHelper::delete('webadmin.gallery.destroy', $image->id)}}</td>

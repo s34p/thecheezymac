@@ -30,7 +30,8 @@ class MenuCategoriesController extends \BaseController {
 	 */
 	public function index()
 	{
-        $menuCategories = $this->menuCategoriesModel->orderBy('name')->get();
+
+		$menuCategories = $this->menuCategoriesModel->orderBy('name')->get();
         $this->layout->content = View::make('private.menuCategories.index', compact('menuCategories'));
 	}
 

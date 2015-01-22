@@ -37,6 +37,7 @@
                             <li><a href="/winners">RECIPE WINNER</a></li>
                             <li><a href="/catering">CATERING</a></li>
                             <li><a href="/contact-us">CONTACT US</a></li>
+                            <li><a href="/gallery">GALLERY</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3 dashed-border">
@@ -92,7 +93,7 @@
                 {{HTML::script('/plugins/tinymce/js/tinymce/tinymce.min.js')}}
 
                 {{HTML::script('/plugins/fancybox/source/jquery.fancybox.pack.js')}}
-
+                {{HTML::script('/plugins/fancybox/source/helpers/jquery.fancybox-media.js')}}
 
 
                 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>

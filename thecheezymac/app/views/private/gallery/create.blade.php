@@ -39,14 +39,17 @@
                                         <input id="fieldID" type="text" name="image" class="form-control">
                                     </div><!-- /input-group -->
 
-
-
-
                                 </div>
                                  <div class="form-group">
                                     {{Form::label('caption','Caption')}}
                                     {{Form::text('caption', null, array('class'=>'form-control', 'placeholder'=>'Caption'))}}
                                     {{DisplayMessage::error('caption', $errors)}}
+                                </div>
+
+                                <div class="form-group">
+                                    {{Form::label('video','Video Link')}}
+                                    {{Form::text('video', null, array('class'=>'form-control', 'placeholder'=>'Video Link'))}}
+                                    {{DisplayMessage::error('video', $errors)}}
                                 </div>
 
                                 <div class="form-group">

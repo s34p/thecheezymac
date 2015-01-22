@@ -1,12 +1,12 @@
 @section('title')
-    Edit Image
+    Menu File Download
 @stop
 
 @section('content')
     <div class="main">
 
            <div class="wrapper">
-               <h1 class="heading">{{$image->caption}}</h1>
+               <h1 class="heading">Downloadable Menu</h1>
 
                <div class="row">
 
@@ -17,41 +17,29 @@
 
                           <div class="panel-body">
                           {{DisplayMessage::sentryError(Session::get('sentryError'))}}
-                          {{Form::model($image, ['method'=>'PUT','route'=>['webadmin.gallery.update', $image->id],'role'=>'form'])}}
-
+                          {{Form::model($menuFile, ['method'=>'PUT','route'=>['webadmin.menuFile.update', $menuFile->id],'role'=>'form'])}}
 
 
                               <div class="form-group">
 
-                                  {{Form::label('image',"Image")}}
+                                  {{Form::label('file_path',"Menu File")}}
                                   <div class="input-group">
                                           <span class="input-group-btn">
 
                                                 <button class="btn btn-default" type="button">
-                                                    <a href="/plugins/ResponsiveFilemanager/filemanager/dialog.php?type=1&amp;field_id=image" class="iframe-btn">Upload
+                                                    <a href="/plugins/ResponsiveFilemanager/filemanager/dialog.php?type=1&amp;field_id=file_path" class="iframe-btn">Upload
                                                     </a>
                                                 </button>
 
 
                                           </span>
-                                      {{Form::text('image', null, array('class'=>'form-control', 'placeholder'=>'Item image','id'=>'image'))}}
+                                      {{Form::text('file_path', null, array('class'=>'form-control', 'placeholder'=>'Menu File','id'=>'file_path'))}}
                                   </div><!-- /input-group -->
 
 
+                                  {{DisplayMessage::error('file_path', $errors)}}
 
                               </div>
-                                <div class="form-group">
-                                       {{Form::label('caption','Caption')}}
-                                       {{Form::text('caption', null, array('class'=>'form-control', 'placeholder'=>'Caption'))}}
-                                       {{DisplayMessage::error('caption', $errors)}}
-                                   </div>
-
-                              <div class="form-group">
-                                  {{Form::label('video','Video Link')}}
-                                  {{Form::text('video', null, array('class'=>'form-control', 'placeholder'=>'Video Link'))}}
-                                  {{DisplayMessage::error('video', $errors)}}
-                              </div>
-
 
                                 <div class="form-group">
                                     {{Form::submit('update',array('class'=>'btn btn-primary', 'name'=>'submit'))}}
@@ -59,7 +47,6 @@
                           {{Form::close()}}
                           </div>
                         </div>
-
 
 
                    </div>

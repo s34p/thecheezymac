@@ -25,6 +25,7 @@ class GalleryImplementation implements GalleryInterface{
     {
         $this->galleryModel->caption = $inputs['caption'];
         $this->galleryModel->image = $inputs['image'];
+        $this->galleryModel->video = $inputs['video'];
         return $this->galleryModel->save();
     }
 
@@ -33,8 +34,8 @@ class GalleryImplementation implements GalleryInterface{
         $gallery = $this->galleryModel->findOrFail($galleryId);
         $gallery->caption = $inputs['caption'];
         $gallery->image = $inputs['image'];
+        $gallery->video = $inputs['video'];
         return $gallery->save();
     }
-
 
 } 

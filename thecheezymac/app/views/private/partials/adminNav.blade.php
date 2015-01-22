@@ -14,6 +14,7 @@
     <li role="presentation" data-link="pages"><a href="/webadmin/pages"><i class="fa fa-file-text"></i> Pages</a></li>
     <li role="presentation" data-link="category"><a href="/webadmin/category"><i class="fa fa-folder"></i> Menu Categories</a></li>
     <li role="presentation" data-link="menu"><a href="/webadmin/menu"><i class="fa fa-cutlery"></i> Menu</a></li>
+    <li role="presentation" data-link="menuFile"><a href="/webadmin/menuFile"><i class="fa fa-download"></i> Downloadable Menu</a></li>
     <li role="presentation" data-link="gallery"><a href="/webadmin/gallery"><i class="fa fa-image"></i> Gallery</a></li>
     <li role="presentation" data-link="comments"><a href="/webadmin/comments"><i class="fa fa-comment"></i> Comments</a></li>
     <li role="presentation" data-link="newsletter"><a href="/webadmin/newsletter"><i class="fa fa-envelope"></i> NewsLetter</a></li>

@@ -14,8 +14,9 @@
                     @foreach($categories as $cat)
                     <li data-link="{{$cat->slug}}"><a href="/menu/{{$cat->slug}}" >{{$cat->name}}</a></li>
                     @endforeach
+                     {{--<li><a href="{{Queries::downloadMenu()}}" target="_blank">Download Menu</a></li>--}}
                 </ul>
-
+		<div><strong><a href="{{Queries::downloadMenu()}}" target="_blank">Download Menu <span class="glyphicon glyphicon-print"></span></a></strong></div>
                 <script>
                     $activeLink = "<?php echo Request::segment(2); ?>";
                     $(".menu-nav-pills li").each(function()
@@ -41,6 +42,7 @@
 
                         <h1>
                             {{Queries::menuCategory(Request::segment(2))}}
+
                             <div class="stars">
                             &#9733; &#9733; &#9733; &#9733; &#9733;
                             </div>
@@ -61,7 +63,7 @@
 
                                         <div class="col-md-12 text-center">
 
-                                        <h3 style="color:yellow; text-align: center !important;">{{$menu->menu_name}}
+                                        <h3 style="color:yellow; text-align: center !important;">{{$menu->name}}
                                         <div>
                                         &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733;
                                         </div>
@@ -76,18 +78,17 @@
 
                                         @endforeach
                             @else
-                            @while($i < count($menus))
-
+                                @foreach($menus as $menu)
                                     <div class="col-sm-6">
-                                    <h3 style="color:yellow">{{$menus[$i]->menu_name}}
+                                    <h3 style="color:yellow">{{$menu->name}}
                                     <div>
                                     &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733; &#9733;
                                     </div>
                                     </h3>
 
-                                    {{$menus[$i]->description}}
-                                    @if($menus[$i]->price)
-                                    <h3 class="price" style="color:red">${{$menus[$i]->price}}</h3>
+                                    {{$menu->description}}
+                                    @if($menu->price)
+                                    <h3 class="price" style="color:red">${{$menu->price}}</h3>
                                     @endif
                                     </div>
                                     <?php
@@ -96,8 +97,9 @@
                                     @if($i % 2 == 0)
                                     <div class="clearfix"></div>
                                     @endif
+                                @endforeach
 
-                                @endwhile
+
                             @endif
 
 

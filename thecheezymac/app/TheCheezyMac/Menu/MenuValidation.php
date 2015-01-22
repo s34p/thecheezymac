@@ -14,7 +14,8 @@ class MenuValidation extends FormValidator {
 
     protected $rules = [
         'name'          =>  'required',
-        'category_id'      =>  'required|numeric'
+        'category_id'      =>  'required|numeric',
+        'order'      =>  'required|numeric'
     ];
 
 } 

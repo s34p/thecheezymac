@@ -25,7 +25,20 @@ $(document).ready(function(){
 
     });
 
-    $(".fancybox").fancybox();
+    $(".fancybox").fancybox({
+        maxWidth	: 800,
+        maxHeight	: 600,
+        fitToView	: true,
+        width		: '70%',
+        height		: '70%',
+        autoSize	: true,
+        closeClick	: false,
+        openEffect	: 'none',
+        closeEffect	: 'none',
+        helpers : {
+            media : {}
+        }
+    });
 
 
     if (window.attachEvent && !window.addEventListener) {

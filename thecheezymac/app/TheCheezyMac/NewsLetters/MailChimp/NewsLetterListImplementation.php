@@ -21,7 +21,7 @@ class NewsLetterListImplementation implements NewsLetterListInterface {
     protected $mailchimp;
 
     protected $lists = [
-        'Subscribers'   =>  '3d67eae76c'
+        'Subscribers'   =>  '3e0fdae650'
     ];
 
     public function __construct(Mailchimp $mailchimp)
@@ -45,14 +45,20 @@ class NewsLetterListImplementation implements NewsLetterListInterface {
 
         $email = $inputs['email'];
 
-        return $this->mailchimp->lists->subscribe(
-            $this->lists[$listName],
-            ['email'=>$email],
-            $options, //Merge vars
-            'html', //Email Type
-            false, //Send double opt in (send confirmation email to user before adding to the list)
-            true // update existing customer
-        );
+
+                return $this->mailchimp->lists->subscribe(
+                    $this->lists[$listName],
+                    ['email'=>$email],
+                    $options, //Merge vars
+                    'html', //Email Type
+                    false, //Send double opt in (send confirmation email to user before adding to the list)
+                    false // update existing customer
+                );
+
+
+
+
+
     }
 
 

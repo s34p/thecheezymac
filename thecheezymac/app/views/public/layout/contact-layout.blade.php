@@ -1,3 +1,6 @@
+@section('title')
+     Cheezy Mac {{$page->title}}
+@endsection
 @include('public.partials.header')
 
     <div class="main">

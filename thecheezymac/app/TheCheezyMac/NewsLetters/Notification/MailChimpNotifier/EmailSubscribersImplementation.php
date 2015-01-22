@@ -32,10 +32,10 @@ class EmailSubscribersImplementation implements EmailSubscribersInterface {
     {
 
         $options = [
-            'list_id'       =>  '58cc1c5e9f',
+            'list_id'       =>  '3e0fdae650',
             'subject'       =>  $title,
             'from_name'     =>  'The Cheezy Mac',
-            'from_email'    =>  'rrafiatech@gmail.com',
+            'from_email'    =>  'club@thecheezymac.com',
             'to_name'       =>  'The Cheezy Mac Subscribers'
         ];
 

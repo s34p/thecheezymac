@@ -1,6 +1,9 @@
 @section('title')
     The Cheezy Mac
 @stop
+@section('description')
+   The Cheezy Mac: The ultimate comfort food using the finest ingredients and freshest cheeses, to craft the best macaroni and Cheese. Choose from one of our many Chef’s Specialties.
+@stop
 
 @section('content')
 

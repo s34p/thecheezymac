@@ -11,7 +11,7 @@ namespace TheCheezyMac\Gallery;
 
 class Gallery extends \Eloquent {
 
-    protected $fillable = ['caption','image'];
+    protected $fillable = ['caption','image','video'];
 
     protected $table = 'gallery';
 

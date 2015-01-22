@@ -32,6 +32,7 @@ Mac & Cheese lovers unite! Sign-up to receive the latest news, upcoming events, 
 
 
                                                {{DisplayMessage::success(Session::get('success'))}}
+                                               {{Session::get('error')}}
                                                {{Form::open(array('route'=>'newsletter.subscribe','role'=>'form'))}}
 
 

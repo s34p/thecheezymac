@@ -30,7 +30,8 @@ class MenuImplementation implements MenuInterface{
         {
             $this->menuModel->image = $inputs['image'];
         }
-        $this->menuModel->weekly_special = $inputs['weekly_special'];
+//        $this->menuModel->weekly_special = $inputs['weekly_special'];
+        $this->menuModel->order = $inputs['order'];
         $this->menuModel->category_id = $inputs['category_id'];
         return $this->menuModel->save();
     }
@@ -43,7 +44,8 @@ class MenuImplementation implements MenuInterface{
         $menu->price = $inputs['price'];
         $menu->description = $inputs['description'];
         $menu->category_id = $inputs['category_id'];
-        $menu->weekly_special = $inputs['weekly_special'];
+//        $menu->weekly_special = $inputs['weekly_special'];
+        $menu->order = $inputs['order'];
         if(isset($inputs['image']))
         {
             $menu->image = $inputs['image'];

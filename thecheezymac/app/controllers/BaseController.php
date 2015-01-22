@@ -17,6 +17,9 @@ class BaseController extends Controller {
 			Event::fire('clockwork.controller.end');
 		});
     }
+
+
+
     /**
 	 * Setup the layout used by the controller.
 	 *
@@ -29,6 +32,8 @@ class BaseController extends Controller {
 			$this->layout = View::make($this->layout);
 		}
 	}
+
+
 
 
 

@@ -43,6 +43,8 @@
                                     {{DisplayMessage::error('category_id', $errors)}}
                                 </div>
 
+
+
                                 <div class="form-group">
 
                                     {{Form::label('image',"Item's Image")}}
@@ -70,16 +72,21 @@
                                     {{DisplayMessage::error('description', $errors)}}
                                 </div>
 
-                                 <div class="form-group">
-                                    {{Form::label('weekly_special','Is this item a weekly special?')}}
-
-                                    <select name="weekly_special" class="form-control" id="weekly_special">
-                                        <option value="0" selected="selected">No</option>
-                                        <option value="1">Yes</option>
-                                    </select>
-
-                                    {{DisplayMessage::error('weekly_special', $errors)}}
+                                <div class="form-group">
+                                    {{Form::label('order','Order')}}
+                                    {{Form::number('order', null, array('class'=>'form-control', 'placeholder'=>'Order'))}}
+                                    {{DisplayMessage::error('order', $errors)}}
                                 </div>
+                                 {{--<div class="form-group">--}}
+                                    {{--{{Form::label('weekly_special','Is this item a weekly special?')}}--}}
+
+                                    {{--<select name="weekly_special" class="form-control" id="weekly_special">--}}
+                                        {{--<option value="0" selected="selected">No</option>--}}
+                                        {{--<option value="1">Yes</option>--}}
+                                    {{--</select>--}}
+
+                                    {{--{{DisplayMessage::error('weekly_special', $errors)}}--}}
+                                {{--</div>--}}
 
                                 <div class="form-group">
                                     {{Form::submit('Add',array('class'=>'btn btn-primary', 'name'=>'submit'))}}

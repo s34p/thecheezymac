@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://thecheezymac.studio34productions.com',
+	'url' => 'http://thecheezymac.com',
 
 	/*
 	|--------------------------------------------------------------------------

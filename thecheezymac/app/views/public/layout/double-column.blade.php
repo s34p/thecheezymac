@@ -1,3 +1,10 @@
+
+@section('title')
+    Cheezy Mac {{$page->title}}
+@endsection
+@section('description')
+    The Cheezy Mac: The ultimate comfort food using the finest ingredients and freshest cheeses, to craft the best macaroni and Cheese. Choose from one of our many Chef’s Specialties.
+@endsection
 @include('public.partials.header')
 
     <div class="main">
@@ -7,7 +14,7 @@
 
             <div class="row">
 
-                <div class="col-md-4 storypic">
+                <div class="col-md-4 storypic" style="z-index: 1000">
                     @if($page->image)
                     <img src="{{$page->image}}" class="img-responsive img-thumbnail" alt=""/>
                     @endif
@@ -17,7 +24,7 @@
 
                 </div>
 
-                <div class="col-md-8 storytext" style="z-index: 1">
+                <div class="col-md-8 storytext" style="z-index: 1001">
                     @if($page->slug == "contact-us")
                         @include('public.partials.contactForm')
                     @endif

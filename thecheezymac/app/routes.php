@@ -72,6 +72,7 @@ Route::group(['prefix'=>'webadmin','before'=>'isLoggedIn'], function()
         Route::resource('winners', 'WinnersController');
         Route::resource('pages', 'PagesController');
         Route::resource('merchandise', 'MerchandiseController');
+        Route::resource('menuFile', 'MenuFileController');
         Route::get('settings', 'SettingsController@index');
         Route::get('settings/database-backup', 'SettingsController@DbBackup');
         Route::get('settings/performance', 'SettingsController@performance');

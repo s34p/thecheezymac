@@ -30,30 +30,24 @@
                                         <div class="img-item">  <img src="{{$image->image}}" class="img-responsive img-thumbnail" style="width:100%; height:150px" alt=""> </div>
                                         <figcaption><h4><a href="portfolio-item.html">{{$image->caption}}</a> </h4>
                                         <p>{{date('M d Y', strtotime($image->created_at))}}</p></figcaption>
-                                        <span class="ff"><a href="{{$image->image}}" class="prettyPhoto fancybox" rel="gallery1" ><i class="fa fa-search-plus"></i></a></span>
+                                        <span class="ff">
+                                            <a href="{{!empty($image->video)? $image->video:$image->image}}" class="prettyPhoto fancybox" rel="gallery1" ><i class="fa fa-search-plus"></i></a>
+                                        </span>
                                         <span class="ll"><a href="#" ><i class="fa fa-link"></i></a></span>
                                       </figure>
                                     @endforeach
-
-
 
                                         <div class="clearfix"></div>
 
                                     </div>
 
-                                    {{--<script type="text/javascript">--}}
-                                    	{{--$(document).ready(function() {--}}
-                                    		{{--$(".fancybox").fancybox();--}}
-                                    	{{--});--}}
-                                    {{--</script>--}}
+
 
                                     	</div>
 
 
+
                                     <hr class="vertical-space2">
-
-
-
 
                                     </section>
 
